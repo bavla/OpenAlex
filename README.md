@@ -1,6 +1,6 @@
 # ![openalex](https://github.com/bavla/OpenAlex/assets/20244435/6a3c39cf-9fef-43f4-a821-9c028963a851)
 
-<img src="[/docs/logo.png](https://github.com/bavla/OpenAlex/assets/20244435/6a3c39cf-9fef-43f4-a821-9c028963a851)" alt="OpenAlex"/>
+<img src="https://github.com/bavla/OpenAlex/assets/20244435/6a3c39cf-9fef-43f4-a821-9c028963a851" width=200 alt="OpenAlex"/>
 
 Bibliometrics
 
