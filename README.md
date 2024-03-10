@@ -3,3 +3,6 @@
 Bibliometrics
 
 source("https://raw.githubusercontent.com/bavla/OpenAlex/main/OpenAlex.R")
+
+https://github.com/topics/openalex
+
