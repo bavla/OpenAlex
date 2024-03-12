@@ -2,7 +2,7 @@
 
 Bibliometrics
 
-source("https://raw.githubusercontent.com/bavla/OpenAlex/main/OpenAlex.R")
+source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex.R")
 
 https://github.com/topics/openalex
 
