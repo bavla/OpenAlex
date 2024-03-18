@@ -156,7 +156,9 @@ processWork <- function(w) {
     vid <- getID(wk); v <- putWork(vid,"")
     cat(v,vid,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,sep=";",file=wrk)
     cat("\n",file=wrk); cat(u,v,"\n",file=ci) }
-  if(!is.null(w$authorships)) {
+  if(is.null(w$authorships)) {
+    v <- putAuth(fAName,Aname=fAName); cat(u,v,"\n",file=wa)
+  } else {
     auts <- w$authorships$author
     if(is.null(auts)) auts <- w$authorships[[1]]$author 
     for(a in 1:nrow(auts)) {
