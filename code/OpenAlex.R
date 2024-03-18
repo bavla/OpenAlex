@@ -69,7 +69,7 @@ openWorks <- function(query=NULL,list=NULL,file=NULL){
   WC <<- new.env(hash=TRUE,parent=emptyenv())
   WC$works <- "https://api.openalex.org/works"
   WC$Q <- query; WC$L <- list; WC$f <- file
-  WC$n <- 0; WC$l <- 0; WC$m <- 0
+  WC$n <- 0; WC$l <- 0; WC$m <- 0; WC$an <- 0
   if(length(query[["search"]])>0) {
     WC$k <- 0; WC$nr <- 0; WC$act <- "page"
     if(length(query[["per_page"]])==0) WC$Q$per_page <- "200"
@@ -140,8 +140,10 @@ processWork <- function(w) {
   vol <- w$biblio$volume; iss <- w$biblio$issue
   fPage <- w$biblio$first_page; lPage <- w$biblio$last_page
   title <- w$title; tit <- gsub(";",",",title) 
-  fAName <- w$authorships$author$display_name[1]
-  if(length(w$authorships)==1) fAName <- w$authorships[[1]]$author$display_name[1]
+  if(is.null(w$authorships)) { cat("W",WC$n,"no authors info\n"); flush.console()
+    WC$an <- WC$an + 1; fAName <- paste("Anon",WC$an,sep="")
+  } else { fAName <- w$authorships$author$display_name[1]
+    if(length(w$authorships)==1) fAName <- w$authorships[[1]]$author$display_name[1]}
   sWname <- Gname(fAName,type,pYear,vol,fPage)
   u <- putWork(Wid,sWname)
   # cat(u,Wid,hit,sWname,Sid,pYear,pDate,type,lang,vol,iss,fPage,lPage,fAName,tit,sep=";","\n"); flush.console()
@@ -154,11 +156,12 @@ processWork <- function(w) {
     vid <- getID(wk); v <- putWork(vid,"")
     cat(v,vid,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,sep=";",file=wrk)
     cat("\n",file=wrk); cat(u,v,"\n",file=ci) }
-  auts <- w$authorships$author
-  if(is.null(auts)) auts <- w$authorships[[1]]$author 
-  for(a in 1:nrow(auts)) {
-    Aid <- getID(auts$id[a]); v <- putAuth(Aid,Aname=auts$display_name[a])
-    cat(u,v,"\n",file=wa) }
+  if(!is.null(w$authorships)) {
+    auts <- w$authorships$author
+    if(is.null(auts)) auts <- w$authorships[[1]]$author 
+    for(a in 1:nrow(auts)) {
+      Aid <- getID(auts$id[a]); v <- putAuth(Aid,Aname=auts$display_name[a])
+      cat(u,v,"\n",file=wa) } }
 }
 
 closeWorks <- function() rm(WC,inherits=TRUE)
