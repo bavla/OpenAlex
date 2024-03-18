@@ -8,6 +8,14 @@ keys = ls
 
 eDict <- function(size=10000L) new.env(hash=TRUE,parent=emptyenv(),size=size)
 
+getVals <- Vectorize(get,vectorize.args="x")
+
+dict2DF <- function(dict,ind) {
+  V <- as.data.frame(t(getVals(keys(dict),dict)))
+  V[[ind]] <- as.integer(unname(V[[ind]]))
+  return(V[order(V[[ind]]),])
+}
+
 putWork <- function(Wid,sWname=""){
   if(exists(Wid,env=works,inherits=FALSE)){
     if(works[[Wid]]["sWname"]!=sWname){
@@ -56,4 +64,103 @@ Gname <- function(name,ty,py,vl,fp){L <- firstup(unlist(strsplit(name," "))); k 
 sAname <- function(name){L <- firstup(unlist(strsplit(name," "))); k <- length(L)
   H <- paste(L[k],paste(substr(L[1:(k-1)],1,1),sep="",collapse=""))
 }
+
+openWorks <- function(query=NULL,list=NULL,file=NULL){
+  WC <<- new.env(hash=TRUE,parent=emptyenv())
+  WC$works <- "https://api.openalex.org/works"
+  WC$Q <- query; WC$L <- list; WC$f <- file
+  WC$n <- 0; WC$l <- 0; WC$m <- 0
+  if(length(query[["search"]])>0) {
+    WC$k <- 0; WC$nr <- 0; WC$act <- "page"
+    if(length(query[["per_page"]])==0) WC$Q$per_page <- "200"
+    WC$Q$cursor <- "*"
+  } else if(length(list)>0) { WC$act <- "list"
+  } else if(length(file)>0) { WC$act <- "open"
+  } else WC$act <- "stop"
+}
+
+nextWork <- function(){
+  # repeat{
+  for(t in 1:5){
+    switch(WC$act,
+      "page" = {
+        # if(WC$n==10) {WC$act <- "list"; next}
+        WC$k <- WC$k + 1
+        if(WC$k>WC$nr){
+          WC$wd <- GET(WC$works,query=WC$Q)
+          if(WC$wd$status_code!=200) {WC$act <- "list"
+            cat(WC$n,"GET error\n"); flush.console(); next}
+          WC$k <- 1
+          WC$wc <- fromJSON(rawToChar(WC$wd$content))
+          WC$Q$cursor <- WC$wc$meta$next_cursor
+          if(is.null(WC$Q$cursor)) {WC$act <- "list"; next}
+          WC$df <- WC$wc$results; WC$nr <- nrow(WC$df)
+          # cat(WC$k,wc$meta$count,WC$nr,"\n   ",WC$Q$cursor,"\n"); flush.console()
+        }
+        WC$n <- WC$n + 1
+        return(WC$df[WC$k,])    
+      },
+      "list" = {
+        WC$l <- WC$l + 1 
+        if(WC$l>length(WC$L)) {WC$act <- "open"; next}
+        works <- paste(WC$works,"/",WC$L[WC$l],sep="")
+        WC$wd <- GET(works,query=list(select=WC$Q[["select"]]))
+        if(WC$wd$status_code!=200) {cat(WC$n,"GET error\n")
+          flush.console(); next}
+        # cat("   >>>",WC$l,WC$L[WC$l],"\n"); flush.console()
+        wc <- fromJSON(rawToChar(WC$wd$content))
+        WC$n <- WC$n + 1
+        return(wc)
+      },
+      "open" = {
+        if(is.null(WC$f)) { WC$act <- "stop"; next }
+        WC$ndj <- file(WC$f,open="r")
+        WC$act <- "file"; next 
+      },
+      "file" = {
+        wc <- readLines(con=WC$ndj,n=1)
+        if(length(wc)==0){ close(WC$ndj); WC$act <- "stop"; next }
+        WC$m <- WC$m + 1; WC$n <- WC$n + 1
+        return(fromJSON(wc))
+      },
+      "stop" = { return(NULL) },
+      stop(paste0("No handler for ",WC$act))
+    ) 
+  }
+  stop("Too many errors")
+}
+
+processWork <- function(w) {
+  # cat("   Process:",WC$n,w$title,"\n"); flush.console()
+  Wid <- getID(w$id); hit <- TRUE
+  Sid <- getID(w$primary_location$source$id)
+  Sname <- w$primary_location$source$display_name 
+  pYear <- w$publication_year; pDate <- w$publication_date
+  type <- w$type; lang <- w$language
+  vol <- w$biblio$volume; iss <- w$biblio$issue
+  fPage <- w$biblio$first_page; lPage <- w$biblio$last_page
+  title <- w$title; tit <- gsub(";",",",title) 
+  fAName <- w$authorships$author$display_name[1]
+  if(length(w$authorships)==1) fAName <- w$authorships[[1]]$author$display_name[1]
+  sWname <- Gname(fAName,type,pYear,vol,fPage)
+  u <- putWork(Wid,sWname)
+  # cat(u,Wid,hit,sWname,Sid,pYear,pDate,type,lang,vol,iss,fPage,lPage,fAName,tit,sep=";","\n"); flush.console()
+  if(!is.na(Sid)) {j <- putSrc(Sid,Sname); cat(u,j,"\n",file=wj)}
+  cat(u,Wid,hit,sWname,Sid,pYear,pDate,type,lang,vol,iss,fPage,lPage,fAName,tit,
+    sep=";",file=wrk); cat("\n",file=wrk)
+  refs <- w$referenced_works
+  if(length(w$referenced_works)==1) refs <- w$referenced_works[[1]]
+  for(wk in refs) {
+    vid <- getID(wk); v <- putWork(vid,"")
+    cat(v,vid,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,sep=";",file=wrk)
+    cat("\n",file=wrk); cat(u,v,"\n",file=ci) }
+  auts <- w$authorships$author
+  if(is.null(auts)) auts <- w$authorships[[1]]$author 
+  for(a in 1:nrow(auts)) {
+    Aid <- getID(auts$id[a]); v <- putAuth(Aid,Aname=auts$display_name[a])
+    cat(u,v,"\n",file=wa) }
+}
+
+closeWorks <- function() rm(WC,inherits=TRUE)
+
 
