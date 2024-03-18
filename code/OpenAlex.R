@@ -140,7 +140,8 @@ processWork <- function(w) {
   vol <- w$biblio$volume; iss <- w$biblio$issue
   fPage <- w$biblio$first_page; lPage <- w$biblio$last_page
   title <- w$title; tit <- gsub(";",",",title) 
-  if(is.null(w$authorships)) { cat("W",WC$n,"no authors info\n"); flush.console()
+  autsh <- w$authorships[[1]]
+  if(nrow(autsh)==0) { cat("W",WC$n,"no authors info\n"); flush.console()
     WC$an <- WC$an + 1; fAName <- paste("Anon",WC$an,sep="")
   } else { fAName <- w$authorships$author$display_name[1]
     if(length(w$authorships)==1) fAName <- w$authorships[[1]]$author$display_name[1]}
@@ -156,7 +157,7 @@ processWork <- function(w) {
     vid <- getID(wk); v <- putWork(vid,"")
     cat(v,vid,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,sep=";",file=wrk)
     cat("\n",file=wrk); cat(u,v,"\n",file=ci) }
-  if(is.null(w$authorships)) {
+  if(nrow(autsh)==0) {
     v <- putAuth(fAName,Aname=fAName); cat(u,v,"\n",file=wa)
   } else {
     auts <- w$authorships$author
