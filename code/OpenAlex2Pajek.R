@@ -46,7 +46,8 @@ cat("*** OpenAlex2Pajek - Stop",date(),"\n"); flush.console()
 # print(ls.str(WC))
 close(ci);  close(wa); close(wj); close(wrk)
 if(save) close(json)
-cat("works:",length(works),"authors:",length(auths),"sources:",length(srces),"\n")
+cat("hits:",WC$n,"works:",length(works),"authors:",length(auths),
+  "anon:",WC$an,"sources:",length(srces),"\n")
 
 # Citation Cite
 U <- dict2DF(works,"wind")
