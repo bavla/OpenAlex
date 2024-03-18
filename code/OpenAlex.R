@@ -20,8 +20,7 @@ putWork <- function(Wid,sWname=""){
   if(exists(Wid,env=works,inherits=FALSE)){
     if(works[[Wid]]["sWname"]!=sWname){
       if(works[[Wid]]["sWname"]=="") {works[[Wid]]["sWname"] <- sWname} else {
-        cat("W",length(works),works[[Wid]]["sWname"],sWname,"\n")
-        flush.console() }}
+        cat("W",length(works),works[[Wid]]["sWname"],sWname,"\n",file=WC$tr) }}
   } else works[[Wid]] <- c(wind=length(works)+1,sWname=sWname)
   return(works[[Wid]]["wind"]) 
 }
@@ -30,8 +29,7 @@ putSrc <- function(Sid,Sname=NA){
   if(exists(Sid,env=srces,inherits=FALSE)){
     if(srces[[Sid]]["Sname"]!=Sname){
       if(is.na(srces[[Sid]]["Sname"])) {srces[[Sid]]["Sname"] <- Sname} else {
-        cat("S",length(srces),srces[[Sid]]["Sname"],Sname,"\n")
-        flush.console() }}
+        cat("S",length(srces),srces[[Sid]]["Sname"],Sname,"\n",file=WC$tr) }}
   } else srces[[Sid]] <- c(sind=length(srces)+1,Sname=Sname)
   return(srces[[Sid]]["sind"]) 
 }
@@ -41,8 +39,7 @@ putAuth <- function(Aid,Aname=NA){
   if(exists(Aid,env=auths,inherits=FALSE)){
     if(auths[[Aid]]["Aname"]!=Aname){
       if(is.na(auths[[Aid]]["Aname"])) {auths[[Aid]]["Aname"] <- Aname} else {
-        cat("A",length(auths),auths[[Aid]]["Aname"],Aname,"\n")
-        flush.console() }}
+        cat("A",length(auths),auths[[Aid]]["Aname"],Aname,"\n",file=WC$tr) }}
   } else auths[[Aid]] <- c(aind=length(auths)+1,Aname=Aname,sAname=sAnam)
   return(auths[[Aid]]["aind"]) 
 }
@@ -70,6 +67,8 @@ openWorks <- function(query=NULL,list=NULL,file=NULL){
   WC$works <- "https://api.openalex.org/works"
   WC$Q <- query; WC$L <- list; WC$f <- file
   WC$n <- 0; WC$l <- 0; WC$m <- 0; WC$an <- 0
+  WC$tr <- file("trace.txt","w",encoding="UTF-8")
+  cat("% OpenAlex",date(),"\n",file=WC$tr)
   if(length(query[["search"]])>0) {
     WC$k <- 0; WC$nr <- 0; WC$act <- "page"
     if(length(query[["per_page"]])==0) WC$Q$per_page <- "200"
@@ -141,7 +140,7 @@ processWork <- function(w) {
   fPage <- w$biblio$first_page; lPage <- w$biblio$last_page
   title <- w$title; tit <- gsub(";",",",title) 
   autsh <- w$authorships[[1]]
-  if(nrow(autsh)==0) { cat("W",WC$n,"no authors info\n"); flush.console()
+  if(nrow(autsh)==0) { cat("W",WC$n,"no authors info\n",file=WC$tr)
     WC$an <- WC$an + 1; fAName <- paste("Anon",WC$an,sep="")
   } else { fAName <- w$authorships$author$display_name[1]
     if(length(w$authorships)==1) fAName <- w$authorships[[1]]$author$display_name[1]}
@@ -167,6 +166,6 @@ processWork <- function(w) {
       cat(u,v,"\n",file=wa) } }
 }
 
-closeWorks <- function() rm(WC,inherits=TRUE)
+closeWorks <- function() {close(WC$tr); rm(WC,inherits=TRUE)}
 
 
