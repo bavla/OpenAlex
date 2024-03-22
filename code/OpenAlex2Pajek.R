@@ -1,17 +1,16 @@
-# OpenAlex2Pajek 
+# OpenAlex2Pajek ver 1. March 22, 2024
 # source("OpenAlex2Pajek.R")
 
 # library(httr)
 # library(jsonlite)
-source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex.R")
-# source("OpenAlex.R")
+# source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex.R")
+source("OpenAlex1.R")
 
 # VBlist <- read.table("VladoWorks.csv")$V1
 Q <- list(
   search="handball",
 #  filter="publication_year:2015",
   select="id,primary_location,publication_year,publication_date,type,language,biblio,title,authorships,countries_distinct_count,cited_by_count,referenced_works_count,referenced_works",
-#  select="id,title,countries_distinct_count,cited_by_count,referenced_works_count",
   per_page="200"
 #  per_page="3"
 )
@@ -38,11 +37,13 @@ repeat{
   if(is.null(w)) break
   if(save) write(toJSON(w),file=json)
   if(WC$n %% step==0) cat(date()," n =",WC$n,"\n"); flush.console()
-#  tryCatch(
-  processWork(w) #,
-#    error=function(e){ cat("W",WC$n,w$id,"\n"); flush.console(); print(e)} )
+  tryCatch(
+    processWork(w),
+    error=function(e){ WC$er <- WC$er + 1; cat("W",WC$n,w$id,WC$er,"\n")
+      print(e); flush.console();
+      if(WC$er > 20) stop("To many errors") }  )
 }
-cat("*** OpenAlex2Pajek - Stop",date(),"\n"); flush.console()
+cat("*** OpenAlex2Pajek - Data Collected",date(),"\n"); flush.console()
 # print(ls.str(WC))
 close(ci);  close(wa); close(wj); close(wrk)
 if(save) close(json)
@@ -63,7 +64,33 @@ for(i in 1:n){
 }
 cat("*arcs\n",file=net)
 for(i in 1:nrow(Ci)) cat(Ci$V1[i],Ci$V2[i],"\n",file=net)
-close(net); close(nam); rm(Ci)
+close(net); close(nam) 
+# publication year
+cly <- file("year.clu","w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=cly)
+cat("% OpenAlex2Pajek - publication year",date(),"\n*vertices",n,"\n",file=cly)
+for(i in 1:n) cat(U$pyear[i],'\n',sep="",file=cly)
+close(cly)
+# hit 
+clh <- file("DC.clu","w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clh)
+cat("% OpenAlex2Pajek - hit",date(),"\n*vertices",n,"\n",file=clh)
+H <- as.integer(U$hit)
+for(i in 1:n) cat(H[i],'\n',sep="",file=clh)
+close(clh); rm(H)
+# type of publication 
+clt <- file("type.clu","w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clt)
+cat("% OpenAlex2Pajek / type of publication",date(),"\n*vertices",n,"\n",file=clt)
+T <- factor(U$type); L <- levels(T)
+cat("% ",paste(1:length(L),L,sep="-"),sep=", ","\n",file=clt)
+for(i in 1:n) cat(T[i],'\n',sep="",file=clt)
+close(clt); rm(T)
+# language of publication 
+cll <- file("lang.clu","w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=cll)
+cat("% OpenAlex2Pajek - language of publication",date(),"\n*vertices",n,"\n",file=cll)
+T <- factor(U$lang); L <- levels(T)
+cat("% ",paste(1:length(L),L,sep="-"),sep=", ","\n",file=cll)
+for(i in 1:n) cat(T[i],'\n',sep="",file=cll)
+close(cll); rm(T)
+rm(Ci)
 
 # Authorship WA
 A <- dict2DF(auths,"aind")
@@ -99,6 +126,7 @@ cat("*arcs\n",file=net)
 for(i in 1:nrow(WJ)) cat(WJ$V1[i],n+WJ$V2[i],"\n",file=net)
 close(net); close(nam); rm(WJ)
 
-# closeWorks() 
+cat("*** OpenAlex2Pajek - Stop",date(),"\n"); flush.console()
+closeWorks() 
 
 

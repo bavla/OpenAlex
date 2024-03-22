@@ -1,4 +1,4 @@
-# OpenAlex
+# OpenAlex ver 1. March 22, 2024
 # https://github.com/bavla/OpenAlex/tree/main/code
 # http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:bib:alex
 # by Vladimir Batagelj, March 2024
@@ -11,37 +11,49 @@ eDict <- function(size=10000L) new.env(hash=TRUE,parent=emptyenv(),size=size)
 getVals <- Vectorize(get,vectorize.args="x")
 
 dict2DF <- function(dict,ind) {
-  V <- as.data.frame(t(getVals(keys(dict),dict)))
-  V[[ind]] <- as.integer(unname(V[[ind]]))
+  V <- as.data.frame(t(as.data.frame(getVals(keys(dict),dict))))
+  colnames(V)[1] <- ind
+  for(n in colnames(V)) V[[n]] <- unname(unlist(V[[n]]))
   return(V[order(V[[ind]]),])
 }
 
-putWork <- function(Wid,sWname=""){
+# Wid -> (wind,sWname,hit,pyear,type,lang)
+putWork <- function(Wid,val){ # val = list(sWname,hit,pyear,type,lang)
   if(exists(Wid,env=works,inherits=FALSE)){
-    if(works[[Wid]]["sWname"]!=sWname){
-      if(works[[Wid]]["sWname"]=="") {works[[Wid]]["sWname"] <- sWname} else {
-        cat("W",length(works),works[[Wid]]["sWname"],sWname,"\n",file=WC$tr) }}
-  } else works[[Wid]] <- c(wind=length(works)+1,sWname=sWname)
-  return(works[[Wid]]["wind"]) 
+    dHit <- works[[Wid]][["hit"]]; vHit <- val[["hit"]]
+    if(vHit){dName <- works[[Wid]][["sWname"]]; vName <- val[["sWname"]]
+      if(dHit){
+        if(dName!=vName) cat("W",length(works),dName,vName,"\n",file=WC$tr) 
+      } else works[[Wid]] <- c(wind=works[[Wid]][["wind"]],val)
+    }
+  } else works[[Wid]] <- c(wind=length(works)+1,val)
+  return(works[[Wid]][["wind"]]) 
 }
 
-putSrc <- function(Sid,Sname=NA){
+# Sid -> (sind,Sname)
+putSrc <- function(Sid,par=list(Sname=NA)){
+  Sname <- par[["Sname"]]
   if(exists(Sid,env=srces,inherits=FALSE)){
-    if(srces[[Sid]]["Sname"]!=Sname){
-      if(is.na(srces[[Sid]]["Sname"])) {srces[[Sid]]["Sname"] <- Sname} else {
-        cat("S",length(srces),srces[[Sid]]["Sname"],Sname,"\n",file=WC$tr) }}
-  } else srces[[Sid]] <- c(sind=length(srces)+1,Sname=Sname)
-  return(srces[[Sid]]["sind"]) 
+    dName <- srces[[Sid]][["Sname"]]
+    if(is.na(dName)) srces[[Sid]][["Sname"]] <- Sname else {
+      if(!is.na(Sname)) if(dName!=Sname)
+        cat("S",length(srces),dName,Sname,"\n",file=WC$tr) }
+  } else srces[[Sid]] <- list(sind=length(srces)+1,Sname=Sname)
+  return(srces[[Sid]][["sind"]]) 
 }
 
-putAuth <- function(Aid,Aname=NA){
+# Aid -> (aind,Aname)
+putAuth <- function(Aid,par=list(Aname=NA)){
+  Aname <- par[["Aname"]]
   sAnam <- ifelse(is.na(Aname),NA,sAname(Aname)) 
   if(exists(Aid,env=auths,inherits=FALSE)){
-    if(auths[[Aid]]["Aname"]!=Aname){
-      if(is.na(auths[[Aid]]["Aname"])) {auths[[Aid]]["Aname"] <- Aname} else {
-        cat("A",length(auths),auths[[Aid]]["Aname"],Aname,"\n",file=WC$tr) }}
-  } else auths[[Aid]] <- c(aind=length(auths)+1,Aname=Aname,sAname=sAnam)
-  return(auths[[Aid]]["aind"]) 
+    dName <- auths[[Aid]][["Aname"]]
+    if(is.na(dName)) {
+      auths[[Aid]][["Aname"]] <- Aname; auths[[Aid]][["sAname"]] <- sAnam
+    } else if(!is.na(Aname)) if(dName!=Aname) 
+      cat("A",length(auths),dName,Aname,"\n",file=WC$tr) 
+  } else auths[[Aid]] <- list(aind=length(auths)+1,Aname=Aname,sAname=sAnam)
+  return(auths[[Aid]][["aind"]]) 
 }
 
 .Ty <- c("article"="AR","book-chapter"="BC","dissertation"="DS","book"="BK","dataset"="DS",        
@@ -66,7 +78,7 @@ openWorks <- function(query=NULL,list=NULL,file=NULL){
   WC <<- new.env(hash=TRUE,parent=emptyenv())
   WC$works <- "https://api.openalex.org/works"
   WC$Q <- query; WC$L <- list; WC$f <- file
-  WC$n <- 0; WC$l <- 0; WC$m <- 0; WC$an <- 0
+  WC$n <- 0; WC$l <- 0; WC$m <- 0; WC$an <- 0; WC$er <- 0
   WC$tr <- file("trace.txt","w",encoding="UTF-8")
   cat("% OpenAlex",date(),"\n",file=WC$tr)
   if(length(query[["search"]])>0) {
@@ -140,29 +152,31 @@ processWork <- function(w) {
   fPage <- w$biblio$first_page; lPage <- w$biblio$last_page
   title <- w$title; tit <- gsub(";",",",title) 
   autsh <- w$authorships[[1]]
+  if(is.null(nrow(autsh))) autsh <- w$authorships
   if(nrow(autsh)==0) { cat("W",WC$n,"no authors info\n",file=WC$tr)
     WC$an <- WC$an + 1; fAName <- paste("Anon",WC$an,sep="")
   } else { fAName <- w$authorships$author$display_name[1]
     if(length(w$authorships)==1) fAName <- w$authorships[[1]]$author$display_name[1]}
   sWname <- Gname(fAName,type,pYear,vol,fPage)
-  u <- putWork(Wid,sWname)
+  u <- putWork(Wid,list(sWname=sWname,hit=TRUE,pyear=pYear,type=type,lang=lang))
   # cat(u,Wid,hit,sWname,Sid,pYear,pDate,type,lang,vol,iss,fPage,lPage,fAName,tit,sep=";","\n"); flush.console()
-  if(!is.na(Sid)) {j <- putSrc(Sid,Sname); cat(u,j,"\n",file=wj)}
+  if(!is.na(Sid)) {j <- putSrc(Sid,list(Sname=Sname)); cat(u,j,"\n",file=wj)}
   cat(u,Wid,hit,sWname,Sid,pYear,pDate,type,lang,vol,iss,fPage,lPage,fAName,tit,
     sep=";",file=wrk); cat("\n",file=wrk)
   refs <- w$referenced_works
   if(length(w$referenced_works)==1) refs <- w$referenced_works[[1]]
   for(wk in refs) {
-    vid <- getID(wk); v <- putWork(vid,"")
+    vid <- getID(wk) 
+    v <- putWork(vid,list(sWname="",hit=FALSE,pyear=0,type="",lang=""))
     cat(v,vid,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,sep=";",file=wrk)
     cat("\n",file=wrk); cat(u,v,"\n",file=ci) }
   if(nrow(autsh)==0) {
-    v <- putAuth(fAName,Aname=fAName); cat(u,v,"\n",file=wa)
+    v <- putAuth(fAName,list(Aname=fAName)); cat(u,v,"\n",file=wa)
   } else {
     auts <- w$authorships$author
     if(is.null(auts)) auts <- w$authorships[[1]]$author 
     for(a in 1:nrow(auts)) {
-      Aid <- getID(auts$id[a]); v <- putAuth(Aid,Aname=auts$display_name[a])
+      Aid <- getID(auts$id[a]); v <- putAuth(Aid,list(Aname=auts$display_name[a]))
       cat(u,v,"\n",file=wa) } }
 }
 
