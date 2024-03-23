@@ -4,9 +4,10 @@
 # library(httr)
 # library(jsonlite)
 # source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex.R")
-source("OpenAlex1.R")
+source("OpenAlex.R")
 
 # VBlist <- read.table("VladoWorks.csv")$V1
+addList <- read.table("addWorks.csv")$V1 # Second run
 Q <- list(
   search="handball",
 #  filter="publication_year:2015",
@@ -26,10 +27,11 @@ cat("ind;Wid;hit;sWname;Sid;pYear;pDate;type;lang;vol;iss;fPage;lPage;fAName;tit
 
 works <- eDict(); srces <- eDict(); auths <- eDict();
 
+# openWorks(query=Q,list=NULL,file=NULL) # First run
+openWorks(query=Q,list=addList,file=NULL) # Second run
 # openWorks(query=Q,list=VBlist,file="manual.ndjson")
 # openWorks(query=Q,list=NULL,file="save.ndjson")
 # openWorks(query=Q,list=VBlist,file=NULL)
-openWorks(query=Q,list=NULL,file=NULL)
 # print(ls.str(WC))
 cat("*** OpenAlex2Pajek - Start",date(),"\n"); flush.console()
 repeat{

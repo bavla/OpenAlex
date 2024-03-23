@@ -153,7 +153,7 @@ processWork <- function(w) {
   title <- w$title; tit <- gsub(";",",",title) 
   autsh <- w$authorships[[1]]
   if(is.null(nrow(autsh))) autsh <- w$authorships
-  if(nrow(autsh)==0) { cat("W",WC$n,"no authors info\n",file=WC$tr)
+  if(nrow(autsh)==0) { # cat("W",WC$n,"no authors info\n",file=WC$tr)
     WC$an <- WC$an + 1; fAName <- paste("Anon",WC$an,sep="")
   } else { fAName <- w$authorships$author$display_name[1]
     if(length(w$authorships)==1) fAName <- w$authorships[[1]]$author$display_name[1]}
