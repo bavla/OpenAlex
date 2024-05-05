@@ -8,9 +8,9 @@ NETPARAM 2
 CLUPARAM 3
 VECPARAM 4
 
-% Input degree centrality of 2. C:\Users\vlado\work\OpenAlex\API\handball1\Cite.net (233560)
+% Input degree centrality of 2. Cite.net (233560)
 V 5 DEGV 2 [0] (233560)
-% Output degree centrality of 2. C:\Users\vlado\work\OpenAlex\API\handball1\Cite.net (233560)
+% Output degree centrality of 2. Cite.net (233560)
 C 4 DEGC 2 [1] (233560)
 % Binarizing Partition
 C 5 BIN 4 [0] (233560)
