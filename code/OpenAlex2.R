@@ -15,22 +15,30 @@ removeDuplicates <- function(inp,out){
   cat(unique(read.table(inp)$V1),sep="\n",file=lst)
   close(lst)
 }
- 
-dict2DF <- function(dict,ind) {
-  V <- as.data.frame(t(as.data.frame(getVals(keys(dict),dict))))
-  colnames(V)[1] <- ind
-  for(n in colnames(V)) V[[n]] <- unname(unlist(V[[n]]))
-  return(V[order(V[[ind]]),])
-}
 
-# Wid -> (wind,hit,cnt,inp,out)
+dict2DF <- function(dict,ind) {
+  L <- ls(dict);  DF <- as.data.frame(dict[[L[1]]])
+  for(i in 2:length(L)) DF[nrow(DF) + 1,] <- dict[[L[i]]]
+  row.names(DF) <- L
+  return(DF[order(DF[[ind]]),])
+}
+ 
+# dict2DF <- function(dict,ind) {
+#   V <- as.data.frame(t(as.data.frame(getVals(keys(dict),dict))))
+#   colnames(V)[1] <- ind
+#   for(n in colnames(V)) V[[n]] <- unname(unlist(V[[n]]))
+#   return(V[order(V[[ind]]),])
+# }
+
+# Wid -> (wind,cnt,inp,out,py,cbc,typ,lan,cdc,sWname)
 putWork <- function(Wid,hit){ 
   if(exists(Wid,env=works,inherits=FALSE)){
     if(hit){ cat("W duplicate ",Wid,"\n",file=WC$tr)
       works[[Wid]][["cnt"]] <- works[[Wid]][["cnt"]]+1 
     } else works[[Wid]][["inp"]] <- works[[Wid]][["inp"]]+1
   } else {
-    works[[Wid]] <- list(wind=length(works)+1,cnt=0,inp=0,out=0)
+    works[[Wid]] <- list(wind=length(works)+1,cnt=0,inp=0,out=0,py=NA,cbc=0,
+      typ=NA,lan=NA,cdc=0,sWname=NA)
     if(hit) works[[Wid]][["cnt"]] <- 1 else works[[Wid]][["inp"]] <- 1 
   }
   return(works[[Wid]][["wind"]])
@@ -46,11 +54,12 @@ putSrc <- function(Sid){
 }
 
 # Aid -> (aind)
-putAuth <- function(Aid,par=list(Aname=NA)){
+putAuth <- function(Aid,Aname=NA){
   if(!exists(Aid,env=auths,inherits=FALSE)){
-    auths[[Aid]] <- list(aind=length(auths)+1,cnt=0)
+    auths[[Aid]] <- list(aind=length(auths)+1,cnt=0,Aname=Aname)
   }
   auths[[Aid]][["cnt"]] <- auths[[Aid]][["cnt"]]+1
+  if(is.na(auths[[Aid]][["Aname"]])) if(!is.na(Aname)) auths[[Aid]][["Aname"]] <- Aname
   return(auths[[Aid]][["aind"]]) 
 }
 
@@ -172,6 +181,10 @@ processWork <- function(w) {
   type <- w$type; lang <- w$language
   vol <- w$biblio$volume; iss <- w$biblio$issue
   fPage <- w$biblio$first_page; lPage <- w$biblio$last_page
+  cdc <- w$countries_distinct_count; cbc <- w$cited_by_count
+  works[[Wid]][["py"]] <- pYear; works[[Wid]][["lan"]] <- lang
+  works[[Wid]][["typ"]] <- type; works[[Wid]][["cdc"]] <- cdc
+  works[[Wid]][["cbc"]] <- cbc
   title <- w$title; tit <- gsub(";",",",title) 
   autsh <- w$authorships
   if(typeof(autsh)=="list") if(length(autsh)>0) autsh <- w$authorships[[1]]
@@ -180,9 +193,10 @@ processWork <- function(w) {
   } else { fAName <- w$authorships$author$display_name[1]
     if(length(w$authorships)==1) fAName <- w$authorships[[1]]$author$display_name[1]}
   sWname <- Gname(fAName,type,pYear,vol,fPage)
+  works[[Wid]][["sWname"]] <- sWname
   # cat(u,Wid,hit,sWname,Sid,pYear,pDate,type,lang,vol,iss,fPage,lPage,fAName,tit,sep=";","\n"); flush.console()
   if(!is.na(Sid)) {j <- putSrc(Sid); cat(u,j,"\n",file=wj)}
-  cat(u,Wid,hit,sWname,Sid,pYear,pDate,type,lang,vol,iss,fPage,lPage,fAName,tit,
+  cat(u,Wid,hit,sWname,Sid,pYear,pDate,type,lang,vol,iss,fPage,lPage,cdc,cbc,fAName,tit,
     sep=";",file=wrk); cat("\n",file=wrk)
   refs <- w$referenced_works
   if(length(w$referenced_works)==1) refs <- w$referenced_works[[1]]
@@ -190,18 +204,18 @@ processWork <- function(w) {
   for(wk in refs) {
     vid <- getID(wk) 
     v <- putWork(vid,hit=FALSE)
-    cat(v,vid,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,sep=";",file=wrk)
+    cat(v,vid,FALSE,"",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,sep=";",file=wrk)
     cat("\n",file=wrk); 
     cat(u,v,"\n",file=ci) }
   if(length(autsh)==0) {
-    v <- putAuth(fAName); cat(u,v,"\n",file=wa)
+    v <- putAuth(fAName,fAName); cat(u,v,"\n",file=wa)
   } else {
     auts <- w$authorships$author
     if(is.null(auts)) if(length(w$authorships)>0)
       auts <- w$authorships[[1]]$author 
     if(length(auts)>0) for(a in 1:nrow(auts)) {
-      Aid <- getID(auts$id[a]); v <- putAuth(Aid)
-      cat(u,v,"\n",file=wa) } }
+      Aname <- auts$display_name[a]; Aid <- getID(auts$id[a])
+      v <- putAuth(Aid,Aname); cat(u,v,"\n",file=wa) } }
 }
 
 closeWorks <- function() {close(WC$tr); rm(WC,inherits=TRUE)}
@@ -246,8 +260,9 @@ OpenAlex2PajekCite <- function(Q,nrun,netF="PajekCite.net",listF=NULL,save=FALSE
   closeWorks() 
 }
 
-OpenAlex2PajekAll <- function(Q,nrun,netF="PajekCite.net",waF="WA.net",wjF="WJnet",
-  listF=NULL,save=FALSE,saveF="saveCite.ndjson",step=500){
+OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
+  saveF="saveCite.ndjson",step=500,test=0){
+  Fn <- function(F) paste0(name,F)
   if(save) json <<- file(saveF,"w",encoding="UTF-8")
   if(is.null(listF)) listW <- NULL else listW <- unique(read.table(listF)$V1) # list of works
   cat("OpenAlex2Pajek / All - Start",date(),"\n")
@@ -256,10 +271,10 @@ OpenAlex2PajekAll <- function(Q,nrun,netF="PajekCite.net",waF="WA.net",wjF="WJne
   cat("% OpenAlex2Pajek / All",date(),"\n",file=ci); cat("% OpenAlex2Pajek / All",date(),"\n",file=wrk)
   cat("% OpenAlex2Pajek / All",date(),"\n",file=ci); cat("% OpenAlex2Pajek / All",date(),"\n",file=wrk)
   # cat("ind;Wid;hit;sWname;Sid;pYear;pDate;type;lang;vol;iss;fPage;lPage;fAName;title\n",file=wrk)
-  cat("ind;Wid;hit;sWname;Sid;pYear;pDate;type;lang;vol;iss;fPage;lPage;fAName;title\n",file=wrk)
+  cat("ind;Wid;hit;sWname;Sid;pYear;pDate;type;lang;vol;iss;fPage;lPage;cdc;cbc;fAName;title\n",file=wrk)
   works <<- eDict(); srces <<- eDict(); auths <<- eDict() 
   openWorks(query=Q,list=listW,file=NULL) 
-  # print(ls.str(WC))
+  if(test>1) print(ls.str(WC))
   cat("*** OpenAlex2Pajek / All - Process",date(),"\n"); flush.console()
   repeat{
     w <- nextWork()
@@ -273,34 +288,81 @@ OpenAlex2PajekAll <- function(Q,nrun,netF="PajekCite.net",waF="WA.net",wjF="WJne
         if(WC$er > 20) stop("To many errors") }  )
   }
   cat("*** OpenAlex2Pajek / All - Data Collected",date(),"\n"); flush.console()
-  # print(ls.str(WC))
+  if(test>1) print(ls.str(WC))
   close(ci); close(wrk); close(wa); close(wj)
   if(save) close(json)
   cat("hits:",WC$n,"works:",length(works),"authors:",length(auths),
     "anon:",WC$an,"sources:",length(srces),"\n")
   # Citation Cite
   U <- dict2DF(works,"wind"); n <- nrow(U)
-  net <- file(netF,"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=net)
+  net <- file(Fn("Ci.net"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=net)
+  nam <- file(Fn("W.nam"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=nam)
   cat("% OpenAlex2Pajek / All",date(),"\n*vertices",n,"\n",file=net)
+  cat("% OpenAlex2Pajek / All",date(),"\n*vertices",n,"\n",file=nam)
   Ci <- read.csv("Ci.tmp",sep="",head=FALSE,skip=1,encoding="UTF-8")
-  for(i in 1:n) cat(i,' "',row.names(U)[i],'"\n',sep="",file=net)
+  for(i in 1:n){
+    cat(i,' "',row.names(U)[i],'"\n',sep="",file=net)
+    cat(i,' "',ifelse(U[["sWname"]][i]=="",row.names(U)[i],U[["sWname"]][i]),'"\n',sep="",file=nam)
+  }
   cat("*arcs\n",file=net)
   for(i in 1:nrow(Ci)) cat(Ci$V1[i],Ci$V2[i],"\n",file=net)
-  close(net); rm(Ci)
+  close(net); rm(Ci); close(nam)
+  # publication year
+  cly <- file(Fn("Year.clu"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=cly)
+  cat("% OpenAlex2Pajek / All - publication year",date(),"\n*vertices",n,"\n",file=cly)
+  for(i in 1:n) cat(U$py[i],'\n',sep="",file=cly)
+  close(cly)
+  # hit 
+  # clh <- file(Fn("DC.clu"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clh)
+  # cat("% OpenAlex2Pajek / All - hit",date(),"\n*vertices",n,"\n",file=clh)
+  # H <- as.integer(U$hit)
+  # for(i in 1:n) cat(H[i],'\n',sep="",file=clh)
+  # close(clh); rm(H)
+  # type of publication 
+  clt <- file(Fn("Type.clu"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clt)
+  cat("% OpenAlex2Pajek / All - type of publication",date(),"\n*vertices",n,"\n",file=clt)
+  T <- factor(U$typ); L <- levels(T)
+  cat("% ",paste(1:length(L),L,sep="-"),sep=", ","\n",file=clt)
+  for(i in 1:n) cat(T[i],'\n',sep="",file=clt)
+  close(clt); rm(T)
+  # language of publication 
+  cll <- file(Fn("lang.clu"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=cll)
+  cat("% OpenAlex2Pajek / All - language of publication",date(),"\n*vertices",n,"\n",file=cll)
+  T <- factor(U$lan); L <- levels(T)
+  cat("% ",paste(1:length(L),L,sep="-"),sep=", ","\n",file=cll)
+  for(i in 1:n) cat(T[i],'\n',sep="",file=cll)
+  close(cll); rm(T)
+  # cited by count 
+  clb <- file(Fn("Cbc.clu"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clb)
+  cat("% OpenAlex2Pajek / All - cited by count",date(),"\n*vertices",n,"\n",file=clb)
+  B <- as.integer(U$cbc)
+  for(i in 1:n) cat(B[i],'\n',sep="",file=clb)
+  close(clb); rm(B)
+  # countries distinct count 
+  clc <- file(Fn("Cdc.clu"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clc)
+  cat("% OpenAlex2Pajek / All - countries distinct count",date(),"\n*vertices",n,"\n",file=clc)
+  C <- as.integer(U$cdc)
+  for(i in 1:n) cat(C[i],'\n',sep="",file=clc)
+  close(clc); rm(C)
   # Authorship WA
   A <- dict2DF(auths,"aind"); m <- nrow(A)
-  net <- file(waF,"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=net)
-  cat("% OpenAlex2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net)
+  net <- file(Fn("WA.net"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=net)
+  nam <- file(Fn("A.nam"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=nam)
+  cat("% OpenAlex2Pajek / All - WA",date(),"\n*vertices",n+m,n,"\n",file=net)
+  cat("% OpenAlex2Pajek / All - authors' name",date(),"\n*vertices",m,"\n",file=nam)
   WA <- read.csv("WA.tmp",sep="",head=FALSE,skip=1,encoding="UTF-8")
   for(i in 1:n) cat(i,' "',row.names(U)[i],'"\n',sep="",file=net)
-  for(i in 1:m) cat(n+i,' "',row.names(A)[i],'"\n',sep="",file=net)
+  for(i in 1:m) {
+    cat(n+i,' "',row.names(A)[i],'"\n',sep="",file=net)
+    cat(i,' "',A[["Aname"]][i],'"\n',sep="",file=nam)
+  }
   cat("*arcs\n",file=net)
   for(i in 1:nrow(WA)) cat(WA$V1[i],n+WA$V2[i],"\n",file=net)
-  close(net); rm(WA)
+  close(net); rm(WA); close(nam); rm(A)
   # Sources WJ
   J <- dict2DF(srces,"sind")
   m <- nrow(J)
-  net <- file(wjF,"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=net)
+  net <- file(Fn("WJ.net"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=net)
   cat("% OpenAlex2Pajek",date(),"\n*vertices",n+m,n,"\n",file=net)
   WJ <- read.csv("WJ.tmp",sep="",head=FALSE,skip=1,encoding="UTF-8")
   for(i in 1:n) cat(i,' "',row.names(U)[i],'"\n',sep="",file=net)
