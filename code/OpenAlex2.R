@@ -65,6 +65,7 @@ saveFac <- function(V,lab="clustering",file="Cling",na=0){
 }
 
 saveCite <- function(U,name,lab,file,names=FALSE){
+  o.scipen <- options("scipen")$scipen; options(scipen=999)
   cat(paste0(">>> ",lab,"\n")); flush.console(); n <- nrow(U)
   net <- file(Fn("Ci.net"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=net)
   cat("% OpenAlex2Pajek /",lab,date(),"\n*vertices",n,"\n",file=net)
@@ -80,9 +81,12 @@ saveCite <- function(U,name,lab,file,names=FALSE){
       '"\n',sep="",file=nam)
     close(nam)
   }
+  options(scipen=o.scipen)
+
 }
 
 saveTwoMode <- function(U,name,dict,ind,lab,file,names=FALSE,nind=NA){
+  o.scipen <- options("scipen")$scipen; options(scipen=999)
   cat(paste0(">>> ",lab,"\n")); flush.console()
   DF <- dict2DF(dict,ind);  m <- nrow(DF); n <- nrow(U)
   net <- file(Fn(paste0(file,".net")),"w",encoding="UTF-8")
@@ -102,6 +106,7 @@ saveTwoMode <- function(U,name,dict,ind,lab,file,names=FALSE,nind=NA){
       '"\n',sep="",file=nam)
     close(nam)
   }
+  options(scipen=o.scipen)
 }
 
 # Wid -> (wind,cnt,inp,out,py,cbc,typ,lan,cdc,sWname)
