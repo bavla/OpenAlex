@@ -56,9 +56,10 @@ saveClu <- function(V,lab="clustering",file="Cling",na=99999){
 saveFac <- function(V,lab="clustering",file="Cling",na=0){ 
   cat(paste0(">>> ",lab,"\n")); flush.console(); n <- length(V)
   clu <- file(Fn(paste0(file,".clu")),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clu)
-  cat("% OpenAlex2Pajek / All -",lab,date(),"\n*vertices",n,"\n",file=clu)
+  cat("% OpenAlex2Pajek / All -",lab,date(),"\n",file=clu)
   T <- factor(V); L <- levels(T); T <- as.integer(T); T[is.na(T)] <- na
   cat("% ",paste(1:length(L),L,sep="-"),sep=", ","\n",file=clu)
+  cat("*vertices",n,"\n",file=clu)
   for(i in 1:length(V)) cat(T[i],'\n',sep="",file=clu)
   close(clu)
 }
