@@ -1,0 +1,2133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Title: 6. y-coordinate from V2 in N5 (251) -->
+<!-- Creator: Pajek 5.19: http://mrvar.fdv.uni-lj.si/pajek -->
+<!-- CreationDate: 05-12-2024, 23:12:02 -->
+<svg xml:space="preserve" viewBox="0 0 1137 883" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<title>6. y-coordinate from V2 in N5 (251)</title>
+<g inkscape:groupmode="layer" id="PajekSig" inkscape:label="PajekSignature">
+<g transform="translate(3 865)">
+<g transform="scale(0.1)">
+<g transform="matrix(1 0 0 -1 0 96)">
+<path d="M   7.67  49.98 L  31.76  72.76 L  46.91  78.63
+         L  57.23  80.49 M  72.86  65.23 L  65.73  83.25
+         L  57.06  75.49 L  56.75  68.65 M  76.27  68.03
+         L  75.65  84.50 L  93.92  91.02 L 107.24  74.87
+         M  80.29  67.72 L  89.28  84.81 L 104.77  81.70
+         L 116.23  73.31 L 121.18  59.33 M  56.75  81.08
+         L  71.31  64.30"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  86.18  70.21 L  91.45  73.00 L  95.78  69.58
+         M  91.14  60.88 L  96.09  62.75 L  98.26  59.33"
+         style="fill:none; stroke:saddlebrown; stroke-width:1.5;"/>
+<path d="M  81.07  49.08 L  87.81  49.08 L  93.30  54.38
+         L  93.30  60.88 L  93.30  67.39 L  87.81  72.69
+         L  81.07  72.69 L  74.33  72.69 L  68.83  67.39
+         L  68.83  60.88 L  68.83  54.38 L  74.33  49.08
+         L  81.07  49.08 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;"/>
+<path d="M  54.63  37.53 L  68.53  43.56 L  75.39  55.85
+         L  69.90  65.35 L  64.41  72.86 L  48.60  74.06
+         L  34.71  68.04 L  20.81  55.02 L  15.95  40.72
+         L  17.44  33.22 L  24.92  28.72 L  40.73  30.51
+         L  54.63  37.53 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;" />
+<path d="M  77.82  50.63 L 103.84  59.33 L 131.10  43.80
+         L 139.46  27.95 L 139.15  15.83 M  35.99   5.27
+         L  47.15  32.92 L  61.71  50.01 L  70.07  46.90
+         L  82.77  45.04 L  83.39  27.02 L  65.42  12.11
+         M  68.52  50.63 L  91.14  49.39 L 103.53  43.17
+         L 117.16  22.67 L 115.30   8.38"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  41.57  54.98 L  60.16  64.61 M  52.41  66.17
+         L  57.99  57.47"
+         style="fill:none; stroke:white; stroke-width:5;"/>
+</g>
+</g>
+<animateMotion dur="20s" path="M3 0 L1119 0" begin="120s" fill="freeze"/>
+</g>
+<g transform="translate(3 865)">
+<g transform="scale(0.1)">
+<text x="5" y="140" style="font-family:Brush Script MT;font-size:75px;fill:green;">Pajek</text>
+</g>
+<animateMotion dur="0.1s" path="M3 0 L1119 0" begin="120s" fill="freeze"/>
+</g>
+</g>      <!-- Layer Signature -->
+
+<g inkscape:groupmode="layer" id="PajekNet" inkscape:label="PajekNetwork">
+
+<!-- Arc:     1  238 -->
+<g transform="translate(615.94 448.09)">
+<g transform="rotate(515.09)">
+<path d="M 0 0 L -0.72 1.80 L 3.60 0 L -0.72 -1.80 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="787.08" y1="368.63" x2="615.94" y2="448.09" style="stroke-width:1.20;stroke:rgb(153,153,153)"/>
+<!-- Arc:     3  112 -->
+<g transform="translate(878.09 587.26)">
+<g transform="rotate(531.78)">
+<path d="M 0 0 L -0.77 1.92 L 3.85 0 L -0.77 -1.92 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="952.40" y1="576.52" x2="878.09" y2="587.26" style="stroke-width:1.28;stroke:rgb(153,153,153)"/>
+<!-- Arc:     4   76 -->
+<g transform="translate(456.60 711.54)">
+<g transform="rotate(347.98)">
+<path d="M 0 0 L -1.86 4.65 L 9.31 0 L -1.86 -4.65 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="345.87" y1="735.12" x2="456.60" y2="711.54" style="stroke-width:3.10;stroke:rgb(153,153,153)"/>
+<!-- Arc:     5  238 -->
+<g transform="translate(610.38 444.95)">
+<g transform="rotate(490.08)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="707.96" y1="328.98" x2="610.38" y2="444.95" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:     6  211 -->
+<g transform="translate(277.46 516.36)">
+<g transform="rotate(356.49)">
+<path d="M 0 0 L -0.48 1.21 L 2.41 0 L -0.48 -1.21 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="187.64" y1="521.87" x2="277.46" y2="516.36" style="stroke-width:0.80;stroke:rgb(153,153,153)"/>
+<!-- Arc:     7   32 -->
+<g transform="translate(826.88 295.15)">
+<g transform="rotate(450.89)">
+<path d="M 0 0 L -0.66 1.65 L 3.30 0 L -0.66 -1.65 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="827.65" y1="245.40" x2="826.88" y2="295.15" style="stroke-width:1.10;stroke:rgb(153,153,153)"/>
+<!-- Arc:     8  245 -->
+<g transform="translate(717.12 745.15)">
+<g transform="rotate(243.40)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="738.39" y1="787.63" x2="717.12" y2="745.15" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:    10   95 -->
+<g transform="translate(326.75 278.19)">
+<g transform="rotate(372.29)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="264.73" y1="264.69" x2="326.75" y2="278.19" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:    11  238 -->
+<g transform="translate(588.67 437.82)">
+<g transform="rotate(410.26)">
+<path d="M 0 0 L -2.06 5.15 L 10.30 0 L -2.06 -5.15 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="484.82" y1="312.91" x2="588.67" y2="437.82" style="stroke-width:3.43;stroke:rgb(153,153,153)"/>
+<!-- Arc:    12  238 -->
+<g transform="translate(584.70 451.23)">
+<g transform="rotate(369.99)">
+<path d="M 0 0 L -1.36 3.40 L 6.80 0 L -1.36 -3.40 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="377.31" y1="414.71" x2="584.70" y2="451.23" style="stroke-width:2.27;stroke:rgb(153,153,153)"/>
+<!-- Arc:    13   32 -->
+<g transform="translate(837.57 304.10)">
+<g transform="rotate(512.48)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="886.47" y1="278.62" x2="837.57" y2="304.10" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:    14  238 -->
+<g transform="translate(616.45 434.60)">
+<g transform="rotate(485.47)">
+<path d="M 0 0 L -2.59 6.47 L 12.95 0 L -2.59 -6.47 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="774.90" y1="212.18" x2="616.45" y2="434.60" style="stroke-width:4.32;stroke:rgb(153,153,153)"/>
+<!-- Arc:    15   83 -->
+<g transform="translate(272.03 377.20)">
+<g transform="rotate(376.39)">
+<path d="M 0 0 L -2.36 5.89 L 11.78 0 L -2.36 -5.89 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="184.60" y1="351.49" x2="272.03" y2="377.20" style="stroke-width:3.93;stroke:rgb(153,153,153)"/>
+<!-- Arc:    16  230 -->
+<g transform="translate(799.94 696.59)">
+<g transform="rotate(234.76)">
+<path d="M 0 0 L -1.17 2.92 L 5.84 0 L -1.17 -2.92 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="831.70" y1="741.55" x2="799.94" y2="696.59" style="stroke-width:1.95;stroke:rgb(153,153,153)"/>
+<!-- Arc:    17  238 -->
+<g transform="translate(605.97 468.48)">
+<g transform="rotate(256.34)">
+<path d="M 0 0 L -0.66 1.65 L 3.30 0 L -0.66 -1.65 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="638.99" y1="604.38" x2="605.97" y2="468.48" style="stroke-width:1.10;stroke:rgb(153,153,153)"/>
+<!-- Arc:    18  237 -->
+<g transform="translate(453.83 172.82)">
+<g transform="rotate(478.93)">
+<path d="M 0 0 L -0.87 2.17 L 4.34 0 L -0.87 -2.17 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="513.22" y1="65.37" x2="453.83" y2="172.82" style="stroke-width:1.45;stroke:rgb(153,153,153)"/>
+<!-- Arc:    19  238 -->
+<g transform="translate(621.59 457.07)">
+<g transform="rotate(188.12)">
+<path d="M 0 0 L -1.61 4.03 L 8.06 0 L -1.61 -4.03 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="805.33" y1="483.29" x2="621.59" y2="457.07" style="stroke-width:2.69;stroke:rgb(153,153,153)"/>
+<!-- Arc:    20  237 -->
+<g transform="translate(450.31 171.40)">
+<g transform="rotate(464.94)">
+<path d="M 0 0 L -0.87 2.17 L 4.34 0 L -0.87 -2.17 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="479.75" y1="61.08" x2="450.31" y2="171.40" style="stroke-width:1.45;stroke:rgb(153,153,153)"/>
+<!-- Arc:    21  185 -->
+<g transform="translate(855.14 661.92)">
+<g transform="rotate(230.15)">
+<path d="M 0 0 L -1.58 3.94 L 7.89 0 L -1.58 -3.94 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="903.72" y1="720.12" x2="855.14" y2="661.92" style="stroke-width:2.63;stroke:rgb(153,153,153)"/>
+<!-- Arc:    22  238 -->
+<g transform="translate(580.94 462.59)">
+<g transform="rotate(339.15)">
+<path d="M 0 0 L -2.36 5.90 L 11.81 0 L -2.36 -5.90 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="304.28" y1="567.95" x2="580.94" y2="462.59" style="stroke-width:3.94;stroke:rgb(153,153,153)"/>
+<!-- Arc:    23  112 -->
+<g transform="translate(879.71 590.80)">
+<g transform="rotate(184.78)">
+<path d="M 0 0 L -1.08 2.69 L 5.38 0 L -1.08 -2.69 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="952.40" y1="596.88" x2="879.71" y2="590.80" style="stroke-width:1.79;stroke:rgb(153,153,153)"/>
+<!-- Arc:    24   76 -->
+<g transform="translate(466.41 720.42)">
+<g transform="rotate(308.09)">
+<path d="M 0 0 L -1.09 2.73 L 5.46 0 L -1.09 -2.73 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="398.61" y1="806.92" x2="466.41" y2="720.42" style="stroke-width:1.82;stroke:rgb(153,153,153)"/>
+<!-- Arc:    25  238 -->
+<g transform="translate(610.33 467.92)">
+<g transform="rotate(239.82)">
+<path d="M 0 0 L -0.88 2.21 L 4.42 0 L -0.88 -2.21 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="717.09" y1="651.53" x2="610.33" y2="467.92" style="stroke-width:1.47;stroke:rgb(153,153,153)"/>
+<!-- Arc:    26  103 -->
+<g transform="translate(893.18 541.15)">
+<g transform="rotate(193.25)">
+<path d="M 0 0 L -0.58 1.46 L 2.92 0 L -0.58 -1.46 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="943.27" y1="552.95" x2="893.18" y2="541.15" style="stroke-width:0.97;stroke:rgb(153,153,153)"/>
+<!-- Arc:    27  238 -->
+<g transform="translate(590.02 443.17)">
+<g transform="rotate(401.82)">
+<path d="M 0 0 L -1.10 2.75 L 5.50 0 L -1.10 -2.75 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="430.05" y1="300.05" x2="590.02" y2="443.17" style="stroke-width:1.83;stroke:rgb(153,153,153)"/>
+<!-- Arc:    29   56 -->
+<g transform="translate(269.87 490.41)">
+<g transform="rotate(353.46)">
+<path d="M 0 0 L -1.00 2.50 L 5.00 0 L -1.00 -2.50 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="191.70" y1="499.37" x2="269.87" y2="490.41" style="stroke-width:1.67;stroke:rgb(153,153,153)"/>
+<!-- Arc:    30  238 -->
+<g transform="translate(595.86 438.93)">
+<g transform="rotate(426.49)">
+<path d="M 0 0 L -1.11 2.77 L 5.53 0 L -1.11 -2.77 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="511.19" y1="244.33" x2="595.86" y2="438.93" style="stroke-width:1.84;stroke:rgb(153,153,153)"/>
+<!-- Arc:    32  238 -->
+<g transform="translate(622.07 441.68)">
+<g transform="rotate(507.17)">
+<path d="M 0 0 L -2.42 6.04 L 12.08 0 L -2.42 -6.04 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="826.63" y1="309.69" x2="622.07" y2="441.68" style="stroke-width:4.03;stroke:rgb(153,153,153)"/>
+<!-- Arc:    34  237 -->
+<g transform="translate(453.17 169.56)">
+<g transform="rotate(472.40)">
+<path d="M 0 0 L -1.40 3.50 L 7.00 0 L -1.40 -3.50 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="496.99" y1="63.22" x2="453.17" y2="169.56" style="stroke-width:2.33;stroke:rgb(153,153,153)"/>
+<!-- Arc:    35   83 -->
+<g transform="translate(274.65 387.68)">
+<g transform="rotate(348.54)">
+<path d="M 0 0 L -1.73 4.33 L 8.65 0 L -1.73 -4.33 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="183.58" y1="406.14" x2="274.65" y2="387.68" style="stroke-width:2.88;stroke:rgb(153,153,153)"/>
+<!-- Arc:    36   76 -->
+<g transform="translate(476.03 724.93)">
+<g transform="rotate(272.48)">
+<path d="M 0 0 L -1.29 3.22 L 6.44 0 L -1.29 -3.22 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="471.64" y1="826.21" x2="476.03" y2="724.93" style="stroke-width:2.15;stroke:rgb(153,153,153)"/>
+<!-- Arc:    37   76 -->
+<g transform="translate(473.15 725.50)">
+<g transform="rotate(281.10)">
+<path d="M 0 0 L -1.47 3.67 L 7.34 0 L -1.47 -3.67 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="453.38" y1="826.21" x2="473.15" y2="725.50" style="stroke-width:2.45;stroke:rgb(153,153,153)"/>
+<!-- Arc:    38  238 -->
+<g transform="translate(617.27 462.91)">
+<g transform="rotate(210.10)">
+<path d="M 0 0 L -1.17 2.92 L 5.84 0 L -1.17 -2.92 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="748.53" y1="539.02" x2="617.27" y2="462.91" style="stroke-width:1.95;stroke:rgb(153,153,153)"/>
+<!-- Arc:    39  238 -->
+<g transform="translate(602.11 435.67)">
+<g transform="rotate(448.70)">
+<path d="M 0 0 L -1.49 3.72 L 7.44 0 L -1.49 -3.72 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="597.41" y1="228.25" x2="602.11" y2="435.67" style="stroke-width:2.48;stroke:rgb(153,153,153)"/>
+<!-- Arc:    40  238 -->
+<g transform="translate(621.05 471.78)">
+<g transform="rotate(223.28)">
+<path d="M 0 0 L -2.84 7.11 L 14.21 0 L -2.84 -7.11 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="769.83" y1="611.88" x2="621.05" y2="471.78" style="stroke-width:4.74;stroke:rgb(153,153,153)"/>
+<!-- Arc:    41  180 -->
+<g transform="translate(285.95 550.44)">
+<g transform="rotate(336.16)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="209.95" y1="584.02" x2="285.95" y2="550.44" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:    42  238 -->
+<g transform="translate(601.81 467.24)">
+<g transform="rotate(272.95)">
+<path d="M 0 0 L -0.33 0.82 L 1.65 0 L -0.33 -0.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="594.36" y1="611.88" x2="601.81" y2="467.24" style="stroke-width:0.55;stroke:rgb(153,153,153)"/>
+<!-- Arc:    43   76 -->
+<g transform="translate(486.33 718.38)">
+<g transform="rotate(229.46)">
+<path d="M 0 0 L -0.69 1.73 L 3.45 0 L -0.69 -1.73 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="553.79" y1="797.27" x2="486.33" y2="718.38" style="stroke-width:1.15;stroke:rgb(153,153,153)"/>
+<!-- Arc:    44   76 -->
+<g transform="translate(478.02 721.74)">
+<g transform="rotate(264.50)">
+<path d="M 0 0 L -0.66 1.65 L 3.30 0 L -0.66 -1.65 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="487.87" y1="824.06" x2="478.02" y2="721.74" style="stroke-width:1.10;stroke:rgb(153,153,153)"/>
+<!-- Arc:    45  238 -->
+<g transform="translate(585.19 441.70)">
+<g transform="rotate(396.42)">
+<path d="M 0 0 L -2.04 5.09 L 10.18 0 L -2.04 -5.09 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="417.88" y1="318.27" x2="585.19" y2="441.70" style="stroke-width:3.39;stroke:rgb(153,153,153)"/>
+<!-- Arc:    46  238 -->
+<g transform="translate(626.89 450.36)">
+<g transform="rotate(530.49)">
+<path d="M 0 0 L -2.70 6.74 L 13.49 0 L -2.70 -6.74 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="865.17" y1="410.42" x2="626.89" y2="450.36" style="stroke-width:4.50;stroke:rgb(153,153,153)"/>
+<!-- Arc:    49  238 -->
+<g transform="translate(588.84 439.70)">
+<g transform="rotate(407.12)">
+<path d="M 0 0 L -1.75 4.38 L 8.77 0 L -1.75 -4.38 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="444.25" y1="283.97" x2="588.84" y2="439.70" style="stroke-width:2.92;stroke:rgb(153,153,153)"/>
+<!-- Arc:    50  152 -->
+<g transform="translate(346.37 777.35)">
+<g transform="rotate(328.74)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="294.14" y1="809.06" x2="346.37" y2="777.35" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Edge:    51   52 -->
+<line x1="1050.79" y1="484.36" x2="1049.77" y2="558.30" style="stroke-width:1.94;stroke:rgb(0,112,145)"/>
+<!-- Arc:    53   78 -->
+<g transform="translate(593.54 783.21)">
+<g transform="rotate(214.32)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="647.11" y1="819.78" x2="593.54" y2="783.21" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:    54  238 -->
+<g transform="translate(604.16 473.06)">
+<g transform="rotate(264.72)">
+<path d="M 0 0 L -1.51 3.76 L 7.53 0 L -1.51 -3.76 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="616.68" y1="608.67" x2="604.16" y2="473.06" style="stroke-width:2.51;stroke:rgb(153,153,153)"/>
+<!-- Arc:    55   76 -->
+<g transform="translate(457.93 705.94)">
+<g transform="rotate(364.03)">
+<path d="M 0 0 L -1.51 3.79 L 7.57 0 L -1.51 -3.79 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="339.78" y1="697.61" x2="457.93" y2="705.94" style="stroke-width:2.52;stroke:rgb(153,153,153)"/>
+<!-- Arc:    56  238 -->
+<g transform="translate(583.43 456.39)">
+<g transform="rotate(353.81)">
+<path d="M 0 0 L -1.58 3.95 L 7.90 0 L -1.58 -3.95 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="286.02" y1="488.65" x2="583.43" y2="456.39" style="stroke-width:2.63;stroke:rgb(153,153,153)"/>
+<!-- Arc:    57  211 -->
+<g transform="translate(272.07 519.82)">
+<g transform="rotate(347.04)">
+<path d="M 0 0 L -1.65 4.14 L 8.27 0 L -1.65 -4.14 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="188.65" y1="539.02" x2="272.07" y2="519.82" style="stroke-width:2.76;stroke:rgb(153,153,153)"/>
+<!-- Arc:    58  158 -->
+<g transform="translate(268.28 470.22)">
+<g transform="rotate(356.64)">
+<path d="M 0 0 L -0.90 2.25 L 4.49 0 L -0.90 -2.25 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="191.70" y1="474.72" x2="268.28" y2="470.22" style="stroke-width:1.50;stroke:rgb(153,153,153)"/>
+<!-- Arc:    59  238 -->
+<g transform="translate(585.73 445.10)">
+<g transform="rotate(388.89)">
+<path d="M 0 0 L -1.58 3.94 L 7.89 0 L -1.58 -3.94 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="398.61" y1="341.84" x2="585.73" y2="445.10" style="stroke-width:2.63;stroke:rgb(153,153,153)"/>
+<!-- Arc:    60  238 -->
+<g transform="translate(582.40 446.16)">
+<g transform="rotate(382.37)">
+<path d="M 0 0 L -2.09 5.22 L 10.44 0 L -2.09 -5.22 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="433.09" y1="384.71" x2="582.40" y2="446.16" style="stroke-width:3.48;stroke:rgb(153,153,153)"/>
+<!-- Arc:    61  238 -->
+<g transform="translate(581.44 446.67)">
+<g transform="rotate(380.13)">
+<path d="M 0 0 L -2.23 5.58 L 11.15 0 L -2.23 -5.58 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="301.24" y1="343.98" x2="581.44" y2="446.67" style="stroke-width:3.72;stroke:rgb(153,153,153)"/>
+<!-- Arc:    62   76 -->
+<g transform="translate(483.56 718.18)">
+<g transform="rotate(237.58)">
+<path d="M 0 0 L -0.33 0.82 L 1.65 0 L -0.33 -0.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="540.61" y1="807.99" x2="483.56" y2="718.18" style="stroke-width:0.55;stroke:rgb(153,153,153)"/>
+<!-- Arc:    63  238 -->
+<g transform="translate(607.89 466.54)">
+<g transform="rotate(246.18)">
+<path d="M 0 0 L -0.42 1.04 L 2.08 0 L -0.42 -1.04 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="666.38" y1="599.03" x2="607.89" y2="466.54" style="stroke-width:0.69;stroke:rgb(153,153,153)"/>
+<!-- Arc:    64  238 -->
+<g transform="translate(613.57 466.75)">
+<g transform="rotate(228.43)">
+<path d="M 0 0 L -1.08 2.69 L 5.38 0 L -1.08 -2.69 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="754.62" y1="625.82" x2="613.57" y2="466.75" style="stroke-width:1.79;stroke:rgb(153,153,153)"/>
+<!-- Arc:    65  238 -->
+<g transform="translate(592.50 439.55)">
+<g transform="rotate(416.05)">
+<path d="M 0 0 L -1.32 3.31 L 6.61 0 L -1.32 -3.31 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="500.04" y1="302.19" x2="592.50" y2="439.55" style="stroke-width:2.20;stroke:rgb(153,153,153)"/>
+<!-- Arc:    66  238 -->
+<g transform="translate(599.62 433.79)">
+<g transform="rotate(442.16)">
+<path d="M 0 0 L -1.90 4.76 L 9.51 0 L -1.90 -4.76 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="571.04" y1="226.11" x2="599.62" y2="433.79" style="stroke-width:3.17;stroke:rgb(153,153,153)"/>
+<!-- Arc:    67  238 -->
+<g transform="translate(597.54 468.04)">
+<g transform="rotate(289.51)">
+<path d="M 0 0 L -0.66 1.65 L 3.30 0 L -0.66 -1.65 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="547.71" y1="608.67" x2="597.54" y2="468.04" style="stroke-width:1.10;stroke:rgb(153,153,153)"/>
+<!-- Arc:    68  238 -->
+<g transform="translate(599.94 443.40)">
+<g transform="rotate(436.87)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="550.75" y1="232.54" x2="599.94" y2="443.40" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:    69  238 -->
+<g transform="translate(599.97 440.21)">
+<g transform="rotate(439.77)">
+<path d="M 0 0 L -0.62 1.56 L 3.12 0 L -0.62 -1.56 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="570.02" y1="274.33" x2="599.97" y2="440.21" style="stroke-width:1.04;stroke:rgb(153,153,153)"/>
+<!-- Arc:    70   83 -->
+<g transform="translate(275.18 384.32)">
+<g transform="rotate(357.84)">
+<path d="M 0 0 L -1.54 3.86 L 7.72 0 L -1.54 -3.86 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="179.53" y1="387.92" x2="275.18" y2="384.32" style="stroke-width:2.57;stroke:rgb(153,153,153)"/>
+<!-- Arc:    71  120 -->
+<g transform="translate(887.80 510.08)">
+<g transform="rotate(196.89)">
+<path d="M 0 0 L -1.42 3.55 L 7.10 0 L -1.42 -3.55 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="944.29" y1="527.23" x2="887.80" y2="510.08" style="stroke-width:2.37;stroke:rgb(153,153,153)"/>
+<!-- Arc:    72  237 -->
+<g transform="translate(459.42 182.71)">
+<g transform="rotate(524.29)">
+<path d="M 0 0 L -0.48 1.21 L 2.41 0 L -0.48 -1.21 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="583.21" y1="147.88" x2="459.42" y2="182.71" style="stroke-width:0.80;stroke:rgb(153,153,153)"/>
+<!-- Arc:    73   61 -->
+<g transform="translate(287.68 337.09)">
+<g transform="rotate(386.86)">
+<path d="M 0 0 L -0.79 1.98 L 3.96 0 L -0.79 -1.98 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="201.84" y1="293.62" x2="287.68" y2="337.09" style="stroke-width:1.32;stroke:rgb(153,153,153)"/>
+<!-- Arc:    74   14 -->
+<g transform="translate(790.67 209.34)">
+<g transform="rotate(529.47)">
+<path d="M 0 0 L -0.95 2.38 L 4.77 0 L -0.95 -2.38 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="838.80" y1="200.39" x2="790.67" y2="209.34" style="stroke-width:1.59;stroke:rgb(153,153,153)"/>
+<!-- Arc:    75  238 -->
+<g transform="translate(580.60 451.31)">
+<g transform="rotate(367.90)">
+<path d="M 0 0 L -2.17 5.42 L 10.84 0 L -2.17 -5.42 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="424.98" y1="429.71" x2="580.60" y2="451.31" style="stroke-width:3.61;stroke:rgb(153,153,153)"/>
+<!-- Arc:    76  238 -->
+<g transform="translate(591.44 476.73)">
+<g transform="rotate(296.46)">
+<path d="M 0 0 L -2.74 6.85 L 13.69 0 L -2.74 -6.85 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="476.71" y1="707.26" x2="591.44" y2="476.73" style="stroke-width:4.56;stroke:rgb(153,153,153)"/>
+<!-- Arc:    77   76 -->
+<g transform="translate(492.30 709.41)">
+<g transform="rotate(187.61)">
+<path d="M 0 0 L -0.90 2.25 L 4.49 0 L -0.90 -2.25 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="604.51" y1="724.40" x2="492.30" y2="709.41" style="stroke-width:1.50;stroke:rgb(153,153,153)"/>
+<!-- Arc:    78   76 -->
+<g transform="translate(490.09 715.94)">
+<g transform="rotate(212.93)">
+<path d="M 0 0 L -0.94 2.35 L 4.70 0 L -0.94 -2.35 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="584.22" y1="776.91" x2="490.09" y2="715.94" style="stroke-width:1.57;stroke:rgb(153,153,153)"/>
+<!-- Arc:    80   76 -->
+<g transform="translate(489.20 718.46)">
+<g transform="rotate(221.72)">
+<path d="M 0 0 L -1.11 2.77 L 5.53 0 L -1.11 -2.77 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="567.99" y1="788.70" x2="489.20" y2="718.46" style="stroke-width:1.84;stroke:rgb(153,153,153)"/>
+<!-- Arc:    81  237 -->
+<g transform="translate(443.61 169.35)">
+<g transform="rotate(441.28)">
+<path d="M 0 0 L -1.21 3.03 L 6.06 0 L -1.21 -3.03 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="427.01" y1="61.08" x2="443.61" y2="169.35" style="stroke-width:2.02;stroke:rgb(153,153,153)"/>
+<!-- Arc:    82  238 -->
+<g transform="translate(586.16 446.13)">
+<g transform="rotate(386.50)">
+<path d="M 0 0 L -1.40 3.51 L 7.02 0 L -1.40 -3.51 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="437.15" y1="371.85" x2="586.16" y2="446.13" style="stroke-width:2.34;stroke:rgb(153,153,153)"/>
+<!-- Arc:    83  238 -->
+<g transform="translate(577.54 448.63)">
+<g transform="rotate(372.92)">
+<path d="M 0 0 L -2.87 7.17 L 14.34 0 L -2.87 -7.17 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="294.14" y1="383.63" x2="577.54" y2="448.63" style="stroke-width:4.78;stroke:rgb(153,153,153)"/>
+<!-- Arc:    84  238 -->
+<g transform="translate(605.06 435.85)">
+<g transform="rotate(457.88)">
+<path d="M 0 0 L -1.49 3.72 L 7.43 0 L -1.49 -3.72 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="626.82" y1="278.62" x2="605.06" y2="435.85" style="stroke-width:2.48;stroke:rgb(153,153,153)"/>
+<!-- Arc:    85  237 -->
+<g transform="translate(433.02 189.76)">
+<g transform="rotate(346.13)">
+<path d="M 0 0 L -0.48 1.21 L 2.41 0 L -0.48 -1.21 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="320.51" y1="217.54" x2="433.02" y2="189.76" style="stroke-width:0.80;stroke:rgb(153,153,153)"/>
+<!-- Arc:    86  238 -->
+<g transform="translate(583.81 442.77)">
+<g transform="rotate(391.68)">
+<path d="M 0 0 L -2.14 5.36 L 10.72 0 L -2.14 -5.36 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="446.28" y1="357.92" x2="583.81" y2="442.77" style="stroke-width:3.57;stroke:rgb(153,153,153)"/>
+<!-- Arc:    87   61 -->
+<g transform="translate(285.61 339.74)">
+<g transform="rotate(375.50)">
+<path d="M 0 0 L -0.99 2.47 L 4.94 0 L -0.99 -2.47 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="192.71" y1="313.98" x2="285.61" y2="339.74" style="stroke-width:1.65;stroke:rgb(153,153,153)"/>
+<!-- Arc:    88  238 -->
+<g transform="translate(595.10 466.69)">
+<g transform="rotate(300.58)">
+<path d="M 0 0 L -0.62 1.56 L 3.12 0 L -0.62 -1.56 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="516.26" y1="600.10" x2="595.10" y2="466.69" style="stroke-width:1.04;stroke:rgb(153,153,153)"/>
+<!-- Arc:    89   76 -->
+<g transform="translate(460.14 700.63)">
+<g transform="rotate(381.58)">
+<path d="M 0 0 L -1.32 3.30 L 6.59 0 L -1.32 -3.30 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="346.88" y1="655.82" x2="460.14" y2="700.63" style="stroke-width:2.20;stroke:rgb(153,153,153)"/>
+<!-- Arc:    90  238 -->
+<g transform="translate(608.10 438.85)">
+<g transform="rotate(469.82)">
+<path d="M 0 0 L -1.05 2.62 L 5.24 0 L -1.05 -2.62 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="675.51" y1="251.83" x2="608.10" y2="438.85" style="stroke-width:1.75;stroke:rgb(153,153,153)"/>
+<!-- Arc:    91  238 -->
+<g transform="translate(587.72 463.95)">
+<g transform="rotate(326.92)">
+<path d="M 0 0 L -1.27 3.18 L 6.35 0 L -1.27 -3.18 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="454.39" y1="550.80" x2="587.72" y2="463.95" style="stroke-width:2.12;stroke:rgb(153,153,153)"/>
+<!-- Arc:    92  237 -->
+<g transform="translate(433.58 184.22)">
+<g transform="rotate(369.99)">
+<path d="M 0 0 L -0.33 0.82 L 1.65 0 L -0.33 -0.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="318.48" y1="163.96" x2="433.58" y2="184.22" style="stroke-width:0.55;stroke:rgb(153,153,153)"/>
+<!-- Arc:    93  174 -->
+<g transform="translate(845.23 168.18)">
+<g transform="rotate(510.41)">
+<path d="M 0 0 L -0.85 2.12 L 4.25 0 L -0.85 -2.12 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="875.32" y1="151.10" x2="845.23" y2="168.18" style="stroke-width:1.42;stroke:rgb(153,153,153)"/>
+<!-- Arc:    94   61 -->
+<g transform="translate(286.01 342.43)">
+<g transform="rotate(365.49)">
+<path d="M 0 0 L -0.81 2.03 L 4.06 0 L -0.81 -2.03 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="190.68" y1="333.27" x2="286.01" y2="342.43" style="stroke-width:1.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:    95  238 -->
+<g transform="translate(590.80 446.75)">
+<g transform="rotate(393.37)">
+<path d="M 0 0 L -0.54 1.34 L 2.69 0 L -0.54 -1.34 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="338.77" y1="280.76" x2="590.80" y2="446.75" style="stroke-width:0.90;stroke:rgb(153,153,153)"/>
+<!-- Arc:    96  238 -->
+<g transform="translate(591.61 463.45)">
+<g transform="rotate(320.34)">
+<path d="M 0 0 L -0.58 1.46 L 2.92 0 L -0.58 -1.46 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="465.55" y1="567.95" x2="591.61" y2="463.45" style="stroke-width:0.97;stroke:rgb(153,153,153)"/>
+<!-- Arc:    98  179 -->
+<g transform="translate(269.66 429.25)">
+<g transform="rotate(361.97)">
+<path d="M 0 0 L -0.42 1.04 L 2.08 0 L -0.42 -1.04 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="189.67" y1="426.50" x2="269.66" y2="429.25" style="stroke-width:0.69;stroke:rgb(153,153,153)"/>
+<!-- Arc:    99  145 -->
+<g transform="translate(751.73 733.81)">
+<g transform="rotate(235.68)">
+<path d="M 0 0 L -1.06 2.64 L 5.29 0 L -1.06 -2.64 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="778.96" y1="773.70" x2="751.73" y2="733.81" style="stroke-width:1.76;stroke:rgb(153,153,153)"/>
+<!-- Arc:   100   46 -->
+<g transform="translate(888.99 412.85)">
+<g transform="rotate(185.70)">
+<path d="M 0 0 L -2.54 6.35 L 12.69 0 L -2.54 -6.35 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="929.07" y1="416.85" x2="888.99" y2="412.85" style="stroke-width:4.23;stroke:rgb(153,153,153)"/>
+<!-- Arc:   101  238 -->
+<g transform="translate(581.18 457.08)">
+<g transform="rotate(352.49)">
+<path d="M 0 0 L -2.04 5.11 L 10.22 0 L -2.04 -5.11 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="431.07" y1="476.86" x2="581.18" y2="457.08" style="stroke-width:3.41;stroke:rgb(153,153,153)"/>
+<!-- Arc:   102  238 -->
+<g transform="translate(584.15 453.40)">
+<g transform="rotate(362.97)">
+<path d="M 0 0 L -1.42 3.55 L 7.10 0 L -1.42 -3.55 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="375.28" y1="442.57" x2="584.15" y2="453.40" style="stroke-width:2.37;stroke:rgb(153,153,153)"/>
+<!-- Arc:   103  238 -->
+<g transform="translate(624.63 461.08)">
+<g transform="rotate(196.79)">
+<path d="M 0 0 L -2.38 5.95 L 11.90 0 L -2.38 -5.95 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="879.37" y1="537.94" x2="624.63" y2="461.08" style="stroke-width:3.97;stroke:rgb(153,153,153)"/>
+<!-- Arc:   104  112 -->
+<g transform="translate(881.85 595.15)">
+<g transform="rotate(197.29)">
+<path d="M 0 0 L -1.66 4.16 L 8.32 0 L -1.66 -4.16 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="949.36" y1="616.17" x2="881.85" y2="595.15" style="stroke-width:2.77;stroke:rgb(153,153,153)"/>
+<!-- Arc:   105  238 -->
+<g transform="translate(622.67 455.14)">
+<g transform="rotate(182.43)">
+<path d="M 0 0 L -1.79 4.48 L 8.95 0 L -1.79 -4.48 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="806.35" y1="462.93" x2="622.67" y2="455.14" style="stroke-width:2.98;stroke:rgb(153,153,153)"/>
+<!-- Arc:   106  238 -->
+<g transform="translate(617.74 453.07)">
+<g transform="rotate(535.47)">
+<path d="M 0 0 L -0.81 2.03 L 4.06 0 L -0.81 -2.03 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="804.32" y1="438.29" x2="617.74" y2="453.07" style="stroke-width:1.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:   107  237 -->
+<g transform="translate(425.35 179.64)">
+<g transform="rotate(378.08)">
+<path d="M 0 0 L -2.15 5.38 L 10.77 0 L -2.15 -5.38 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="321.52" y1="145.74" x2="425.35" y2="179.64" style="stroke-width:3.59;stroke:rgb(153,153,153)"/>
+<!-- Arc:   108  237 -->
+<g transform="translate(431.91 191.74)">
+<g transform="rotate(339.51)">
+<path d="M 0 0 L -0.81 2.03 L 4.06 0 L -0.81 -2.03 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="325.58" y1="231.47" x2="431.91" y2="191.74" style="stroke-width:1.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:   109  238 -->
+<g transform="translate(625.79 456.69)">
+<g transform="rotate(185.49)">
+<path d="M 0 0 L -2.44 6.09 L 12.18 0 L -2.44 -6.09 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="869.23" y1="480.08" x2="625.79" y2="456.69" style="stroke-width:4.06;stroke:rgb(153,153,153)"/>
+<!-- Arc:   110  238 -->
+<g transform="translate(578.57 460.28)">
+<g transform="rotate(346.15)">
+<path d="M 0 0 L -2.68 6.69 L 13.38 0 L -2.68 -6.69 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="433.09" y1="496.15" x2="578.57" y2="460.28" style="stroke-width:4.46;stroke:rgb(153,153,153)"/>
+<!-- Arc:   111  238 -->
+<g transform="translate(612.40 468.58)">
+<g transform="rotate(235.26)">
+<path d="M 0 0 L -1.22 3.05 L 6.09 0 L -1.22 -3.05 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="733.32" y1="642.96" x2="612.40" y2="468.58" style="stroke-width:2.03;stroke:rgb(153,153,153)"/>
+<!-- Arc:   112  238 -->
+<g transform="translate(624.83 465.87)">
+<g transform="rotate(207.40)">
+<path d="M 0 0 L -2.78 6.95 L 13.89 0 L -2.78 -6.95 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="863.15" y1="589.38" x2="624.83" y2="465.87" style="stroke-width:4.63;stroke:rgb(153,153,153)"/>
+<!-- Arc:   113  237 -->
+<g transform="translate(431.82 188.00)">
+<g transform="rotate(353.76)">
+<path d="M 0 0 L -0.66 1.65 L 3.30 0 L -0.66 -1.65 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="318.48" y1="200.39" x2="431.82" y2="188.00" style="stroke-width:1.10;stroke:rgb(153,153,153)"/>
+<!-- Arc:   114  238 -->
+<g transform="translate(620.72 452.17)">
+<g transform="rotate(533.37)">
+<path d="M 0 0 L -1.42 3.56 L 7.12 0 L -1.42 -3.56 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="758.68" y1="436.14" x2="620.72" y2="452.17" style="stroke-width:2.37;stroke:rgb(153,153,153)"/>
+<!-- Arc:   115  185 -->
+<g transform="translate(850.65 662.55)">
+<g transform="rotate(243.04)">
+<path d="M 0 0 L -1.19 2.96 L 5.93 0 L -1.19 -2.96 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="886.47" y1="732.98" x2="850.65" y2="662.55" style="stroke-width:1.98;stroke:rgb(153,153,153)"/>
+<!-- Arc:   116  238 -->
+<g transform="translate(595.83 436.08)">
+<g transform="rotate(430.05)">
+<path d="M 0 0 L -1.64 4.10 L 8.20 0 L -1.64 -4.10 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="540.61" y1="283.97" x2="595.83" y2="436.08" style="stroke-width:2.73;stroke:rgb(153,153,153)"/>
+<!-- Arc:   118  199 -->
+<g transform="translate(1049.77 344.22)">
+<g transform="rotate(270.00)">
+<path d="M 0 0 L -0.58 1.46 L 2.92 0 L -0.58 -1.46 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="1049.77" y1="395.42" x2="1049.77" y2="344.22" style="stroke-width:0.97;stroke:rgb(153,153,153)"/>
+<!-- Arc:   119  112 -->
+<g transform="translate(873.90 597.81)">
+<g transform="rotate(218.29)">
+<path d="M 0 0 L -0.48 1.21 L 2.41 0 L -0.48 -1.21 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="935.16" y1="646.18" x2="873.90" y2="597.81" style="stroke-width:0.80;stroke:rgb(153,153,153)"/>
+<!-- Arc:   120  238 -->
+<g transform="translate(626.03 458.85)">
+<g transform="rotate(190.64)">
+<path d="M 0 0 L -2.55 6.36 L 12.73 0 L -2.55 -6.36 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="870.25" y1="504.72" x2="626.03" y2="458.85" style="stroke-width:4.24;stroke:rgb(153,153,153)"/>
+<!-- Arc:   121  238 -->
+<g transform="translate(620.16 450.29)">
+<g transform="rotate(527.05)">
+<path d="M 0 0 L -1.38 3.45 L 6.89 0 L -1.38 -3.45 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="798.23" y1="409.35" x2="620.16" y2="450.29" style="stroke-width:2.30;stroke:rgb(153,153,153)"/>
+<!-- Arc:   122  185 -->
+<g transform="translate(856.77 654.08)">
+<g transform="rotate(206.45)">
+<path d="M 0 0 L -0.85 2.12 L 4.25 0 L -0.85 -2.12 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="927.05" y1="689.04" x2="856.77" y2="654.08" style="stroke-width:1.42;stroke:rgb(153,153,153)"/>
+<!-- Arc:   123  237 -->
+<g transform="translate(458.42 177.91)">
+<g transform="rotate(504.59)">
+<path d="M 0 0 L -0.72 1.80 L 3.60 0 L -0.72 -1.80 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="566.98" y1="100.73" x2="458.42" y2="177.91" style="stroke-width:1.20;stroke:rgb(153,153,153)"/>
+<!-- Arc:   124  238 -->
+<g transform="translate(583.72 460.73)">
+<g transform="rotate(341.48)">
+<path d="M 0 0 L -1.71 4.28 L 8.56 0 L -1.71 -4.28 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="388.47" y1="526.16" x2="583.72" y2="460.73" style="stroke-width:2.85;stroke:rgb(153,153,153)"/>
+<!-- Arc:   125  238 -->
+<g transform="translate(621.15 458.98)">
+<g transform="rotate(193.78)">
+<path d="M 0 0 L -1.60 3.99 L 7.98 0 L -1.60 -3.99 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="803.30" y1="503.65" x2="621.15" y2="458.98" style="stroke-width:2.66;stroke:rgb(153,153,153)"/>
+<!-- Arc:   126  208 -->
+<g transform="translate(657.02 169.77)">
+<g transform="rotate(449.36)">
+<path d="M 0 0 L -0.66 1.65 L 3.30 0 L -0.66 -1.65 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="656.23" y1="98.59" x2="657.02" y2="169.77" style="stroke-width:1.10;stroke:rgb(153,153,153)"/>
+<!-- Arc:   127  238 -->
+<g transform="translate(597.27 443.23)">
+<g transform="rotate(424.50)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="524.38" y1="290.40" x2="597.27" y2="443.23" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:   128  237 -->
+<g transform="translate(434.10 178.22)">
+<g transform="rotate(394.26)">
+<path d="M 0 0 L -0.69 1.73 L 3.45 0 L -0.69 -1.73 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="340.80" y1="114.66" x2="434.10" y2="178.22" style="stroke-width:1.15;stroke:rgb(153,153,153)"/>
+<!-- Arc:   129  218 -->
+<g transform="translate(267.12 448.77)">
+<g transform="rotate(360.63)">
+<path d="M 0 0 L -0.72 1.80 L 3.60 0 L -0.72 -1.80 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="190.68" y1="447.93" x2="267.12" y2="448.77" style="stroke-width:1.20;stroke:rgb(153,153,153)"/>
+<!-- Arc:   130  238 -->
+<g transform="translate(584.94 449.59)">
+<g transform="rotate(375.48)">
+<path d="M 0 0 L -1.38 3.46 L 6.92 0 L -1.38 -3.46 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="428.02" y1="406.14" x2="584.94" y2="449.59" style="stroke-width:2.31;stroke:rgb(153,153,153)"/>
+<!-- Arc:   131   76 -->
+<g transform="translate(463.56 694.10)">
+<g transform="rotate(405.05)">
+<path d="M 0 0 L -1.47 3.67 L 7.35 0 L -1.47 -3.67 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="379.34" y1="609.74" x2="463.56" y2="694.10" style="stroke-width:2.45;stroke:rgb(153,153,153)"/>
+<!-- Arc:   132   46 -->
+<g transform="translate(881.73 404.45)">
+<g transform="rotate(520.36)">
+<path d="M 0 0 L -1.27 3.18 L 6.35 0 L -1.27 -3.18 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="928.06" y1="387.92" x2="881.73" y2="404.45" style="stroke-width:2.12;stroke:rgb(153,153,153)"/>
+<!-- Arc:   133   14 -->
+<g transform="translate(775.49 194.15)">
+<g transform="rotate(451.70)">
+<path d="M 0 0 L -1.36 3.39 L 6.78 0 L -1.36 -3.39 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="776.93" y1="145.74" x2="775.49" y2="194.15" style="stroke-width:2.26;stroke:rgb(153,153,153)"/>
+<!-- Arc:   134   76 -->
+<g transform="translate(483.31 722.16)">
+<g transform="rotate(246.29)">
+<path d="M 0 0 L -1.01 2.53 L 5.05 0 L -1.01 -2.53 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="523.36" y1="813.35" x2="483.31" y2="722.16" style="stroke-width:1.68;stroke:rgb(153,153,153)"/>
+<!-- Arc:   135  237 -->
+<g transform="translate(435.20 173.33)">
+<g transform="rotate(409.58)">
+<path d="M 0 0 L -1.19 2.96 L 5.93 0 L -1.19 -2.96 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="365.14" y1="91.09" x2="435.20" y2="173.33" style="stroke-width:1.98;stroke:rgb(153,153,153)"/>
+<!-- Arc:   136  237 -->
+<g transform="translate(459.28 172.00)">
+<g transform="rotate(491.93)">
+<path d="M 0 0 L -1.64 4.09 L 8.19 0 L -1.64 -4.09 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="540.61" y1="81.44" x2="459.28" y2="172.00" style="stroke-width:2.73;stroke:rgb(153,153,153)"/>
+<!-- Arc:   137  237 -->
+<g transform="translate(455.68 173.49)">
+<g transform="rotate(485.87)">
+<path d="M 0 0 L -0.95 2.38 L 4.77 0 L -0.95 -2.38 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="528.44" y1="72.87" x2="455.68" y2="173.49" style="stroke-width:1.59;stroke:rgb(153,153,153)"/>
+<!-- Arc:   138   76 -->
+<g transform="translate(481.11 725.05)">
+<g transform="rotate(256.21)">
+<path d="M 0 0 L -1.42 3.54 L 7.08 0 L -1.42 -3.54 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="504.09" y1="818.70" x2="481.11" y2="725.05" style="stroke-width:2.36;stroke:rgb(153,153,153)"/>
+<!-- Arc:   139  237 -->
+<g transform="translate(428.56 185.86)">
+<g transform="rotate(361.87)">
+<path d="M 0 0 L -1.30 3.24 L 6.48 0 L -1.30 -3.24 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="315.44" y1="182.17" x2="428.56" y2="185.86" style="stroke-width:2.16;stroke:rgb(153,153,153)"/>
+<!-- Arc:   140  238 -->
+<g transform="translate(610.85 445.36)">
+<g transform="rotate(492.61)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="746.50" y1="297.91" x2="610.85" y2="445.36" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:   141   76 -->
+<g transform="translate(460.44 703.46)">
+<g transform="rotate(373.33)">
+<path d="M 0 0 L -1.09 2.73 L 5.46 0 L -1.09 -2.73 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="340.80" y1="675.11" x2="460.44" y2="703.46" style="stroke-width:1.82;stroke:rgb(153,153,153)"/>
+<!-- Arc:   142   76 -->
+<g transform="translate(469.45 720.36)">
+<g transform="rotate(298.93)">
+<path d="M 0 0 L -0.75 1.86 L 3.73 0 L -0.75 -1.86 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="416.87" y1="815.49" x2="469.45" y2="720.36" style="stroke-width:1.24;stroke:rgb(153,153,153)"/>
+<!-- Arc:   143  237 -->
+<g transform="translate(438.33 173.26)">
+<g transform="rotate(418.78)">
+<path d="M 0 0 L -0.83 2.08 L 4.16 0 L -0.83 -2.08 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="381.37" y1="79.30" x2="438.33" y2="173.26" style="stroke-width:1.39;stroke:rgb(153,153,153)"/>
+<!-- Arc:   145  238 -->
+<g transform="translate(613.10 474.44)">
+<g transform="rotate(242.23)">
+<path d="M 0 0 L -2.29 5.73 L 11.47 0 L -2.29 -5.73 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="742.45" y1="720.12" x2="613.10" y2="474.44" style="stroke-width:3.82;stroke:rgb(153,153,153)"/>
+<!-- Arc:   146  238 -->
+<g transform="translate(611.61 446.14)">
+<g transform="rotate(497.99)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="726.22" y1="342.91" x2="611.61" y2="446.14" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:   147   83 -->
+<g transform="translate(277.37 381.59)">
+<g transform="rotate(366.86)">
+<path d="M 0 0 L -1.13 2.82 L 5.64 0 L -1.13 -2.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="178.51" y1="369.70" x2="277.37" y2="381.59" style="stroke-width:1.88;stroke:rgb(153,153,153)"/>
+<!-- Arc:   148   76 -->
+<g transform="translate(466.26 693.82)">
+<g transform="rotate(412.33)">
+<path d="M 0 0 L -1.16 2.89 L 5.78 0 L -1.16 -2.89 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="395.57" y1="602.24" x2="466.26" y2="693.82" style="stroke-width:1.93;stroke:rgb(153,153,153)"/>
+<!-- Arc:   149   46 -->
+<g transform="translate(878.53 397.89)">
+<g transform="rotate(496.58)">
+<path d="M 0 0 L -1.41 3.53 L 7.06 0 L -1.41 -3.53 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="912.85" y1="365.42" x2="878.53" y2="397.89" style="stroke-width:2.35;stroke:rgb(153,153,153)"/>
+<!-- Edge:   150  199 -->
+<line x1="1049.77" y1="260.40" x2="1049.77" y2="330.05" style="stroke-width:3.00;stroke:rgb(0,112,145)"/>
+<!-- Arc:   151  211 -->
+<g transform="translate(278.57 521.55)">
+<g transform="rotate(334.01)">
+<path d="M 0 0 L -0.54 1.34 L 2.69 0 L -0.54 -1.34 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="198.80" y1="560.45" x2="278.57" y2="521.55" style="stroke-width:0.90;stroke:rgb(153,153,153)"/>
+<!-- Arc:   152   76 -->
+<g transform="translate(458.19 717.11)">
+<g transform="rotate(331.95)">
+<path d="M 0 0 L -1.95 4.86 L 9.73 0 L -1.95 -4.86 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="356.01" y1="771.55" x2="458.19" y2="717.11" style="stroke-width:3.24;stroke:rgb(153,153,153)"/>
+<!-- Arc:   153   32 -->
+<g transform="translate(833.16 294.15)">
+<g transform="rotate(472.46)">
+<path d="M 0 0 L -1.12 2.80 L 5.61 0 L -1.12 -2.80 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="851.99" y1="248.61" x2="833.16" y2="294.15" style="stroke-width:1.87;stroke:rgb(153,153,153)"/>
+<!-- Arc:   154  238 -->
+<g transform="translate(617.91 461.56)">
+<g transform="rotate(205.04)">
+<path d="M 0 0 L -1.16 2.89 L 5.78 0 L -1.16 -2.89 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="795.19" y1="544.37" x2="617.91" y2="461.56" style="stroke-width:1.93;stroke:rgb(153,153,153)"/>
+<!-- Arc:   155  208 -->
+<g transform="translate(661.55 168.34)">
+<g transform="rotate(465.15)">
+<path d="M 0 0 L -1.06 2.64 L 5.29 0 L -1.06 -2.64 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="679.56" y1="101.80" x2="661.55" y2="168.34" style="stroke-width:1.76;stroke:rgb(153,153,153)"/>
+<!-- Arc:   157  238 -->
+<g transform="translate(618.54 460.90)">
+<g transform="rotate(202.38)">
+<path d="M 0 0 L -1.22 3.05 L 6.09 0 L -1.22 -3.05 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="753.60" y1="516.51" x2="618.54" y2="460.90" style="stroke-width:2.03;stroke:rgb(153,153,153)"/>
+<!-- Arc:   158  238 -->
+<g transform="translate(578.39 455.54)">
+<g transform="rotate(357.31)">
+<path d="M 0 0 L -2.57 6.43 L 12.86 0 L -2.57 -6.43 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="284.00" y1="469.36" x2="578.39" y2="455.54" style="stroke-width:4.29;stroke:rgb(153,153,153)"/>
+<!-- Arc:   160   76 -->
+<g transform="translate(491.96 714.36)">
+<g transform="rotate(204.91)">
+<path d="M 0 0 L -1.11 2.79 L 5.57 0 L -1.11 -2.79 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="594.36" y1="761.91" x2="491.96" y2="714.36" style="stroke-width:1.86;stroke:rgb(153,153,153)"/>
+<!-- Arc:   161  238 -->
+<g transform="translate(612.40 434.90)">
+<g transform="rotate(477.03)">
+<path d="M 0 0 L -2.12 5.30 L 10.60 0 L -2.12 -5.30 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="679.56" y1="303.26" x2="612.40" y2="434.90" style="stroke-width:3.53;stroke:rgb(153,153,153)"/>
+<!-- Arc:   162  238 -->
+<g transform="translate(613.37 466.01)">
+<g transform="rotate(226.82)">
+<path d="M 0 0 L -0.94 2.35 L 4.70 0 L -0.94 -2.35 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="717.09" y1="576.52" x2="613.37" y2="466.01" style="stroke-width:1.57;stroke:rgb(153,153,153)"/>
+<!-- Arc:   163   76 -->
+<g transform="translate(459.14 713.62)">
+<g transform="rotate(340.18)">
+<path d="M 0 0 L -1.49 3.72 L 7.43 0 L -1.49 -3.72 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="351.95" y1="752.26" x2="459.14" y2="713.62" style="stroke-width:2.48;stroke:rgb(153,153,153)"/>
+<!-- Arc:   164  238 -->
+<g transform="translate(597.52 436.09)">
+<g transform="rotate(434.58)">
+<path d="M 0 0 L -1.54 3.84 L 7.68 0 L -1.54 -3.84 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="553.79" y1="277.54" x2="597.52" y2="436.09" style="stroke-width:2.56;stroke:rgb(153,153,153)"/>
+<!-- Arc:   167  238 -->
+<g transform="translate(609.65 442.41)">
+<g transform="rotate(480.93)">
+<path d="M 0 0 L -0.54 1.34 L 2.69 0 L -0.54 -1.34 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="711.01" y1="273.26" x2="609.65" y2="442.41" style="stroke-width:0.90;stroke:rgb(153,153,153)"/>
+<!-- Arc:   168  238 -->
+<g transform="translate(580.46 456.21)">
+<g transform="rotate(355.37)">
+<path d="M 0 0 L -2.17 5.42 L 10.85 0 L -2.17 -5.42 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="378.32" y1="472.58" x2="580.46" y2="456.21" style="stroke-width:3.62;stroke:rgb(153,153,153)"/>
+<!-- Arc:   169  237 -->
+<g transform="translate(459.05 174.97)">
+<g transform="rotate(498.01)">
+<path d="M 0 0 L -1.19 2.96 L 5.93 0 L -1.19 -2.96 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="555.82" y1="87.87" x2="459.05" y2="174.97" style="stroke-width:1.98;stroke:rgb(153,153,153)"/>
+<!-- Arc:   170  238 -->
+<g transform="translate(618.33 465.84)">
+<g transform="rotate(215.84)">
+<path d="M 0 0 L -1.66 4.16 L 8.32 0 L -1.66 -4.16 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="740.42" y1="554.02" x2="618.33" y2="465.84" style="stroke-width:2.77;stroke:rgb(153,153,153)"/>
+<!-- Arc:   171  238 -->
+<g transform="translate(606.13 441.54)">
+<g transform="rotate(465.63)">
+<path d="M 0 0 L -0.42 1.04 L 2.08 0 L -0.42 -1.04 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="648.12" y1="291.48" x2="606.13" y2="441.54" style="stroke-width:0.69;stroke:rgb(153,153,153)"/>
+<!-- Arc:   172  109 -->
+<g transform="translate(884.71 480.88)">
+<g transform="rotate(182.91)">
+<path d="M 0 0 L -0.85 2.12 L 4.25 0 L -0.85 -2.12 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="932.12" y1="483.29" x2="884.71" y2="480.88" style="stroke-width:1.42;stroke:rgb(153,153,153)"/>
+<!-- Arc:   173  238 -->
+<g transform="translate(609.64 471.41)">
+<g transform="rotate(247.50)">
+<path d="M 0 0 L -1.45 3.62 L 7.24 0 L -1.45 -3.62 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="688.69" y1="662.25" x2="609.64" y2="471.41" style="stroke-width:2.41;stroke:rgb(153,153,153)"/>
+<!-- Arc:   174   14 -->
+<g transform="translate(788.06 203.68)">
+<g transform="rotate(507.38)">
+<path d="M 0 0 L -0.88 2.21 L 4.42 0 L -0.88 -2.21 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="831.70" y1="175.74" x2="788.06" y2="203.68" style="stroke-width:1.47;stroke:rgb(153,153,153)"/>
+<!-- Arc:   175  238 -->
+<g transform="translate(590.05 443.98)">
+<g transform="rotate(399.62)">
+<path d="M 0 0 L -0.99 2.47 L 4.94 0 L -0.99 -2.47 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="461.49" y1="337.55" x2="590.05" y2="443.98" style="stroke-width:1.65;stroke:rgb(153,153,153)"/>
+<!-- Arc:   176   32 -->
+<g transform="translate(846.05 307.25)">
+<g transform="rotate(532.65)">
+<path d="M 0 0 L -1.66 4.16 L 8.32 0 L -1.66 -4.16 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="893.57" y1="301.12" x2="846.05" y2="307.25" style="stroke-width:2.77;stroke:rgb(153,153,153)"/>
+<!-- Arc:   177  238 -->
+<g transform="translate(619.45 444.51)">
+<g transform="rotate(509.75)">
+<path d="M 0 0 L -1.68 4.19 L 8.38 0 L -1.68 -4.19 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="778.96" y1="351.49" x2="619.45" y2="444.51" style="stroke-width:2.79;stroke:rgb(153,153,153)"/>
+<!-- Arc:   179  238 -->
+<g transform="translate(580.04 452.70)">
+<g transform="rotate(364.42)">
+<path d="M 0 0 L -2.25 5.63 L 11.25 0 L -2.25 -5.63 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="282.98" y1="429.71" x2="580.04" y2="452.70" style="stroke-width:3.75;stroke:rgb(153,153,153)"/>
+<!-- Arc:   180  238 -->
+<g transform="translate(582.15 460.49)">
+<g transform="rotate(343.40)">
+<path d="M 0 0 L -2.00 4.99 L 9.99 0 L -2.00 -4.99 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="297.18" y1="545.45" x2="582.15" y2="460.49" style="stroke-width:3.33;stroke:rgb(153,153,153)"/>
+<!-- Arc:   181  238 -->
+<g transform="translate(588.05 468.70)">
+<g transform="rotate(315.34)">
+<path d="M 0 0 L -1.82 4.55 L 9.09 0 L -1.82 -4.55 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="475.69" y1="579.74" x2="588.05" y2="468.70" style="stroke-width:3.03;stroke:rgb(153,153,153)"/>
+<!-- Arc:   182  237 -->
+<g transform="translate(462.03 177.67)">
+<g transform="rotate(510.65)">
+<path d="M 0 0 L -1.36 3.39 L 6.78 0 L -1.36 -3.39 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="574.08" y1="114.66" x2="462.03" y2="177.67" style="stroke-width:2.26;stroke:rgb(153,153,153)"/>
+<!-- Arc:   183   76 -->
+<g transform="translate(470.68 723.84)">
+<g transform="rotate(289.93)">
+<path d="M 0 0 L -1.28 3.20 L 6.39 0 L -1.28 -3.20 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="435.12" y1="821.92" x2="470.68" y2="723.84" style="stroke-width:2.13;stroke:rgb(153,153,153)"/>
+<!-- Arc:   184   76 -->
+<g transform="translate(460.73 695.11)">
+<g transform="rotate(397.48)">
+<path d="M 0 0 L -1.76 4.41 L 8.82 0 L -1.76 -4.41 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="366.15" y1="622.60" x2="460.73" y2="695.11" style="stroke-width:2.94;stroke:rgb(153,153,153)"/>
+<!-- Arc:   185  238 -->
+<g transform="translate(620.69 469.03)">
+<g transform="rotate(218.74)">
+<path d="M 0 0 L -2.43 6.07 L 12.14 0 L -2.43 -6.07 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="842.86" y1="647.25" x2="620.69" y2="469.03" style="stroke-width:4.05;stroke:rgb(153,153,153)"/>
+<!-- Arc:   186   22 -->
+<g transform="translate(291.80 573.51)">
+<g transform="rotate(335.88)">
+<path d="M 0 0 L -0.48 1.21 L 2.41 0 L -0.48 -1.21 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="218.07" y1="606.53" x2="291.80" y2="573.51" style="stroke-width:0.80;stroke:rgb(153,153,153)"/>
+<!-- Arc:   189  238 -->
+<g transform="translate(600.04 467.02)">
+<g transform="rotate(280.62)">
+<path d="M 0 0 L -0.33 0.82 L 1.65 0 L -0.33 -0.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="573.06" y1="610.81" x2="600.04" y2="467.02" style="stroke-width:0.55;stroke:rgb(153,153,153)"/>
+<!-- Arc:   190  237 -->
+<g transform="translate(446.09 175.21)">
+<g transform="rotate(449.08)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="444.25" y1="61.08" x2="446.09" y2="175.21" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:   191   76 -->
+<g transform="translate(460.93 698.15)">
+<g transform="rotate(389.99)">
+<path d="M 0 0 L -1.39 3.48 L 6.97 0 L -1.39 -3.48 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="356.01" y1="637.60" x2="460.93" y2="698.15" style="stroke-width:2.32;stroke:rgb(153,153,153)"/>
+<!-- Arc:   194  244 -->
+<g transform="translate(880.08 454.77)">
+<g transform="rotate(537.25)">
+<path d="M 0 0 L -0.33 0.82 L 1.65 0 L -0.33 -0.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="933.13" y1="452.22" x2="880.08" y2="454.77" style="stroke-width:0.55;stroke:rgb(153,153,153)"/>
+<!-- Arc:   195  237 -->
+<g transform="translate(436.35 191.75)">
+<g transform="rotate(331.70)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="334.71" y1="246.47" x2="436.35" y2="191.75" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:   196   32 -->
+<g transform="translate(838.08 297.01)">
+<g transform="rotate(492.18)">
+<path d="M 0 0 L -1.17 2.92 L 5.84 0 L -1.17 -2.92 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="871.26" y1="260.40" x2="838.08" y2="297.01" style="stroke-width:1.95;stroke:rgb(153,153,153)"/>
+<!-- Arc:   197  238 -->
+<g transform="translate(620.43 460.83)">
+<g transform="rotate(199.66)">
+<path d="M 0 0 L -1.57 3.92 L 7.83 0 L -1.57 -3.92 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="803.30" y1="526.16" x2="620.43" y2="460.83" style="stroke-width:2.61;stroke:rgb(153,153,153)"/>
+<!-- Arc:   198   76 -->
+<g transform="translate(458.16 708.57)">
+<g transform="rotate(355.90)">
+<path d="M 0 0 L -1.47 3.67 L 7.35 0 L -1.47 -3.67 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="341.81" y1="716.90" x2="458.16" y2="708.57" style="stroke-width:2.45;stroke:rgb(153,153,153)"/>
+<!-- Arc:   200  238 -->
+<g transform="translate(602.94 441.47)">
+<g transform="rotate(452.32)">
+<path d="M 0 0 L -0.33 0.82 L 1.65 0 L -0.33 -0.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="609.58" y1="277.54" x2="602.94" y2="441.47" style="stroke-width:0.55;stroke:rgb(153,153,153)"/>
+<!-- Arc:   201  237 -->
+<g transform="translate(441.04 174.67)">
+<g transform="rotate(426.18)">
+<path d="M 0 0 L -0.33 0.82 L 1.65 0 L -0.33 -0.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="396.58" y1="73.94" x2="441.04" y2="174.67" style="stroke-width:0.55;stroke:rgb(153,153,153)"/>
+<!-- Arc:   202  238 -->
+<g transform="translate(621.56 443.39)">
+<g transform="rotate(510.17)">
+<path d="M 0 0 L -2.15 5.38 L 10.76 0 L -2.15 -5.38 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="744.48" y1="372.92" x2="621.56" y2="443.39" style="stroke-width:3.59;stroke:rgb(153,153,153)"/>
+<!-- Arc:   203  238 -->
+<g transform="translate(609.72 465.95)">
+<g transform="rotate(238.06)">
+<path d="M 0 0 L -0.48 1.21 L 2.41 0 L -0.48 -1.21 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="686.66" y1="589.38" x2="609.72" y2="465.95" style="stroke-width:0.80;stroke:rgb(153,153,153)"/>
+<!-- Arc:   204  238 -->
+<g transform="translate(584.24 446.24)">
+<g transform="rotate(384.02)">
+<path d="M 0 0 L -1.74 4.36 L 8.71 0 L -1.74 -4.36 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="388.47" y1="358.99" x2="584.24" y2="446.24" style="stroke-width:2.90;stroke:rgb(153,153,153)"/>
+<!-- Arc:   205  238 -->
+<g transform="translate(582.75 454.71)">
+<g transform="rotate(358.94)">
+<path d="M 0 0 L -1.70 4.24 L 8.48 0 L -1.70 -4.24 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="428.02" y1="457.57" x2="582.75" y2="454.71" style="stroke-width:2.83;stroke:rgb(153,153,153)"/>
+<!-- Arc:   206   74 -->
+<g transform="translate(852.12 199.69)">
+<g transform="rotate(537.03)">
+<path d="M 0 0 L -0.42 1.04 L 2.08 0 L -0.42 -1.04 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="900.67" y1="197.17" x2="852.12" y2="199.69" style="stroke-width:0.69;stroke:rgb(153,153,153)"/>
+<!-- Arc:   207  238 -->
+<g transform="translate(597.03 444.51)">
+<g transform="rotate(421.49)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="492.94" y1="252.90" x2="597.03" y2="444.51" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:   208  238 -->
+<g transform="translate(606.71 433.08)">
+<g transform="rotate(461.48)">
+<path d="M 0 0 L -2.09 5.22 L 10.44 0 L -2.09 -5.22 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="657.25" y1="184.32" x2="606.71" y2="433.08" style="stroke-width:3.48;stroke:rgb(153,153,153)"/>
+<!-- Arc:   209  238 -->
+<g transform="translate(611.34 447.43)">
+<g transform="rotate(501.89)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="767.80" y1="324.70" x2="611.34" y2="447.43" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:   210  237 -->
+<g transform="translate(429.73 178.35)">
+<g transform="rotate(386.20)">
+<path d="M 0 0 L -1.44 3.59 L 7.18 0 L -1.44 -3.59 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="328.62" y1="128.59" x2="429.73" y2="178.35" style="stroke-width:2.39;stroke:rgb(153,153,153)"/>
+<!-- Arc:   211  238 -->
+<g transform="translate(579.12 458.93)">
+<g transform="rotate(348.90)">
+<path d="M 0 0 L -2.51 6.28 L 12.55 0 L -2.51 -6.28 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="291.10" y1="515.44" x2="579.12" y2="458.93" style="stroke-width:4.18;stroke:rgb(153,153,153)"/>
+<!-- Arc:   212  112 -->
+<g transform="translate(878.80 597.78)">
+<g transform="rotate(208.49)">
+<path d="M 0 0 L -1.30 3.26 L 6.52 0 L -1.30 -3.26 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="944.29" y1="633.32" x2="878.80" y2="597.78" style="stroke-width:2.17;stroke:rgb(153,153,153)"/>
+<!-- Arc:   213  237 -->
+<g transform="translate(434.45 175.76)">
+<g transform="rotate(402.34)">
+<path d="M 0 0 L -0.94 2.35 L 4.70 0 L -0.94 -2.35 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="350.94" y1="99.66" x2="434.45" y2="175.76" style="stroke-width:1.57;stroke:rgb(153,153,153)"/>
+<!-- Arc:   214  238 -->
+<g transform="translate(594.91 444.67)">
+<g transform="rotate(412.00)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="458.45" y1="270.04" x2="594.91" y2="444.67" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:   215  238 -->
+<g transform="translate(590.73 450.75)">
+<g transform="rotate(377.43)">
+<path d="M 0 0 L -0.21 0.52 L 1.04 0 L -0.21 -0.52 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="380.35" y1="384.71" x2="590.73" y2="450.75" style="stroke-width:0.35;stroke:rgb(153,153,153)"/>
+<!-- Arc:   216  208 -->
+<g transform="translate(664.86 172.64)">
+<g transform="rotate(483.27)">
+<path d="M 0 0 L -0.54 1.34 L 2.69 0 L -0.54 -1.34 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="702.89" y1="114.66" x2="664.86" y2="172.64" style="stroke-width:0.90;stroke:rgb(153,153,153)"/>
+<!-- Arc:   217  238 -->
+<g transform="translate(581.72 464.91)">
+<g transform="rotate(333.08)">
+<path d="M 0 0 L -2.41 6.02 L 12.04 0 L -2.41 -6.02 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="444.25" y1="534.73" x2="581.72" y2="464.91" style="stroke-width:4.01;stroke:rgb(153,153,153)"/>
+<!-- Arc:   218  238 -->
+<g transform="translate(578.75 453.96)">
+<g transform="rotate(360.96)">
+<path d="M 0 0 L -2.50 6.24 L 12.48 0 L -2.50 -6.24 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="281.97" y1="449.00" x2="578.75" y2="453.96" style="stroke-width:4.16;stroke:rgb(153,153,153)"/>
+<!-- Arc:   219  238 -->
+<g transform="translate(616.05 462.87)">
+<g transform="rotate(212.29)">
+<path d="M 0 0 L -0.95 2.38 L 4.77 0 L -0.95 -2.38 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="789.10" y1="572.24" x2="616.05" y2="462.87" style="stroke-width:1.59;stroke:rgb(153,153,153)"/>
+<!-- Arc:   220  238 -->
+<g transform="translate(623.60 445.04)">
+<g transform="rotate(516.35)">
+<path d="M 0 0 L -2.37 5.92 L 11.83 0 L -2.37 -5.92 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="751.58" y1="388.99" x2="623.60" y2="445.04" style="stroke-width:3.94;stroke:rgb(153,153,153)"/>
+<!-- Arc:   221  185 -->
+<g transform="translate(857.17 658.76)">
+<g transform="rotate(218.60)">
+<path d="M 0 0 L -1.42 3.56 L 7.12 0 L -1.42 -3.56 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="917.92" y1="707.26" x2="857.17" y2="658.76" style="stroke-width:2.37;stroke:rgb(153,153,153)"/>
+<!-- Arc:   222  238 -->
+<g transform="translate(603.81 436.13)">
+<g transform="rotate(454.38)">
+<path d="M 0 0 L -1.40 3.51 L 7.02 0 L -1.40 -3.51 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="619.72" y1="228.25" x2="603.81" y2="436.13" style="stroke-width:2.34;stroke:rgb(153,153,153)"/>
+<!-- Arc:   223  238 -->
+<g transform="translate(622.50 447.36)">
+<g transform="rotate(520.48)">
+<path d="M 0 0 L -1.99 4.98 L 9.96 0 L -1.99 -4.98 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="793.16" y1="386.85" x2="622.50" y2="447.36" style="stroke-width:3.32;stroke:rgb(153,153,153)"/>
+<!-- Arc:   224   14 -->
+<g transform="translate(781.03 202.74)">
+<g transform="rotate(483.01)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="810.40" y1="157.53" x2="781.03" y2="202.74" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:   225   76 -->
+<g transform="translate(465.91 717.64)">
+<g transform="rotate(316.37)">
+<path d="M 0 0 L -0.75 1.86 L 3.73 0 L -0.75 -1.86 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="382.38" y1="797.27" x2="465.91" y2="717.64" style="stroke-width:1.24;stroke:rgb(153,153,153)"/>
+<!-- Arc:   228  237 -->
+<g transform="translate(448.54 170.12)">
+<g transform="rotate(457.68)">
+<path d="M 0 0 L -1.05 2.62 L 5.24 0 L -1.05 -2.62 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="463.52" y1="58.94" x2="448.54" y2="170.12" style="stroke-width:1.75;stroke:rgb(153,153,153)"/>
+<!-- Arc:   229   76 -->
+<g transform="translate(459.93 719.46)">
+<g transform="rotate(323.93)">
+<path d="M 0 0 L -1.90 4.75 L 9.49 0 L -1.90 -4.75 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="372.24" y1="783.34" x2="459.93" y2="719.46" style="stroke-width:3.16;stroke:rgb(153,153,153)"/>
+<!-- Arc:   230  238 -->
+<g transform="translate(616.50 471.52)">
+<g transform="rotate(230.56)">
+<path d="M 0 0 L -2.18 5.45 L 10.91 0 L -2.18 -5.45 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="790.12" y1="682.61" x2="616.50" y2="471.52" style="stroke-width:3.64;stroke:rgb(153,153,153)"/>
+<!-- Arc:   231  230 -->
+<g transform="translate(800.16 690.71)">
+<g transform="rotate(218.49)">
+<path d="M 0 0 L -0.33 0.82 L 1.65 0 L -0.33 -0.82 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="843.88" y1="725.47" x2="800.16" y2="690.71" style="stroke-width:0.55;stroke:rgb(153,153,153)"/>
+<!-- Arc:   234  238 -->
+<g transform="translate(600.94 435.97)">
+<g transform="rotate(445.46)">
+<path d="M 0 0 L -1.44 3.60 L 7.21 0 L -1.44 -3.60 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="588.28" y1="276.47" x2="600.94" y2="435.97" style="stroke-width:2.40;stroke:rgb(153,153,153)"/>
+<!-- Arc:   235  238 -->
+<g transform="translate(583.77 462.64)">
+<g transform="rotate(336.21)">
+<path d="M 0 0 L -1.84 4.60 L 9.21 0 L -1.84 -4.60 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="393.54" y1="546.52" x2="583.77" y2="462.64" style="stroke-width:3.07;stroke:rgb(153,153,153)"/>
+<!-- Arc:   236  238 -->
+<g transform="translate(620.34 449.25)">
+<g transform="rotate(524.10)">
+<path d="M 0 0 L -1.46 3.66 L 7.32 0 L -1.46 -3.66 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="756.65" y1="410.42" x2="620.34" y2="449.25" style="stroke-width:2.44;stroke:rgb(153,153,153)"/>
+<!-- Edge:   237  238 -->
+<line x1="446.28" y1="186.46" x2="602.48" y2="454.36" style="stroke-width:4.86;stroke:rgb(0,112,145)"/>
+<!-- Arc:   240   32 -->
+<g transform="translate(844.74 313.53)">
+<g transform="rotate(191.92)">
+<path d="M 0 0 L -1.45 3.63 L 7.25 0 L -1.45 -3.63 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="892.56" y1="323.62" x2="844.74" y2="313.53" style="stroke-width:2.42;stroke:rgb(153,153,153)"/>
+<!-- Arc:   241  185 -->
+<g transform="translate(859.81 651.54)">
+<g transform="rotate(194.52)">
+<path d="M 0 0 L -1.25 3.12 L 6.24 0 L -1.25 -3.12 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="930.09" y1="669.75" x2="859.81" y2="651.54" style="stroke-width:2.08;stroke:rgb(153,153,153)"/>
+<!-- Arc:   242   76 -->
+<g transform="translate(491.83 711.63)">
+<g transform="rotate(196.30)">
+<path d="M 0 0 L -0.90 2.25 L 4.49 0 L -0.90 -2.25 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="601.46" y1="743.69" x2="491.83" y2="711.63" style="stroke-width:1.50;stroke:rgb(153,153,153)"/>
+<!-- Arc:   243  238 -->
+<g transform="translate(588.56 440.57)">
+<g transform="rotate(404.47)">
+<path d="M 0 0 L -1.67 4.17 L 8.34 0 L -1.67 -4.17 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="471.64" y1="325.77" x2="588.56" y2="440.57" style="stroke-width:2.78;stroke:rgb(153,153,153)"/>
+<!-- Arc:   244  238 -->
+<g transform="translate(622.13 454.40)">
+<g transform="rotate(180.24)">
+<path d="M 0 0 L -1.68 4.20 L 8.40 0 L -1.68 -4.20 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="867.20" y1="455.43" x2="622.13" y2="454.40" style="stroke-width:2.80;stroke:rgb(153,153,153)"/>
+<!-- Arc:   245  238 -->
+<g transform="translate(608.99 471.21)">
+<g transform="rotate(248.68)">
+<path d="M 0 0 L -1.36 3.41 L 6.81 0 L -1.36 -3.41 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="712.02" y1="735.12" x2="608.99" y2="471.21" style="stroke-width:2.27;stroke:rgb(153,153,153)"/>
+<!-- Arc:   246  238 -->
+<g transform="translate(593.78 465.55)">
+<g transform="rotate(307.53)">
+<path d="M 0 0 L -0.58 1.46 L 2.92 0 L -0.58 -1.46 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="496.99" y1="591.52" x2="593.78" y2="465.55" style="stroke-width:0.97;stroke:rgb(153,153,153)"/>
+<!-- Arc:   247  237 -->
+<g transform="translate(456.63 182.06)">
+<g transform="rotate(516.85)">
+<path d="M 0 0 L 0.00 0.00 L 0.00 0 L 0.00 0.00 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="579.15" y1="129.66" x2="456.63" y2="182.06" style="stroke-width:0.00;stroke:rgb(153,153,153)"/>
+<!-- Arc:   249  120 -->
+<g transform="translate(886.43 505.35)">
+<g transform="rotate(182.52)">
+<path d="M 0 0 L -0.99 2.47 L 4.94 0 L -0.99 -2.47 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="945.30" y1="507.94" x2="886.43" y2="505.35" style="stroke-width:1.65;stroke:rgb(153,153,153)"/>
+<!-- Arc:   250  238 -->
+<g transform="translate(597.29 438.52)">
+<g transform="rotate(431.67)">
+<path d="M 0 0 L -1.08 2.71 L 5.42 0 L -1.08 -2.71 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="530.46" y1="236.82" x2="597.29" y2="438.52" style="stroke-width:1.81;stroke:rgb(153,153,153)"/>
+<!-- Arc:   251  237 -->
+<g transform="translate(441.77 169.86)">
+<g transform="rotate(434.51)">
+<path d="M 0 0 L -1.19 2.98 L 5.96 0 L -1.19 -2.98 z" style="fill:rgb(153,153,153)"/>
+</g></g>
+<line x1="412.81" y1="65.37" x2="441.77" y2="169.86" style="stroke-width:1.99;stroke:rgb(153,153,153)"/>
+
+<!-- Vertex:     1 -->
+<ellipse cx="787.08" cy="368.63" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="787.08" y="373.63" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AF</text>
+<!-- Vertex:     2 -->
+<ellipse cx="62.88" cy="664.39" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="62.88" y="669.39" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AX</text>
+<!-- Vertex:     3 -->
+<ellipse cx="952.40" cy="576.52" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="952.40" y="581.52" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AL</text>
+<!-- Vertex:     4 -->
+<ellipse cx="345.87" cy="735.12" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="345.87" y="740.12" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">DZ</text>
+<!-- Vertex:     5 -->
+<ellipse cx="707.96" cy="328.98" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="707.96" y="333.98" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AS</text>
+<!-- Vertex:     6 -->
+<ellipse cx="187.64" cy="521.87" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="187.64" y="526.87" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AD</text>
+<!-- Vertex:     7 -->
+<ellipse cx="827.65" cy="245.40" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="827.65" y="250.40" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AO</text>
+<!-- Vertex:     8 -->
+<ellipse cx="738.39" cy="787.63" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="738.39" y="792.63" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AI</text>
+<!-- Vertex:     9 -->
+<ellipse cx="1043.69" cy="780.13" rx="10.00" ry="10.00" style="fill:rgb(204,255,178);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1043.69" y="785.13" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AQ</text>
+<!-- Vertex:    10 -->
+<ellipse cx="264.73" cy="264.69" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="264.73" y="269.69" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AG</text>
+<!-- Vertex:    11 -->
+<ellipse cx="484.82" cy="312.91" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="484.82" y="317.91" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AR</text>
+<!-- Vertex:    12 -->
+<ellipse cx="377.31" cy="414.71" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="377.31" y="419.71" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AM</text>
+<!-- Vertex:    13 -->
+<ellipse cx="886.47" cy="278.62" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="886.47" y="283.62" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AW</text>
+<!-- Vertex:    14 -->
+<ellipse cx="774.90" cy="212.18" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="774.90" y="217.18" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AU</text>
+<!-- Vertex:    15 -->
+<ellipse cx="184.60" cy="351.49" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="184.60" y="356.49" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AT</text>
+<!-- Vertex:    16 -->
+<ellipse cx="831.70" cy="741.55" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="831.70" y="746.55" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AZ</text>
+<!-- Vertex:    17 -->
+<ellipse cx="638.99" cy="604.38" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="638.99" y="609.38" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BS</text>
+<!-- Vertex:    18 -->
+<ellipse cx="513.22" cy="65.37" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="513.22" y="70.37" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BH</text>
+<!-- Vertex:    19 -->
+<ellipse cx="805.33" cy="483.29" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="805.33" y="488.29" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BD</text>
+<!-- Vertex:    20 -->
+<ellipse cx="479.75" cy="61.08" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="479.75" y="66.08" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BB</text>
+<!-- Vertex:    21 -->
+<ellipse cx="903.72" cy="720.12" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="903.72" y="725.12" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BY</text>
+<!-- Vertex:    22 -->
+<ellipse cx="304.28" cy="567.95" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="304.28" y="572.95" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BE</text>
+<!-- Vertex:    23 -->
+<ellipse cx="952.40" cy="596.88" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="952.40" y="601.88" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BZ</text>
+<!-- Vertex:    24 -->
+<ellipse cx="398.61" cy="806.92" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="398.61" y="811.92" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BJ</text>
+<!-- Vertex:    25 -->
+<ellipse cx="717.09" cy="651.53" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="717.09" y="656.53" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BM</text>
+<!-- Vertex:    26 -->
+<ellipse cx="943.27" cy="552.95" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="943.27" y="557.95" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BT</text>
+<!-- Vertex:    27 -->
+<ellipse cx="430.05" cy="300.05" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="430.05" y="305.05" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BO</text>
+<!-- Vertex:    28 -->
+<ellipse cx="115.63" cy="833.71" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="115.63" y="838.71" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BQ</text>
+<!-- Vertex:    29 -->
+<ellipse cx="191.70" cy="499.37" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="191.70" y="504.37" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BA</text>
+<!-- Vertex:    30 -->
+<ellipse cx="511.19" cy="244.33" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="511.19" y="249.33" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BW</text>
+<!-- Vertex:    31 -->
+<ellipse cx="987.90" cy="830.49" rx="10.00" ry="10.00" style="fill:rgb(204,255,178);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="987.90" y="835.49" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BV</text>
+<!-- Vertex:    32 -->
+<ellipse cx="826.63" cy="309.69" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="826.63" y="314.69" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BR</text>
+<!-- Vertex:    33 -->
+<ellipse cx="115.63" cy="710.47" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="115.63" y="715.47" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IO</text>
+<!-- Vertex:    34 -->
+<ellipse cx="496.99" cy="63.22" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="496.99" y="68.22" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BN</text>
+<!-- Vertex:    35 -->
+<ellipse cx="183.58" cy="406.14" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="183.58" y="411.14" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BG</text>
+<!-- Vertex:    36 -->
+<ellipse cx="471.64" cy="826.21" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="471.64" y="831.21" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BF</text>
+<!-- Vertex:    37 -->
+<ellipse cx="453.38" cy="826.21" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="453.38" y="831.21" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BI</text>
+<!-- Vertex:    38 -->
+<ellipse cx="748.53" cy="539.02" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="748.53" y="544.02" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KH</text>
+<!-- Vertex:    39 -->
+<ellipse cx="597.41" cy="228.25" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="597.41" y="233.25" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CM</text>
+<!-- Vertex:    40 -->
+<ellipse cx="769.83" cy="611.88" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="769.83" y="616.88" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CA</text>
+<!-- Vertex:    41 -->
+<ellipse cx="209.95" cy="584.02" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="209.95" y="589.02" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CV</text>
+<!-- Vertex:    42 -->
+<ellipse cx="594.36" cy="611.88" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="594.36" y="616.88" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KY</text>
+<!-- Vertex:    43 -->
+<ellipse cx="553.79" cy="797.27" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="553.79" y="802.27" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CF</text>
+<!-- Vertex:    44 -->
+<ellipse cx="487.87" cy="824.06" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="487.87" y="829.06" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TD</text>
+<!-- Vertex:    45 -->
+<ellipse cx="417.88" cy="318.27" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="417.88" y="323.27" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CL</text>
+<!-- Vertex:    46 -->
+<ellipse cx="865.17" cy="410.42" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="865.17" y="415.42" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CN</text>
+<!-- Vertex:    47 -->
+<ellipse cx="63.90" cy="708.33" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="63.90" y="713.33" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CX</text>
+<!-- Vertex:    48 -->
+<ellipse cx="173.44" cy="709.40" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="173.44" y="714.40" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CC</text>
+<!-- Vertex:    49 -->
+<ellipse cx="444.25" cy="283.97" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="444.25" y="288.97" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CO</text>
+<!-- Vertex:    50 -->
+<ellipse cx="294.14" cy="809.06" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="294.14" y="814.06" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KM</text>
+<!-- Vertex:    51 -->
+<ellipse cx="1050.79" cy="484.36" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1050.79" y="489.36" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CG</text>
+<!-- Vertex:    52 -->
+<ellipse cx="1049.77" cy="558.30" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1049.77" y="563.30" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CD</text>
+<!-- Vertex:    53 -->
+<ellipse cx="647.11" cy="819.78" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="647.11" y="824.78" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CK</text>
+<!-- Vertex:    54 -->
+<ellipse cx="616.68" cy="608.67" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="616.68" y="613.67" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CR</text>
+<!-- Vertex:    55 -->
+<ellipse cx="339.78" cy="697.61" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="339.78" y="702.61" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CI</text>
+<!-- Vertex:    56 -->
+<ellipse cx="286.02" cy="488.65" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="286.02" y="493.65" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">HR</text>
+<!-- Vertex:    57 -->
+<ellipse cx="188.65" cy="539.02" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="188.65" y="544.02" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CU</text>
+<!-- Vertex:    58 -->
+<ellipse cx="191.70" cy="474.72" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="191.70" y="479.72" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CW</text>
+<!-- Vertex:    59 -->
+<ellipse cx="398.61" cy="341.84" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="398.61" y="346.84" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CY</text>
+<!-- Vertex:    60 -->
+<ellipse cx="433.09" cy="384.71" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="433.09" y="389.71" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CZ</text>
+<!-- Vertex:    61 -->
+<ellipse cx="301.24" cy="343.98" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="301.24" y="348.98" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">DK</text>
+<!-- Vertex:    62 -->
+<ellipse cx="540.61" cy="807.99" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="540.61" y="812.99" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">DJ</text>
+<!-- Vertex:    63 -->
+<ellipse cx="666.38" cy="599.03" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="666.38" y="604.03" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">DM</text>
+<!-- Vertex:    64 -->
+<ellipse cx="754.62" cy="625.82" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="754.62" y="630.82" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">DO</text>
+<!-- Vertex:    65 -->
+<ellipse cx="500.04" cy="302.19" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="500.04" y="307.19" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">EC</text>
+<!-- Vertex:    66 -->
+<ellipse cx="571.04" cy="226.11" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="571.04" y="231.11" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">EG</text>
+<!-- Vertex:    67 -->
+<ellipse cx="547.71" cy="608.67" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="547.71" y="613.67" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SV</text>
+<!-- Vertex:    68 -->
+<ellipse cx="550.75" cy="232.54" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="550.75" y="237.54" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GQ</text>
+<!-- Vertex:    69 -->
+<ellipse cx="570.02" cy="274.33" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="570.02" y="279.33" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ER</text>
+<!-- Vertex:    70 -->
+<ellipse cx="179.53" cy="387.92" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="179.53" y="392.92" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">EE</text>
+<!-- Vertex:    71 -->
+<ellipse cx="944.29" cy="527.23" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="944.29" y="532.23" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ET</text>
+<!-- Vertex:    72 -->
+<ellipse cx="583.21" cy="147.88" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="583.21" y="152.88" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">FK</text>
+<!-- Vertex:    73 -->
+<ellipse cx="201.84" cy="293.62" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="201.84" y="298.62" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">FO</text>
+<!-- Vertex:    74 -->
+<ellipse cx="838.80" cy="200.39" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="838.80" y="205.39" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">FJ</text>
+<!-- Vertex:    75 -->
+<ellipse cx="424.98" cy="429.71" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="424.98" y="434.71" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">FI</text>
+<!-- Vertex:    76 -->
+<ellipse cx="476.71" cy="707.26" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="476.71" y="712.26" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">FR</text>
+<!-- Vertex:    77 -->
+<ellipse cx="604.51" cy="724.40" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="604.51" y="729.40" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GF</text>
+<!-- Vertex:    78 -->
+<ellipse cx="584.22" cy="776.91" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="584.22" y="781.91" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PF</text>
+<!-- Vertex:    79 -->
+<ellipse cx="985.87" cy="781.20" rx="10.00" ry="10.00" style="fill:rgb(204,255,178);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="985.87" y="786.20" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TF</text>
+<!-- Vertex:    80 -->
+<ellipse cx="567.99" cy="788.70" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="567.99" y="793.70" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GA</text>
+<!-- Vertex:    81 -->
+<ellipse cx="427.01" cy="61.08" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="427.01" y="66.08" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GM</text>
+<!-- Vertex:    82 -->
+<ellipse cx="437.15" cy="371.85" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="437.15" y="376.85" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GE</text>
+<!-- Vertex:    83 -->
+<ellipse cx="294.14" cy="383.63" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="294.14" y="388.63" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">DE</text>
+<!-- Vertex:    84 -->
+<ellipse cx="626.82" cy="278.62" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="626.82" y="283.62" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GH</text>
+<!-- Vertex:    85 -->
+<ellipse cx="320.51" cy="217.54" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="320.51" y="222.54" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GI</text>
+<!-- Vertex:    86 -->
+<ellipse cx="446.28" cy="357.92" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="446.28" y="362.92" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GR</text>
+<!-- Vertex:    87 -->
+<ellipse cx="192.71" cy="313.98" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="192.71" y="318.98" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GL</text>
+<!-- Vertex:    88 -->
+<ellipse cx="516.26" cy="600.10" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="516.26" y="605.10" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GD</text>
+<!-- Vertex:    89 -->
+<ellipse cx="346.88" cy="655.82" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="346.88" y="660.82" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GP</text>
+<!-- Vertex:    90 -->
+<ellipse cx="675.51" cy="251.83" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="675.51" y="256.83" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GU</text>
+<!-- Vertex:    91 -->
+<ellipse cx="454.39" cy="550.80" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="454.39" y="555.80" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GT</text>
+<!-- Vertex:    92 -->
+<ellipse cx="318.48" cy="163.96" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="318.48" y="168.96" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GG</text>
+<!-- Vertex:    93 -->
+<ellipse cx="875.32" cy="151.10" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="875.32" y="156.10" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GN</text>
+<!-- Vertex:    94 -->
+<ellipse cx="190.68" cy="333.27" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="190.68" y="338.27" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GW</text>
+<!-- Vertex:    95 -->
+<ellipse cx="338.77" cy="280.76" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="338.77" y="285.76" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GY</text>
+<!-- Vertex:    96 -->
+<ellipse cx="465.55" cy="567.95" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="465.55" y="572.95" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">HT</text>
+<!-- Vertex:    97 -->
+<ellipse cx="1047.74" cy="830.49" rx="10.00" ry="10.00" style="fill:rgb(204,255,178);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1047.74" y="835.49" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">HM</text>
+<!-- Vertex:    98 -->
+<ellipse cx="189.67" cy="426.50" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="189.67" y="431.50" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">VA</text>
+<!-- Vertex:    99 -->
+<ellipse cx="778.96" cy="773.70" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="778.96" y="778.70" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">HN</text>
+<!-- Vertex:   100 -->
+<ellipse cx="929.07" cy="416.85" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="929.07" y="421.85" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">HK</text>
+<!-- Vertex:   101 -->
+<ellipse cx="431.07" cy="476.86" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="431.07" y="481.86" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">HU</text>
+<!-- Vertex:   102 -->
+<ellipse cx="375.28" cy="442.57" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="375.28" y="447.57" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IS</text>
+<!-- Vertex:   103 -->
+<ellipse cx="879.37" cy="537.94" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="879.37" y="542.94" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IN</text>
+<!-- Vertex:   104 -->
+<ellipse cx="949.36" cy="616.17" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="949.36" y="621.17" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ID</text>
+<!-- Vertex:   105 -->
+<ellipse cx="806.35" cy="462.93" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="806.35" y="467.93" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IR</text>
+<!-- Vertex:   106 -->
+<ellipse cx="804.32" cy="438.29" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="804.32" y="443.29" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IQ</text>
+<!-- Vertex:   107 -->
+<ellipse cx="321.52" cy="145.74" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="321.52" y="150.74" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IE</text>
+<!-- Vertex:   108 -->
+<ellipse cx="325.58" cy="231.47" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="325.58" y="236.47" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IM</text>
+<!-- Vertex:   109 -->
+<ellipse cx="869.23" cy="480.08" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="869.23" y="485.08" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IL</text>
+<!-- Vertex:   110 -->
+<ellipse cx="433.09" cy="496.15" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="433.09" y="501.15" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">IT</text>
+<!-- Vertex:   111 -->
+<ellipse cx="733.32" cy="642.96" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="733.32" y="647.96" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">JM</text>
+<!-- Vertex:   112 -->
+<ellipse cx="863.15" cy="589.38" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="863.15" y="594.38" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">JP</text>
+<!-- Vertex:   113 -->
+<ellipse cx="318.48" cy="200.39" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="318.48" y="205.39" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">JE</text>
+<!-- Vertex:   114 -->
+<ellipse cx="758.68" cy="436.14" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="758.68" y="441.14" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">JO</text>
+<!-- Vertex:   115 -->
+<ellipse cx="886.47" cy="732.98" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="886.47" y="737.98" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KZ</text>
+<!-- Vertex:   116 -->
+<ellipse cx="540.61" cy="283.97" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="540.61" y="288.97" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KE</text>
+<!-- Vertex:   117 -->
+<ellipse cx="889.52" cy="90.01" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="889.52" y="95.01" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KI</text>
+<!-- Vertex:   118 -->
+<ellipse cx="1049.77" cy="395.42" rx="10.00" ry="10.00" style="fill:rgb(0,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1049.77" y="400.42" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">XK</text>
+<!-- Vertex:   119 -->
+<ellipse cx="935.16" cy="646.18" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="935.16" y="651.18" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KP</text>
+<!-- Vertex:   120 -->
+<ellipse cx="870.25" cy="504.72" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="870.25" y="509.72" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KR</text>
+<!-- Vertex:   121 -->
+<ellipse cx="798.23" cy="409.35" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="798.23" y="414.35" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KW</text>
+<!-- Vertex:   122 -->
+<ellipse cx="927.05" cy="689.04" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="927.05" y="694.04" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KG</text>
+<!-- Vertex:   123 -->
+<ellipse cx="566.98" cy="100.73" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="566.98" y="105.73" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LA</text>
+<!-- Vertex:   124 -->
+<ellipse cx="388.47" cy="526.16" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="388.47" y="531.16" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LV</text>
+<!-- Vertex:   125 -->
+<ellipse cx="803.30" cy="503.65" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="803.30" y="508.65" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LB</text>
+<!-- Vertex:   126 -->
+<ellipse cx="656.23" cy="98.59" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="656.23" y="103.59" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LS</text>
+<!-- Vertex:   127 -->
+<ellipse cx="524.38" cy="290.40" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="524.38" y="295.40" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LR</text>
+<!-- Vertex:   128 -->
+<ellipse cx="340.80" cy="114.66" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="340.80" y="119.66" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LY</text>
+<!-- Vertex:   129 -->
+<ellipse cx="190.68" cy="447.93" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="190.68" y="452.93" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LI</text>
+<!-- Vertex:   130 -->
+<ellipse cx="428.02" cy="406.14" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="428.02" y="411.14" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LT</text>
+<!-- Vertex:   131 -->
+<ellipse cx="379.34" cy="609.74" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="379.34" y="614.74" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LU</text>
+<!-- Vertex:   132 -->
+<ellipse cx="928.06" cy="387.92" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="928.06" y="392.92" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MO</text>
+<!-- Vertex:   133 -->
+<ellipse cx="776.93" cy="145.74" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="776.93" y="150.74" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MK</text>
+<!-- Vertex:   134 -->
+<ellipse cx="523.36" cy="813.35" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="523.36" y="818.35" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MG</text>
+<!-- Vertex:   135 -->
+<ellipse cx="365.14" cy="91.09" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="365.14" y="96.09" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MW</text>
+<!-- Vertex:   136 -->
+<ellipse cx="540.61" cy="81.44" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="540.61" y="86.44" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MY</text>
+<!-- Vertex:   137 -->
+<ellipse cx="528.44" cy="72.87" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="528.44" y="77.87" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MV</text>
+<!-- Vertex:   138 -->
+<ellipse cx="504.09" cy="818.70" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="504.09" y="823.70" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ML</text>
+<!-- Vertex:   139 -->
+<ellipse cx="315.44" cy="182.17" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="315.44" y="187.17" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MT</text>
+<!-- Vertex:   140 -->
+<ellipse cx="746.50" cy="297.91" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="746.50" y="302.91" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MH</text>
+<!-- Vertex:   141 -->
+<ellipse cx="340.80" cy="675.11" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="340.80" y="680.11" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MQ</text>
+<!-- Vertex:   142 -->
+<ellipse cx="416.87" cy="815.49" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="416.87" y="820.49" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MR</text>
+<!-- Vertex:   143 -->
+<ellipse cx="381.37" cy="79.30" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="381.37" y="84.30" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MU</text>
+<!-- Vertex:   144 -->
+<ellipse cx="63.90" cy="747.98" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="63.90" y="752.98" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">YT</text>
+<!-- Vertex:   145 -->
+<ellipse cx="742.45" cy="720.12" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="742.45" y="725.12" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MX</text>
+<!-- Vertex:   146 -->
+<ellipse cx="726.22" cy="342.91" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="726.22" y="347.91" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">FM</text>
+<!-- Vertex:   147 -->
+<ellipse cx="178.51" cy="369.70" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="178.51" y="374.70" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MD</text>
+<!-- Vertex:   148 -->
+<ellipse cx="395.57" cy="602.24" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="395.57" y="607.24" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MC</text>
+<!-- Vertex:   149 -->
+<ellipse cx="912.85" cy="365.42" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="912.85" y="370.42" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MN</text>
+<!-- Vertex:   150 -->
+<ellipse cx="1049.77" cy="260.40" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1049.77" y="265.40" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ME</text>
+<!-- Vertex:   151 -->
+<ellipse cx="198.80" cy="560.45" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="198.80" y="565.45" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MS</text>
+<!-- Vertex:   152 -->
+<ellipse cx="356.01" cy="771.55" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="356.01" y="776.55" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MA</text>
+<!-- Vertex:   153 -->
+<ellipse cx="851.99" cy="248.61" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="851.99" y="253.61" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MZ</text>
+<!-- Vertex:   154 -->
+<ellipse cx="795.19" cy="544.37" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="795.19" y="549.37" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MM</text>
+<!-- Vertex:   155 -->
+<ellipse cx="679.56" cy="101.80" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="679.56" y="106.80" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NA</text>
+<!-- Vertex:   156 -->
+<ellipse cx="1047.74" cy="87.87" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1047.74" y="92.87" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NR</text>
+<!-- Vertex:   157 -->
+<ellipse cx="753.60" cy="516.51" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="753.60" y="521.51" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NP</text>
+<!-- Vertex:   158 -->
+<ellipse cx="284.00" cy="469.36" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="284.00" y="474.36" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NL</text>
+<!-- Vertex:   159 -->
+<ellipse cx="116.64" cy="790.84" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="116.64" y="795.84" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AN</text>
+<!-- Vertex:   160 -->
+<ellipse cx="594.36" cy="761.91" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="594.36" y="766.91" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NC</text>
+<!-- Vertex:   161 -->
+<ellipse cx="679.56" cy="303.26" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="679.56" y="308.26" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NZ</text>
+<!-- Vertex:   162 -->
+<ellipse cx="717.09" cy="576.52" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="717.09" y="581.52" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NI</text>
+<!-- Vertex:   163 -->
+<ellipse cx="351.95" cy="752.26" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="351.95" y="757.26" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NE</text>
+<!-- Vertex:   164 -->
+<ellipse cx="553.79" cy="277.54" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="553.79" y="282.54" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NG</text>
+<!-- Vertex:   165 -->
+<ellipse cx="997.03" cy="87.87" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="997.03" y="92.87" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NU</text>
+<!-- Vertex:   166 -->
+<ellipse cx="888.50" cy="40.72" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="888.50" y="45.72" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NF</text>
+<!-- Vertex:   167 -->
+<ellipse cx="711.01" cy="273.26" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="711.01" y="278.26" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MP</text>
+<!-- Vertex:   168 -->
+<ellipse cx="378.32" cy="472.58" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="378.32" y="477.58" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">NO</text>
+<!-- Vertex:   169 -->
+<ellipse cx="555.82" cy="87.87" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="555.82" y="92.87" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">OM</text>
+<!-- Vertex:   170 -->
+<ellipse cx="740.42" cy="554.02" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="740.42" y="559.02" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PK</text>
+<!-- Vertex:   171 -->
+<ellipse cx="648.12" cy="291.48" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="648.12" y="296.48" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PW</text>
+<!-- Vertex:   172 -->
+<ellipse cx="932.12" cy="483.29" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="932.12" y="488.29" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PS</text>
+<!-- Vertex:   173 -->
+<ellipse cx="688.69" cy="662.25" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="688.69" y="667.25" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PA</text>
+<!-- Vertex:   174 -->
+<ellipse cx="831.70" cy="175.74" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="831.70" y="180.74" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PG</text>
+<!-- Vertex:   175 -->
+<ellipse cx="461.49" cy="337.55" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="461.49" y="342.55" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PY</text>
+<!-- Vertex:   176 -->
+<ellipse cx="893.57" cy="301.12" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="893.57" y="306.12" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PE</text>
+<!-- Vertex:   177 -->
+<ellipse cx="778.96" cy="351.49" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="778.96" y="356.49" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PH</text>
+<!-- Vertex:   178 -->
+<ellipse cx="1047.74" cy="40.72" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1047.74" y="45.72" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PN</text>
+<!-- Vertex:   179 -->
+<ellipse cx="282.98" cy="429.71" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="282.98" y="434.71" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PL</text>
+<!-- Vertex:   180 -->
+<ellipse cx="297.18" cy="545.45" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="297.18" y="550.45" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PT</text>
+<!-- Vertex:   181 -->
+<ellipse cx="475.69" cy="579.74" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="475.69" y="584.74" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PR</text>
+<!-- Vertex:   182 -->
+<ellipse cx="574.08" cy="114.66" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="574.08" y="119.66" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">QA</text>
+<!-- Vertex:   183 -->
+<ellipse cx="435.12" cy="821.92" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="435.12" y="826.92" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">RE</text>
+<!-- Vertex:   184 -->
+<ellipse cx="366.15" cy="622.60" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="366.15" y="627.60" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">RO</text>
+<!-- Vertex:   185 -->
+<ellipse cx="842.86" cy="647.25" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="842.86" y="652.25" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">RU</text>
+<!-- Vertex:   186 -->
+<ellipse cx="218.07" cy="606.53" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="218.07" y="611.53" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">RW</text>
+<!-- Vertex:   187 -->
+<ellipse cx="173.44" cy="795.13" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="173.44" y="800.13" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">BL</text>
+<!-- Vertex:   188 -->
+<ellipse cx="174.45" cy="752.26" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="174.45" y="757.26" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SH</text>
+<!-- Vertex:   189 -->
+<ellipse cx="573.06" cy="610.81" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="573.06" y="615.81" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">KN</text>
+<!-- Vertex:   190 -->
+<ellipse cx="444.25" cy="61.08" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="444.25" y="66.08" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LC</text>
+<!-- Vertex:   191 -->
+<ellipse cx="356.01" cy="637.60" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="356.01" y="642.60" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">MF</text>
+<!-- Vertex:   192 -->
+<ellipse cx="171.41" cy="837.99" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="171.41" y="842.99" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">PM</text>
+<!-- Vertex:   193 -->
+<ellipse cx="63.90" cy="830.49" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="63.90" y="835.49" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">VC</text>
+<!-- Vertex:   194 -->
+<ellipse cx="933.13" cy="452.22" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="933.13" y="457.22" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">WS</text>
+<!-- Vertex:   195 -->
+<ellipse cx="334.71" cy="246.47" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="334.71" y="251.47" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SM</text>
+<!-- Vertex:   196 -->
+<ellipse cx="871.26" cy="260.40" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="871.26" y="265.40" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ST</text>
+<!-- Vertex:   197 -->
+<ellipse cx="803.30" cy="526.16" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="803.30" y="531.16" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SA</text>
+<!-- Vertex:   198 -->
+<ellipse cx="341.81" cy="716.90" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="341.81" y="721.90" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SN</text>
+<!-- Vertex:   199 -->
+<ellipse cx="1049.77" cy="330.05" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="1049.77" y="335.05" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">RS</text>
+<!-- Vertex:   200 -->
+<ellipse cx="609.58" cy="277.54" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="609.58" y="282.54" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SC</text>
+<!-- Vertex:   201 -->
+<ellipse cx="396.58" cy="73.94" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="396.58" y="78.94" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SL</text>
+<!-- Vertex:   202 -->
+<ellipse cx="744.48" cy="372.92" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="744.48" y="377.92" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SG</text>
+<!-- Vertex:   203 -->
+<ellipse cx="686.66" cy="589.38" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="686.66" y="594.38" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SX</text>
+<!-- Vertex:   204 -->
+<ellipse cx="388.47" cy="358.99" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="388.47" y="363.99" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SK</text>
+<!-- Vertex:   205 -->
+<ellipse cx="428.02" cy="457.57" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="428.02" y="462.57" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SI</text>
+<!-- Vertex:   206 -->
+<ellipse cx="900.67" cy="197.17" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="900.67" y="202.17" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SB</text>
+<!-- Vertex:   207 -->
+<ellipse cx="492.94" cy="252.90" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="492.94" y="257.90" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SO</text>
+<!-- Vertex:   208 -->
+<ellipse cx="657.25" cy="184.32" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="657.25" y="189.32" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ZA</text>
+<!-- Vertex:   209 -->
+<ellipse cx="767.80" cy="324.70" rx="10.00" ry="10.00" style="fill:rgb(204,255,178);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="767.80" y="329.70" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GS</text>
+<!-- Vertex:   210 -->
+<ellipse cx="328.62" cy="128.59" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="328.62" y="133.59" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SS</text>
+<!-- Vertex:   211 -->
+<ellipse cx="291.10" cy="515.44" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="291.10" y="520.44" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ES</text>
+<!-- Vertex:   212 -->
+<ellipse cx="944.29" cy="633.32" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="944.29" y="638.32" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">LK</text>
+<!-- Vertex:   213 -->
+<ellipse cx="350.94" cy="99.66" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="350.94" y="104.66" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SD</text>
+<!-- Vertex:   214 -->
+<ellipse cx="458.45" cy="270.04" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="458.45" y="275.04" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SR</text>
+<!-- Vertex:   215 -->
+<ellipse cx="380.35" cy="384.71" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="380.35" y="389.71" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SJ</text>
+<!-- Vertex:   216 -->
+<ellipse cx="702.89" cy="114.66" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="702.89" y="119.66" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SZ</text>
+<!-- Vertex:   217 -->
+<ellipse cx="444.25" cy="534.73" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="444.25" y="539.73" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SE</text>
+<!-- Vertex:   218 -->
+<ellipse cx="281.97" cy="449.00" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="281.97" y="454.00" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">CH</text>
+<!-- Vertex:   219 -->
+<ellipse cx="789.10" cy="572.24" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="789.10" y="577.24" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">SY</text>
+<!-- Vertex:   220 -->
+<ellipse cx="751.58" cy="388.99" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="751.58" y="393.99" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TW</text>
+<!-- Vertex:   221 -->
+<ellipse cx="917.92" cy="707.26" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="917.92" y="712.26" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TJ</text>
+<!-- Vertex:   222 -->
+<ellipse cx="619.72" cy="228.25" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="619.72" y="233.25" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TZ</text>
+<!-- Vertex:   223 -->
+<ellipse cx="793.16" cy="386.85" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="793.16" y="391.85" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TH</text>
+<!-- Vertex:   224 -->
+<ellipse cx="810.40" cy="157.53" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="810.40" y="162.53" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TL</text>
+<!-- Vertex:   225 -->
+<ellipse cx="382.38" cy="797.27" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="382.38" y="802.27" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TG</text>
+<!-- Vertex:   226 -->
+<ellipse cx="832.72" cy="42.86" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="832.72" y="47.86" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TK</text>
+<!-- Vertex:   227 -->
+<ellipse cx="996.02" cy="40.72" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="996.02" y="45.72" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TO</text>
+<!-- Vertex:   228 -->
+<ellipse cx="463.52" cy="58.94" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="463.52" y="63.94" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TT</text>
+<!-- Vertex:   229 -->
+<ellipse cx="372.24" cy="783.34" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="372.24" y="788.34" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TN</text>
+<!-- Vertex:   230 -->
+<ellipse cx="790.12" cy="682.61" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="790.12" y="687.61" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TR</text>
+<!-- Vertex:   231 -->
+<ellipse cx="843.88" cy="725.47" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="843.88" y="730.47" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TM</text>
+<!-- Vertex:   232 -->
+<ellipse cx="63.90" cy="789.77" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="63.90" y="794.77" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TC</text>
+<!-- Vertex:   233 -->
+<ellipse cx="942.26" cy="88.94" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="942.26" y="93.94" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">TV</text>
+<!-- Vertex:   234 -->
+<ellipse cx="588.28" cy="276.47" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="588.28" y="281.47" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">UG</text>
+<!-- Vertex:   235 -->
+<ellipse cx="393.54" cy="546.52" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="393.54" y="551.52" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">UA</text>
+<!-- Vertex:   236 -->
+<ellipse cx="756.65" cy="410.42" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="756.65" y="415.42" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">AE</text>
+<!-- Vertex:   237 -->
+<ellipse cx="446.28" cy="186.46" rx="10.00" ry="10.00" style="fill:rgb(204,255,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="446.28" y="191.46" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">GB</text>
+<!-- Vertex:   238 -->
+<ellipse cx="602.48" cy="454.36" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="602.48" y="459.36" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">US</text>
+<!-- Vertex:   239 -->
+<ellipse cx="941.25" cy="39.65" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="941.25" y="44.65" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">UM</text>
+<!-- Vertex:   240 -->
+<ellipse cx="892.56" cy="323.62" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="892.56" y="328.62" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">UY</text>
+<!-- Vertex:   241 -->
+<ellipse cx="930.09" cy="669.75" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="930.09" y="674.75" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">UZ</text>
+<!-- Vertex:   242 -->
+<ellipse cx="601.46" cy="743.69" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="601.46" y="748.69" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">VU</text>
+<!-- Vertex:   243 -->
+<ellipse cx="471.64" cy="325.77" rx="10.00" ry="10.00" style="fill:rgb(216,255,79);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="471.64" y="330.77" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">VE</text>
+<!-- Vertex:   244 -->
+<ellipse cx="867.20" cy="455.43" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="867.20" y="460.43" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">VN</text>
+<!-- Vertex:   245 -->
+<ellipse cx="712.02" cy="735.12" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="712.02" y="740.12" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">VG</text>
+<!-- Vertex:   246 -->
+<ellipse cx="496.99" cy="591.52" rx="10.00" ry="10.00" style="fill:rgb(255,216,242);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="496.99" y="596.52" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">VI</text>
+<!-- Vertex:   247 -->
+<ellipse cx="579.15" cy="129.66" rx="10.00" ry="10.00" style="fill:rgb(255,181,40);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="579.15" y="134.66" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">WF</text>
+<!-- Vertex:   248 -->
+<ellipse cx="115.63" cy="750.12" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="115.63" y="755.12" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">EH</text>
+<!-- Vertex:   249 -->
+<ellipse cx="945.30" cy="507.94" rx="10.00" ry="10.00" style="fill:rgb(204,204,255);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="945.30" y="512.94" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">YE</text>
+<!-- Vertex:   250 -->
+<ellipse cx="530.46" cy="236.82" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="530.46" y="241.82" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ZM</text>
+<!-- Vertex:   251 -->
+<ellipse cx="412.81" cy="65.37" rx="10.00" ry="10.00" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+<text x="412.81" y="70.37" style="font-family:Arial;font-weight: bold;font-size:15px;fill:rgb(173,0,0);text-anchor:middle;">ZW</text>
+</g>         <!-- Layer Network -->
+</svg>
