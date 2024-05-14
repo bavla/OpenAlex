@@ -82,7 +82,6 @@ saveCite <- function(U,name,lab,file,names=FALSE){
     close(nam)
   }
   options(scipen=o.scipen)
-
 }
 
 saveTwoMode <- function(U,name,dict,ind,lab,file,names=FALSE,nind=NA){
