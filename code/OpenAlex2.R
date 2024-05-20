@@ -39,11 +39,11 @@ joinLists <- function(oldF,newF,lstF){
   close(lst)
 }
 
+# https://stackoverflow.com/questions/23541137/r-environment-to-data-frame
+# https://sparkbyexamples.com/r-programming/convert-list-to-r-dataframe/
 dict2DF <- function(dict,ind) {
-  L <- ls(dict);  DF <- as.data.frame(dict[[L[1]]])
-  for(i in 2:length(L)) DF[nrow(DF) + 1,] <- dict[[L[i]]]
-  row.names(DF) <- L
-  return(DF[order(DF[[ind]]),])
+  DF <- as.data.frame(do.call(rbind, as.list(dict)))
+  return(DF[order(unlist(unname(DF[[ind]]))),])
 }
 
 saveClu <- function(V,lab="clustering",file="Cling",na=99999){ 
@@ -404,7 +404,7 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
   close(ci); close(wrk); close(wa); close(wj); close(wk); close(wc)
   if(save) close(json)
   cat("hits:",WC$n,"works:",length(works),"authors:",length(auths),
-    "anon:",WC$an,"sources:",length(srces),"\n")
+    "anon:",WC$an,"sources:",length(srces),"\n"); flush.console()
   U <- dict2DF(works,"wind"); n <- nrow(U)
   saveCite(U,name,"Citation Cite","Ci",TRUE)
   # properties
