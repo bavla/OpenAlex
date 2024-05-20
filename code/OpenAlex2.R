@@ -17,6 +17,8 @@ eDict <- function(size=10000L) new.env(hash=TRUE,parent=emptyenv(),size=size)
 
 getVals <- Vectorize(get,vectorize.args="x")
 
+getISO <- function(URLid) substring(URLid,32)
+
 Fn <- function(F) paste0(WC$name,F)
 
 removeDuplicates <- function(inp,out){
@@ -420,5 +422,42 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
   cat("*** OpenAlex2Pajek / All - Stop",date(),"\n"); flush.console()
   close(WC$tr) # closeWorks() 
 }
+
+coAuthorship <- function(CC,year=NULL){
+  n <- length(CC)
+  M <- matrix(0,nrow=n,ncol=n); rownames(M) <- colnames(M) <- CC
+  T <- rep(0,n); names(T) <- CC; G <- rep(0,n); names(G) <- CC
+  Q1 <- "https://api.openalex.org/works?filter=authorships.countries:"
+  Q3 <- "&group-by=authorships.countries"
+  if(is.null(year)) lab <- "\nComplete search" else { 
+    lab <- paste0("\nYear =",year); Q3 <- paste0(",publication_year:",year,Q3)}
+  cat(lab,date(),"\n"); flush.console()
+  for(cy in CC){
+    Q <- paste0(Q1,cy,Q3)
+    S <- GET(Q)
+    C <- fromJSON(rawToChar(S$content))
+    D <- C$group_by; T[cy] <- C$meta$count; G[cy] <- C$meta$groups_count
+    J <- unname(sapply(D$key,getISO))
+    if(length(J)>0){
+      V <- D$count; names(V) <- J
+      for(j in J) M[cy,j] <- V[j]
+    }
+  }
+  cat("collected",date(),"\n"); flush.console()
+  k <- 0; a <- 0; dm <- 0
+  for(i in 2:n){
+    for(j in 1:(i-1)){
+      if(M[i,j]!=M[j,i]) { 
+        if(min(M[i,j],M[j,i])==0) { m <- max(M[i,j],M[j,i])
+          M[i,j] <- M[j,i] <- m; k <- k+1
+        } else {a <- a+1; d <- M[i,j]-M[j,i]; dm <- max(abs(d),dm) 
+          cat(i,j,CC[i],CC[j],M[i,j],M[j,i],d,"\n")}
+      }
+    }
+  }
+  cat("k =",k,"  a =",a,"  dmax =",dm,"\n"); flush.console()
+  return(list(T=T,G=G,M=M))
+}
+
 
 
