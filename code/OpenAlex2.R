@@ -47,6 +47,7 @@ dict2DF <- function(dict,ind) {
 }
 
 saveClu <- function(V,lab="clustering",file="Cling",na=99999){ 
+  V <- unlist(unname(V))
   cat(paste0(">>> ",lab,"\n")); flush.console(); n <- length(V)
   V[is.na(V)] <- na
   clu <- file(Fn(paste0(file,".clu")),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clu)
@@ -56,6 +57,7 @@ saveClu <- function(V,lab="clustering",file="Cling",na=99999){
 }
 
 saveFac <- function(V,lab="clustering",file="Cling",na=0){ 
+  V <- unlist(unname(V))
   cat(paste0(">>> ",lab,"\n")); flush.console(); n <- length(V)
   clu <- file(Fn(paste0(file,".clu")),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=clu)
   cat("% OpenAlex2Pajek / All -",lab,date(),"\n",file=clu)
@@ -77,9 +79,10 @@ saveCite <- function(U,name,lab,file,names=FALSE){
   for(i in 1:nrow(Ci)) cat(Ci$V1[i],Ci$V2[i],"\n",file=net)
   close(net) 
   if(names){
+    sn <- unlist(unname(U$sWname))
     nam <- file(Fn("W.nam"),"w",encoding="UTF-8"); cat('\xEF\xBB\xBF',file=nam)
     cat("% OpenAlex2Pajek /",lab,date(),"\n*vertices",n,"\n",file=nam)
-    for(i in 1:n) cat(i,' "',ifelse(is.na(U[["sWname"]][i]),row.names(U)[i],U[["sWname"]][i]),
+    for(i in 1:n) cat(i,' "',ifelse(is.na(sn[i]),row.names(U)[i],sn[i]),
       '"\n',sep="",file=nam)
     close(nam)
   }
@@ -100,10 +103,11 @@ saveTwoMode <- function(U,name,dict,ind,lab,file,names=FALSE,nind=NA){
   for(i in 1:nrow(WX)) cat(WX$V1[i],n+WX$V2[i],"\n",file=net)
   close(net)
   if(names){
+    sn <- unlist(unname(DF[[nind]]))
     nam <- file(Fn(paste0(file,".nam")),"w",encoding="UTF-8")
     cat("% OpenAlex2Pajek / All - names:",lab,date(),"\n*vertices",m,"\n",file=nam)
-    for(i in 1:m) cat(i,' "',DF[[nind]][i],'"\n',sep="",file=nam)
-    for(i in 1:m) cat(i,' "',ifelse(is.na(DF[[nind]][i]),row.names(DF)[i],DF[[nind]][i]),
+    # for(i in 1:n) cat(i,' "',row.names(U)[i],'"\n',sep="",file=nam)
+    for(i in 1:m) cat(i,' "',ifelse(is.na(sn[i]),row.names(DF)[i],sn[i]),
       '"\n',sep="",file=nam)
     close(nam)
   }
