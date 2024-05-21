@@ -53,6 +53,7 @@ hits: 1596 works: 22321 authors: 2125 anon: 0 sources: 452
 
 
 |  i |  d  |author		  |
+|----|-----|----------------------|
 |  1 |252  |Zvonko Jagličić	  |
 |  2 |116  |Dušan Repovš		  |
 |  3 | 92  |Sandi Klavžar	  |
