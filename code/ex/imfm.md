@@ -2,13 +2,11 @@
 
 https://api.openalex.org/institutions?search=imfm
 
-https://openalex.org/institutions/I200769079
+https://openalex.org/institutions/I4210106342
 
 We would like to restrict hits to the years 2001-2020
 
 https://api.openalex.org/works?filter=institution.id:I4210106342,publication_year:2001-2020&select=id,title&per_page=200&page=2
-
-https://api.openalex.org/works?filter=institution.id:I200769079,publication_year:2017-2019&select=id,title
 
 We learn that researchers from HKUST published 9702 works in the years 2017-2019.
 
