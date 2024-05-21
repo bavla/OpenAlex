@@ -268,8 +268,8 @@ processWorkCite <- function(w) {
   works[[Wid]][["py"]] <- pYear; works[[Wid]][["typ"]] <- type
   works[[Wid]][["cbc"]] <- cbc; works[[Wid]][["cdc"]] <- cdc
   works[[Wid]][["out"]] <- length(refs); works[[Wid]][["lan"]] <- lang
-  for(wk in refs) {
-    vid <- getID(wk) 
+  for(rwk in refs) {
+    vid <- getID(rwk) 
     v <- putWork(vid,hit=FALSE)
     cat(v,vid,FALSE,"",NA,NA,NA,NA,NA,sep=";",file=wrk)
     cat("\n",file=wrk); 
@@ -323,7 +323,7 @@ processWork <- function(w,test) {
       v <- putAuth(Aid,Aname); cat(u,v,"\n",file=wa) } 
     cntrs <- union(c(),unlist(w$authorships$countries))
     if(test>0) if(length(cntrs)>1) {cat(u,Wid,cntrs,"\n"); flush.console()}
-    for(ct in cntrs) {v <- putCtry(ct); cat(u,v,"\n",file=wc)}   
+    for(ct in cntrs) {v <- putCtry(ct); cat(u,v,"\n",file=wl)}   
   }
   knams <- w$keywords$display_name
   for(key in knams) {v <- putKeyw(key); cat(u,v,"\n",file=wk)} 
@@ -382,10 +382,10 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
   cat("OpenAlex2Pajek / All - Start",date(),"\n")
   ci <<- file("Ci.tmp","w",encoding="UTF-8"); wrk <<- file("works.csv","w",encoding="UTF-8")
   wa <<- file("WA.tmp","w",encoding="UTF-8"); wj <<- file("WJ.tmp","w",encoding="UTF-8");
-  wk <<- file("WK.tmp","w",encoding="UTF-8"); wc <<- file("WC.tmp","w",encoding="UTF-8");
+  wk <<- file("WK.tmp","w",encoding="UTF-8"); wl <<- file("WC.tmp","w",encoding="UTF-8");
   cat("% OpenAlex2Pajek / All",date(),"\n",file=ci); cat("% OpenAlex2Pajek / All",date(),"\n",file=wrk)
   cat("% OpenAlex2Pajek / All",date(),"\n",file=wa); cat("% OpenAlex2Pajek / All",date(),"\n",file=wj)
-  cat("% OpenAlex2Pajek / All",date(),"\n",file=wk); cat("% OpenAlex2Pajek / All",date(),"\n",file=wc);
+  cat("% OpenAlex2Pajek / All",date(),"\n",file=wk); cat("% OpenAlex2Pajek / All",date(),"\n",file=wl);
   # cat("ind;Wid;hit;sWname;Sid;pYear;pDate;type;lang;vol;iss;fPage;lPage;fAName;title\n",file=wrk)
   cat("ind;Wid;hit;sWname;Sid;pYear;pDate;type;lang;vol;iss;fPage;lPage;cdc;cbc;fAName;title\n",file=wrk)
   works <<- eDict(); srces <<- eDict(); auths <<- eDict(); keyws <<- eDict(); cntrs <<- eDict()
@@ -405,7 +405,7 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
   }
   cat("*** OpenAlex2Pajek / All - Data Collected",date(),"\n"); flush.console()
   if(test>1) print(ls.str(WC))
-  close(ci); close(wrk); close(wa); close(wj); close(wk); close(wc)
+  close(ci); close(wrk); close(wa); close(wj); close(wk); close(wl)
   if(save) close(json)
   cat("hits:",WC$n,"works:",length(works),"authors:",length(auths),
     "anon:",WC$an,"sources:",length(srces),"\n"); flush.console()
