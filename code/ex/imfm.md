@@ -51,6 +51,16 @@ hits: 1596 works: 22321 authors: 2125 anon: 0 sources: 452
 > 
 ```
 
+  * read WA
+  * network/2-mode/transpose
+  * select WA as the Second network
+  * networks/Multiply
+  * network/create/transform/arcs to edges/bidirected/min
+  * network/create/transform/add/vertex labs/default
+  * network/create/transform/add/vertex labs/from file(s) [IMFMWA.nam]
+  * network/vector/get loops
+  * vector info button [+50]
+
 
 |  i |  d  |author		  |
 |----|-----|----------------------|
@@ -75,7 +85,15 @@ hits: 1596 works: 22321 authors: 2125 anon: 0 sources: 452
 | 19 | 26  |Sergio Cabello	  |
 | 20 | 25  |Riste Škrekovski	  |
 
-
+  * network/create/transform/remove/loops
+  * network/info/line values
+  * link cut at level 7
+    * network/create/transform/remove/lines with value/lower than [7]
+    * network/partition/degree/all
+    * operations/network+partition/extract/subnetwork [1-*]
+    * network/partition/components/weak
+  * draw network+partition
+  * 
 
 
 
