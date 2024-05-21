@@ -105,6 +105,7 @@ saveTwoMode <- function(U,name,dict,ind,lab,file,names=FALSE,nind=NA){
   if(names){
     sn <- unlist(unname(DF[[nind]]))
     nam <- file(Fn(paste0(file,".nam")),"w",encoding="UTF-8")
+    cat('\xEF\xBB\xBF',file=nam)
     cat("% OpenAlex2Pajek / All - names:",lab,date(),"\n*vertices",m,"\n",file=nam)
     # for(i in 1:n) cat(i,' "',row.names(U)[i],'"\n',sep="",file=nam)
     for(i in 1:m) cat(i,' "',ifelse(is.na(sn[i]),row.names(DF)[i],sn[i]),
@@ -315,17 +316,20 @@ processWork <- function(w,test) {
   if(length(autsh)==0) {
     v <- putAuth(fAName,fAName); cat(u,v,"\n",file=wa)
   } else {
-    auts <- w$authorships$author
-    if(is.null(auts)) if(length(w$authorships)>0)
-      auts <- w$authorships[[1]]$author 
-    if(length(auts)>0) for(a in 1:nrow(auts)) {
-      Aname <- auts$display_name[a]; Aid <- getID(auts$id[a])
-      v <- putAuth(Aid,Aname); cat(u,v,"\n",file=wa) } 
-    cntrs <- union(c(),unlist(w$authorships$countries))
-    if(test>0) if(length(cntrs)>1) {cat(u,Wid,cntrs,"\n"); flush.console()}
-    for(ct in cntrs) {v <- putCtry(ct); cat(u,v,"\n",file=wl)}   
+    auts <- w$authorships$author; cntries <- w$authorships$countries;
+    if(is.null(auts)) if(length(w$authorships)>0) {
+      auts <- w$authorships[[1]]$author; cntries <- w$authorships[[1]]$countries }  
+    if(length(auts)>0) {
+      for(a in 1:nrow(auts)) {
+        Aname <- auts$display_name[a]; Aid <- getID(auts$id[a])
+        v <- putAuth(Aid,Aname); cat(u,v,"\n",file=wa) 
+    } } 
+    if(is.null(auts)) if(length(w$authorships)>0) auts <- w$authorships[[1]]$author
+    cns <- union(c(),unlist(cntries))
+    for(ct in cns) {v <- putCtry(ct); cat(u,v,"\n",file=wl)}   
   }
   knams <- w$keywords$display_name
+  if(is.null(knams)) if(length(w$keywords)>0) knams <- w$keywords[[1]]$display_name
   for(key in knams) {v <- putKeyw(key); cat(u,v,"\n",file=wk)} 
 }
 
@@ -421,8 +425,8 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
   # two-mode networks
   saveTwoMode(U,name,auths,"aind","Authorship WA","WA",TRUE,"Aname")
   saveTwoMode(U,name,srces,"sind","Sources WJ","WJ")
-  saveTwoMode(U,name,keyws,"kind","Keywords WK","WK")
   saveTwoMode(U,name,cntrs,"cind","Countries WC","WC")
+  saveTwoMode(U,name,keyws,"kind","Keywords WK","WK")
   cat("*** OpenAlex2Pajek / All - Stop",date(),"\n"); flush.console()
   close(WC$tr) # closeWorks() 
 }
