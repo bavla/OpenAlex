@@ -50,3 +50,35 @@ hits: 1596 works: 22321 authors: 2125 anon: 0 sources: 452
 *** OpenAlex2Pajek / All - Stop Tue May 21 18:22:52 2024 
 > 
 ```
+
+
+| i |  d  |author		  |
+| 1 |252  |Zvonko Jagličić	  |
+| 2 |116  |Dušan Repovš		  |
+| 3 | 92  |Sandi Klavžar	  |
+| 4 | 65  |Marko Jagodič	  |
+| 5 | 61  |Z. Trontelj		  |
+| 6 | 56  |J. Dolinšek		  |
+| 7 | 53  |Franc Forstnerič	  |
+| 8 | 53  |Boštjan Brešar	  |
+| 9 | 43  |Janez Žerovnik	  |
+|10 | 39  |Vicenţiu D. Rădulescu  |
+|11 | 35  |Primož Potočnik	  |
+|12 | 34  |Josip Globevnik	  |
+|13 | 32  |Vladimir Batagelj	  |
+|14 | 31  |Vojko Jazbinšek	  |
+|15 | 31  |Bojan Kuzma		  |
+|16 | 28  |Tomaž Pisanski	  |
+|17 | 27  |Matija Cencelj	  |
+|18 | 26  |Igor Klep		  |
+|19 | 26  |Sergio Cabello	  |
+|20 | 25  |Riste Škrekovski	  |
+
+
+
+
+
+
+
+
+
