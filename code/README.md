@@ -7,4 +7,4 @@
 
 ## Examples
 
-  - [HKUST](ex.hkust.md)
+  - [HKUST](ex/hkust.md)
