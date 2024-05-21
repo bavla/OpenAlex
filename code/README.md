@@ -8,4 +8,4 @@
 ## Examples
 
   - [HKUST](ex/hkust.md)
-  - [imfm](ex/imfm.md)
+  - [IMFM](ex/imfm.md)
