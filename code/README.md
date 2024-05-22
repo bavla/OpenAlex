@@ -9,3 +9,4 @@
 
   - [HKUST](ex/hkust.md)
   - [IMFM](ex/imfm.md)
+  - [Europe](ex/eu.md)
