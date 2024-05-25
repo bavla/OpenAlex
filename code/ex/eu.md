@@ -74,6 +74,11 @@ Macro [EuCluster](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/EuC
 started Sat May 25 00:52:27 2024 
 finished Sat May 25 00:52:30 2024 
 ```
+### 1990
+
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1990_1n.svg?sanitize=true" width="600">
+
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EUmat1990.svg?sanitize=true" width="700">
 
 ### 1995
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1995_1n.svg?sanitize=true" width="600">
