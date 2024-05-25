@@ -28,9 +28,10 @@ Extracting from the world networks.
   * Read network in Pajek
   * Info
   * Remove loops
+  * Weights 1 + ln
   * Remove node 59
   * Remove arcs except max
-  * Weights 1 + ln
+  * Arcs -> Edges (bidirected, min)
   * Draw
 
 Macro [Eu1neighbors](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/Eu1neighbors.mcr)
