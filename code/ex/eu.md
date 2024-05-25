@@ -71,3 +71,7 @@ finished Sat May 25 00:52:30 2024
 
 ### 2020
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU2020_1n.svg?sanitize=true" width="600">
+
+<img src="https://github.com/bavla/OpenAlex/blob/main/Countries/pics/matrix2020.pdf?sanitize=true" width="600">
+
+https://github.com/bavla/OpenAlex/blob/main/Countries/pics/matrix2020.pdf
