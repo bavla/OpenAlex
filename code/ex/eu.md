@@ -33,7 +33,7 @@ Extracting from the world networks.
   * Weights 1 + ln
   * Draw
 
-Macro [1-n]()
+Macro [Europe1neighbors](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/Europe1neighbors.mcr)
 
 ## All years
 ```
