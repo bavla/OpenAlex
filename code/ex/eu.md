@@ -67,6 +67,6 @@ finished Sat May 25 00:52:30 2024
 ```
 
 
-<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1995_1n.svg?sanitize=true">
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1995_1n.svg?sanitize=true" width="600">
 
-<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU2020_1n.svg?sanitize=true">
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU2020_1n.svg?sanitize=true" width="600">
