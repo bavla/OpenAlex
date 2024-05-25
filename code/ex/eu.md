@@ -83,6 +83,8 @@ finished Sat May 25 00:52:30 2024
 ### 1995
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1995_1n.svg?sanitize=true" width="600">
 
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EUmat1995.svg?sanitize=true" width="700">
+
 ### 2020
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU2020_1n.svg?sanitize=true" width="600">
 
