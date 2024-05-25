@@ -33,7 +33,15 @@ Extracting from the world networks.
   * Weights 1 + ln
   * Draw
 
-Macro [Europe1neighbors](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/Europe1neighbors.mcr)
+Macro [Eu1neighbors](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/Eu1neighbors.mcr)
+
+  * Select the 1+ln network produced by Eu1neighbors
+  * Create Complete Cluster on 59 nodes
+  * Operations/network+cluster/Dissimilarity based on network [Corr Euclidean][1]
+  * Hierarchical Clustering (automatic) save dendro.eps
+  * file/network/export matrix using permutation matrix.eps
+
+Macro [EuCluster](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/EuCluster.mcr)
 
 ## All years
 ```
@@ -76,3 +84,6 @@ finished Sat May 25 00:52:30 2024
 
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EUmat2020.svg?sanitize=true" width="700">
 
+### 2023
+
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EUmat2023.svg?sanitize=true" width="700">
