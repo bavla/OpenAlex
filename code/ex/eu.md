@@ -30,9 +30,11 @@
   * Weights 1 + ln
   * Draw
 
+```
+
+```
 
 
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1995_1n.svg?sanitize=true">
 
-<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/code/ex/EU1995_1n.svg?sanitize=true">
-
-<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/code/ex/EU2020_1n.svg?sanitize=true">
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU2020_1n.svg?sanitize=true">
