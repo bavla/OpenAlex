@@ -86,4 +86,6 @@ finished Sat May 25 00:52:30 2024
 
 ### 2023
 
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU2023_1n.svg?sanitize=true" width="600">
+
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EUmat2023.svg?sanitize=true" width="700">
