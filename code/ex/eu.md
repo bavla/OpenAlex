@@ -1,5 +1,8 @@
 # Europe - co-authorship between countries 
 
+Extracting from the world networks.
+
+## Single year
 ```
 > load("MatrixList.Rdata")
 > length(S)
@@ -30,8 +33,37 @@
   * Weights 1 + ln
   * Draw
 
-```
+Macro [1-n]()
 
+## All years
+```
+> cat("started",date(),"\n")
+> load("MatrixList.Rdata")
+> s <- length(S); E <- list()
+> cont <- clu2vector("continents.clu",skip=3)
+> for(i in 1:s){
++   TM <- S[[i]]$M; year <- 1989+i
++   cn <- rownames(TM); eu <- which(cont %in% c(0,4))
++   EM <- TM[eu,eu]; m <- nrow(EM)+1
++   EM <- rbind(cbind(EM,rep(NA,m-1)),rep(NA,m))
++   rownames(EM)[m] <- colnames(EM)[m] <- "OTH"
++   oth <- which(!(cont %in% c(0,4)))
++   rs <- rowSums(TM[eu,oth])
++   EM[1:(m-1),m] <- rs; EM[m,1:(m-1)] <- rs
++   OM <- TM[oth,oth]; OM[lower.tri(OM)] <- 0
++   EM[m,m] <- sum(OM)
++   WG <- S[[i]]$G; EG <- c(WG[eu],OTH=200)
++   WT <- S[[i]]$T; ET <- WT[eu]; ET <- c(ET,OTH=sum(WT)-sum(ET))
++   E[[i]] <- list(M=EM,G=EG,T=ET)
++   matrix2net(EM,paste0("EU",year,".net"))
++   vector2clu(EG,Clu=paste0("EU",year,"G.clu"))
++   vector2vec(ET,Vec=paste0("EU",year,"T.vec"))
++ }
+> save(E,file="EuropeList.Rdata")
+> cat("finished",date(),"\n")
+
+started Sat May 25 00:52:27 2024 
+finished Sat May 25 00:52:30 2024 
 ```
 
 
