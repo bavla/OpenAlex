@@ -74,5 +74,7 @@ Macro [EuCluster](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/EuC
 started Sat May 25 00:52:27 2024 
 finished Sat May 25 00:52:30 2024 
 ```
-[1-neighbors](./eungb.md)
-[Balassa](./eubal.md)
+## Analyses
+
+  * [1-neighbors](./eungb.md)
+  * [Balassa](./eubal.md)
