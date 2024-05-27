@@ -25,24 +25,6 @@ Extracting from the world networks.
 > matrix2net(EM,"EU2020.net")
 ```
 
-  * Read network in Pajek
-  * Info
-  * Remove loops
-  * Weights 1 + ln
-  * Remove node 59
-  * Remove arcs except max
-  * Arcs -> Edges (bidirected, min)
-  * Draw
-
-Macro [Eu1neighbors](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/Eu1neighbors.mcr)
-
-  * Select the 1+ln network produced by Eu1neighbors
-  * Create Complete Cluster on 59 nodes
-  * Operations/network+cluster/Dissimilarity based on network [Corr Euclidean][1]
-  * Hierarchical Clustering (automatic) save dendro.eps
-  * file/network/export matrix using permutation matrix.eps
-
-Macro [EuCluster](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/EuCluster.mcr)
 
 ## All years
 ```
