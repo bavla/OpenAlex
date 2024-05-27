@@ -2,7 +2,7 @@
 
 Extracting from the world networks.
 
-<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1990_1n.svg?sanitize=true" width="600">
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Europe_ISO_3166-1.svg?sanitize=true" width="600">
 
 
 ## Single year
