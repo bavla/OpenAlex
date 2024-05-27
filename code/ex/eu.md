@@ -2,6 +2,9 @@
 
 Extracting from the world networks.
 
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1990_1n.svg?sanitize=true" width="600">
+
+
 ## Single year
 ```
 > load("MatrixList.Rdata")
