@@ -45,5 +45,6 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
 
 ```
 
-<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Eu-Balassa23.svg?sanitize=true" width="600">
+## 2023
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Eu-Balassa23.svg?sanitize=true" width="800">
 
