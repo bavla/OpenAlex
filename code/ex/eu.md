@@ -2,6 +2,7 @@
 
 Extracting from the world networks.
 
+[Balassa](./eubal.md)
 ## Single year
 ```
 > load("MatrixList.Rdata")
