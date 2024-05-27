@@ -1,4 +1,4 @@
-====== Balassa index ======
+# Balassa index 
 
 
 https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
@@ -44,4 +44,6 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
 > }
 
 ```
+
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/EU1990_1n.svg?sanitize=true" width="600">
 
