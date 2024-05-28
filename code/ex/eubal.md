@@ -40,6 +40,16 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
 > }
 ```
 
+## 1995
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Eu-Balassa95.svg?sanitize=true" width="800">
+
+## 2015
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Eu-Balassa15.svg?sanitize=true" width="800">
+
+## 2020
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Eu-Balassa20.svg?sanitize=true" width="800">
+
+
 ## 2023
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Eu-Balassa23.svg?sanitize=true" width="800">
 
