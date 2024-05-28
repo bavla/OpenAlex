@@ -53,3 +53,6 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
 ## 2023
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Eu-Balassa23.svg?sanitize=true" width="800">
 
+
+For the final results we can reorder matrices considering clusterings. See
+https://github.com/bavla/NormNet/blob/main/data/natalija/reorder.md .
