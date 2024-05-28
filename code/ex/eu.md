@@ -4,6 +4,30 @@ Extracting from the world networks.
 
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Europe_ISO_3166-1.svg?sanitize=true" width="800">
 
+| ISO | country  | ISO      | country    | ISO        | country    |
+|-----|----------|-----|----------|-----|----------|
+| AD  | Andorra  |	GB  | G Britain  |	  MK  | N Macedonia  |
+| AL  | Albania  |	GE  | Georgia  |	  MT  | Malta  |
+| AM  | Armenia  |	GG  | Guernsey/GB  |	  NL  | Netherlands  |
+| AT  | Austria  |	GI  | Gibraltar/GB  |	  NO  | Norway  |
+| AX  | Åland/FI  |	GR  | Greece  |		  PL  | Poland  |
+| AZ  | Azerbaijan  |	HR  | Croatia  |	  PT  | Portugal  |
+| BA  | Bosnia+Herz  |	HU  | Hungary  |	  RO  | Romania  |
+| BE  | Belgium  |	IE  | Ireland  |	  RS  | Serbia  |
+| BG  | Bulgaria  |	IM  | i of Man/GB  |	  RU  | Russia  |
+| BY  | Belarus  |	IS  | Iceland  |	  SE  | Sweden  |
+| CH  | Switzerland  |	IT  | Italy  |		  SI  | Slovenia  |
+| CY  | Cyprus  |	JE  | Jersey/GB  |	  SJ  | Svalbard+JM  |
+| CZ  | Czech rep  |	KZ  | Kazakhstan  |	  SK  | Slovakia  |
+| DE  | Germany  |	LI  | Liechtenstein  |	  SM  | San Marino  |
+| DK  | Denmark  |	LT  | Lithuania  |	  TR  | Turkey  |
+| EE  | Estonia  |	LU  | Luxembourg  |	  UA  | Ukraine  |
+| ES  | Spain  |	LV  | Latvia  |		  VA  | Vatican  |
+| FI  | Finland  |	MC  | Monaco  |		  XK  | Kosovo  |
+| FO  | Faroe i/DK  |	MD  | Moldova  |	      |         |
+| FR  | France  |	ME  | Montenegro  |	      |         |
+
+
 
 ## Single year
 ```
