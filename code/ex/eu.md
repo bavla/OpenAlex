@@ -2,7 +2,7 @@
 
 Extracting from the world networks.
 
-<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Europe_ISO_3166-1.svg?sanitize=true" width="800">
+<img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Europe_ISO_3166-1+XK.svg?sanitize=true" width="800">
 
 | ISO | country  | ISO      | country    | ISO        | country    | ISO      | country    | ISO        | country    |
 |-----|----------|-----|----------|-----|----------|-----|----------|-----|----------|
