@@ -28,12 +28,14 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
 > for(i in 1:length(E)){
 >    cat(i,"Year",Y[i],"\n"); flush.console()
 >    P <- E[[i]]$M; diag(P) <- 0
+>    # P <- E[[i]]$M[1:58,1:58]; diag(P) <- 0
 >    D <- rowSums(P); T <- sum(D); n <- nrow(P)
 >    for(u in 1:(n-1)) for(v in (u+1):n) P[u,v] <- P[v,u] <- P[u,v]*T/D[u]/D[v]
 >    X <- Z <- log2(P)
 >    Z[Z == -Inf] <- 0; Z[is.nan(Z)] <- 0 
->    X[X == -Inf] <- NA; X[is.nan(X)] <- 0 
+>    X[X == -Inf] <- NA; X[is.nan(X)] <- 0; X[,D==0] <- NA; X[D==0,] <- NA
 >    t <- hclust(as.dist(CorEu(Z)),method="ward.D")
+>    # pdf(file=paste("Eu-Balassa",Y[i],".pdf",sep=""),width=11,height=11)
 >    pdf(file=paste("EuBalassa",Y[i],".pdf",sep=""),width=11,height=11)
 >    heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
 +       scale="none",revC=TRUE,col = bluered(100),na.color="yellow",
@@ -42,7 +44,6 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
 > #   ans <- readline(paste(i,". Press Enter to continue >",sep=""))
 >    dev.off()
 > }
-
 ```
 
 ## 2023
