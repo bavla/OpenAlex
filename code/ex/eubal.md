@@ -6,12 +6,6 @@ https://github.com/bavla/NormNet/blob/main/data/natalija/analysis.md
 ```
 > wdir <- "C:/Users/vlado/work/OpenAlex/API"
 > setwd(wdir)
->  
-> library(httr)
-> library(jsonlite)
-> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
-> source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2.R")
-> # source("OpenAlex2.R")
 > library(gplots)
 
 > CorEu <- function(W,p=1){
