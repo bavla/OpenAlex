@@ -4,28 +4,22 @@ Extracting from the world networks.
 
 <img src="https://raw.githubusercontent.com/bavla/OpenAlex/main/Countries/pics/Europe_ISO_3166-1.svg?sanitize=true" width="800">
 
-| ISO | country  | ISO      | country    | ISO        | country    |
-|-----|----------|-----|----------|-----|----------|
-| AD  | Andorra  |	GB  | G Britain  |	  MK  | N Macedonia  |
-| AL  | Albania  |	GE  | Georgia  |	  MT  | Malta  |
-| AM  | Armenia  |	GG  | Guernsey/GB  |	  NL  | Netherlands  |
-| AT  | Austria  |	GI  | Gibraltar/GB  |	  NO  | Norway  |
-| AX  | Åland/FI  |	GR  | Greece  |		  PL  | Poland  |
-| AZ  | Azerbaijan  |	HR  | Croatia  |	  PT  | Portugal  |
-| BA  | Bosnia+Herz  |	HU  | Hungary  |	  RO  | Romania  |
-| BE  | Belgium  |	IE  | Ireland  |	  RS  | Serbia  |
-| BG  | Bulgaria  |	IM  | i of Man/GB  |	  RU  | Russia  |
-| BY  | Belarus  |	IS  | Iceland  |	  SE  | Sweden  |
-| CH  | Switzerland  |	IT  | Italy  |		  SI  | Slovenia  |
-| CY  | Cyprus  |	JE  | Jersey/GB  |	  SJ  | Svalbard+JM  |
-| CZ  | Czech rep  |	KZ  | Kazakhstan  |	  SK  | Slovakia  |
-| DE  | Germany  |	LI  | Liechtenstein  |	  SM  | San Marino  |
-| DK  | Denmark  |	LT  | Lithuania  |	  TR  | Turkey  |
-| EE  | Estonia  |	LU  | Luxembourg  |	  UA  | Ukraine  |
-| ES  | Spain  |	LV  | Latvia  |		  VA  | Vatican  |
-| FI  | Finland  |	MC  | Monaco  |		  XK  | Kosovo  |
-| FO  | Faroe i/DK  |	MD  | Moldova  |	      |         |
-| FR  | France  |	ME  | Montenegro  |	      |         |
+| ISO | country  | ISO      | country    | ISO        | country    | ISO      | country    | ISO        | country    |
+|-----|----------|-----|----------|-----|----------|-----|----------|-----|----------|
+| AD  | Andorra  |     CZ  | Czech rep  |    GR  | Greece  |	    LV  | Latvia  |	 RU  | Russia  |
+| AL  | Albania  |     DE  | Germany  |	     HR  | Croatia  |	    MC  | Monaco  |	 SE  | Sweden  |
+| AM  | Armenia  |     DK  | Denmark  |	     HU  | Hungary  |	    MD  | Moldova  |	 SI  | Slovenia  |
+| AT  | Austria  |     EE  | Estonia  |	     IE  | Ireland  |	    ME  | Montenegro  |	 SJ  | Svalbard+JM  |
+| AX  | Åland/FI  |    ES  | Spain  |	     IM  | i of Man/GB  |   MK  | N Macedonia  | SK  | Slovakia  |
+| AZ  | Azerbaijan  |  FI  | Finland  |	     IS  | Iceland  |	    MT  | Malta  |	 SM  | San Marino  |
+| BA  | Bosnia+Herz  | FO  | Faroe i/DK  |   IT  | Italy  |	    NL  | Netherlands  | TR  | Turkey  |
+| BE  | Belgium  |     FR  | France  |	     JE  | Jersey/GB  |	    NO  | Norway  |	 UA  | Ukraine  |
+| BG  | Bulgaria  |    GB  | G Britain  |    KZ  | Kazakhstan  |    PL  | Poland  |	 VA  | Vatican  |
+| BY  | Belarus  |     GE  | Georgia  |	     LI  | Liechtenstein  | PT  | Portugal  |	 XK  | Kosovo  |
+| CH  | Switzerland  | GG  | Guernsey/GB  |  LT  | Lithuania  |	    RO  | Romania  |	     |          |
+| CY  | Cyprus  |      GI  | Gibraltar/GB  | LU  | Luxembourg  |    RS  | Serbia  |	     |          |
+
+
 
 
 
