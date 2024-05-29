@@ -1,4 +1,5 @@
-# 1-neighbors
+# Analyses
+## 1-neighbors
 
   * Read network in Pajek
   * Info
@@ -10,6 +11,8 @@
   * Draw
 
 Macro [Eu1neighbors](https://raw.githubusercontent.com/bavla/OpenAlex/main/code/Eu1neighbors.mcr)
+
+## Clustering
 
   * Select the 1+ln network produced by Eu1neighbors
   * Create Complete Cluster on 59 nodes
