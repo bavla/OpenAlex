@@ -80,4 +80,5 @@ finished Sat May 25 00:52:30 2024
 ## Analyses
 
   * [1-neighbors and clustering](./eungb.md)
+  * [Salton and Jaccard](./eunor.md)
   * [Balassa](./eubal.md)
