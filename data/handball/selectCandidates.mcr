@@ -5,19 +5,19 @@ CLSBEGIN 1
 HIEBEGIN 1
 VECBEGIN 1
 
-% Reading Network   ---    C:\Users\markb\OneDrive\Vlado\OpenAlex\project work SUnbelt\HBcite2Ci.net
+% Reading Network   ---    HBciteCi.net
 N 1 RDN "?" (315626)
-% Reading Partition   ---    C:\Users\markb\OneDrive\Vlado\OpenAlex\project work SUnbelt\HBcite2Cbc.clu
+% Reading Partition   ---    HBciteCbc.clu
 C 1 RDC "?" (315626)
 % Binarizing Partition
 C 2 BIN 1 [100-*] (315626)
 C 2 CLUNAME gideg >= tg
-% Output degree centrality of 1. C:\Users\markb\OneDrive\Vlado\OpenAlex\project work SUnbelt\HBcite2Ci.net (315626)
+% Output degree centrality of 1. HBciteCi.net (315626)
 C 3 DEGC 1 [1] (315626)
 % Binarizing Partition
 C 4 BIN 3 [0] (315626)
 C 4 CLUNAME lodeg = 0
-% Input degree centrality of 1. C:\Users\markb\OneDrive\Vlado\OpenAlex\project work SUnbelt\HBcite2Ci.net (315626)
+% Input degree centrality of 1. HBciteCi.net (315626)
 C 5 DEGC 1 [0] (315626)
 % Binarizing Partition
 C 6 BIN 5 [10-*] (315626)
@@ -29,5 +29,5 @@ C 8 MINP 7 4 (315626)
 C 8 CLUNAME new candidates
 % Extracting Subnetwork according to Partition
 N 2 EXT 1 8 [1] 1 (3784)
-% Saving network to file   ---    C:\Users\markb\OneDrive\Vlado\OpenAlex\project work SUnbelt\HB2.net
-N 2 WN "C:\Users\markb\OneDrive\Vlado\OpenAlex\project work SUnbelt\HB2.net" 0 (3784)
+% Saving network to file   ---    HB.net
+N 2 WN "HB.net" 0 (3784)
