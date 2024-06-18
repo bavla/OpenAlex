@@ -4,6 +4,7 @@
   - version 1. March 22, 2024; added partitions pYear, hit, type, lang
   - version 2. May 5, 2024; OpenAlex2Pajek split to Cite and All parts
   - version 3. May 11, 2024; Collaboration between countries
+  - version 4. June 18, 2024; Problem with the NULL values
 
 ## Examples
 
