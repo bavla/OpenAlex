@@ -15,6 +15,15 @@
 ```
 We get the citation network HBcite1Ci.net with some partitions.
 
+We get the citation network HBcite1Ci.net with some partitions.
+
+  * HBcite1Year.clu - publication year
+  * HBcite1Type.clu - type of publication
+  * HBcite1Lang.clu - language of publication
+  * HBcite1Cbc.clu - cited by count
+  * HBcite1Cdc.clu - countries distinct count
+  * HBcite1Out.clu - referenced works
+
 Using Pajek macro selectCandidates create the network HB1.net, using Textpad extract from it the list of candidates, and save the list as HB1.csv.
 
 Create the extended citation network HBcite2Ci.net
