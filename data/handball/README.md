@@ -15,8 +15,6 @@
 ```
 We get the citation network HBcite1Ci.net with some partitions.
 
-We get the citation network HBcite1Ci.net with some partitions.
-
   * HBcite1Year.clu - publication year
   * HBcite1Type.clu - type of publication
   * HBcite1Lang.clu - language of publication
