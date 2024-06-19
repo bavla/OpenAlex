@@ -55,6 +55,18 @@ Note
 ```
 ...
 
+```
+OpenAlex2PajekAll(
+   Q,                         # query
+   name="test",               # name of generated files 
+   listF=NULL,                # CSV file with IDs of works to add
+   save=FALSE,                # save data about works in ndjson format
+   saveF="saveCite.ndjson",   # ndjson file name
+   step=500,                  # report elapsed time after step processed works
+   test=0                     # if test > 0 report some test info
+)
+```   
+
 Finally we generate all networks:
 ```
 > Q <- list(
