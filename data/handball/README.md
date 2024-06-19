@@ -36,8 +36,10 @@ Join it with HB1.csv into the new list HB2u.csv and create the extended citation
 ```
 Repeat the last commands some times.
 
+Note
 ```
+> joinLists("HB2u.csv","HB3.csv","HB3u.csv")
 ```
-
+...
 
 
