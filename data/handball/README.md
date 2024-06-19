@@ -22,6 +22,19 @@ We get the citation network HBcite1Ci.net with some partitions.
   * HBcite1Cdc.clu - countries distinct count
   * HBcite1Out.clu - referenced works
 
+```
+OpenAlex2PajekCite(
+   Q,                         # query
+   nrun,                      # saturation iteration number
+   name="test",               # name of generated files 
+   listF=NULL,                # CSV file with IDs of works to add
+   save=FALSE,                # save data about works in ndjson format
+   saveF="saveCite.ndjson",   # ndjson file name
+   prop=FALSE,                # generate also partitions
+   step=500,                  # report elapsed time after step processed works
+   test=0                     # if test > 0 report some test info
+)
+```   
 Using Pajek macro selectCandidates create the network HB1.net, using Textpad extract from it the list of candidates, and save the list as HB1.csv.
 
 Create the extended citation network HBcite2Ci.net
