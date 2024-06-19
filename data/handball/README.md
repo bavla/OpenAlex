@@ -25,7 +25,7 @@ We get the citation network HBcite1Ci.net with some partitions.
 
 ```
 OpenAlex2PajekCite(
-   Q,                         # query
+   Q,                         # Cite query
    nrun,                      # saturation iteration number
    name="test",               # name of generated files 
    listF=NULL,                # CSV file with IDs of works to add
@@ -59,7 +59,7 @@ Note
 ## Generating network collection
 ```
 OpenAlex2PajekAll(
-   Q,                         # query
+   Q,                         # All query
    name="test",               # name of generated files 
    listF=NULL,                # CSV file with IDs of works to add
    save=FALSE,                # save data about works in ndjson format
