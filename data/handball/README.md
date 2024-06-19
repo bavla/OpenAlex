@@ -42,4 +42,13 @@ Note
 ```
 ...
 
+Finally we generate all networks:
+```
+> Q <- list(
++   search="handball",
++   select=selAll,
++   per_page="200"
++ )
+> OpenAlex2PajekAll(Q,name="Handball",listF="HB2u.csv")
+```
 
