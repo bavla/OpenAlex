@@ -1,5 +1,6 @@
 # Handball
 
+## Saturation 
 ```
 > wdir <- "C:/OpenAlex/handball"
 > setwd(wdir)
@@ -55,6 +56,7 @@ Note
 ```
 ...
 
+## Generating network collection
 ```
 OpenAlex2PajekAll(
    Q,                         # query
