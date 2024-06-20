@@ -78,4 +78,9 @@ Finally we generate all networks:
 + )
 > OpenAlex2PajekAll(Q,name="Handball",listF="HB8u.csv")
 ```
+To get source names we run
+```
+> sourceNames(netF="HandballWJ.net",namF="HBSources.nam")
+```
+
 
