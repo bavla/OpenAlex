@@ -8,7 +8,7 @@
 # version 1. March 22, 2024; added partitions pYear, hit, type, lang
 # version 2. May 5, 2024; OpenAlex2Pajek split to Cite and All parts
 # version 3. May 11, 2024; Collaboration between countries
-# version 4. June 18, 2024; Problem with the NULL values
+# version 4. June 18, 2024; Problem with the NULL values, sourceNames
 
 selPub  <- "id,primary_location,title,publication_year,cited_by_count,countries_distinct_count"
 selRef  <- "biblio,type,language,referenced_works_count,referenced_works"
@@ -385,7 +385,8 @@ OpenAlex2PajekCite <- function(Q,nrun,name="test",listF=NULL,save=FALSE,
     saveClu(U$out,"referenced works","Out")
   }
   cat("*** OpenAlex2Pajek / Cite - Stop",date(),"\n"); flush.console()
-  close(WC$tr) # closeWorks() 
+  # close(WC$tr) 
+  closeWorks() 
 }
 
 OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
@@ -437,7 +438,32 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
   saveTwoMode(U,name,cntrs,"cind","Countries WC","WC")
   saveTwoMode(U,name,keyws,"kind","Keywords WK","WK")
   cat("*** OpenAlex2Pajek / All - Stop",date(),"\n"); flush.console()
-  close(WC$tr) # closeWorks() 
+  # close(WC$tr) 
+  closeWorks() 
+}
+
+sourceNames <- function(netF="WJ.net",namF="Sources.nam",step=500){
+  cat("OpenAlex2Pajek - Names of sources",date(),"\n")
+  net <- file(netF,"r"); nam <- file(namF,"w")
+  line <- readLines(net,n=1); n <- 1
+  while(substr(line,1,1)!="*") {line <- readLines(net,n=1); n <- n+1}
+  S <- unlist(strsplit(line," "))
+  n1 <- as.integer(S[3]); n2 <- as.integer(S[2])-n1
+  close(net)
+  L <- read.table(netF,skip=n+n1,nrows=n2)$V2
+  cat("% OpenAlex2Pajek - names of sources",date(),"\n",file=nam)
+  cat("*vertices ",n2,"\n",file=nam)
+  cat("# of vertices = ",n2,"\n"); flush.console()
+  for(i in 1:length(L)){ 
+    if(i %% step==0) cat(date()," n =",i,"\n"); flush.console()
+    src <- paste0("https://api.openalex.org/sources/",L[i])
+    wd <- GET(src,query=list(select="id,display_name"))
+    if(wd$status_code!=200) {cat(i,L[i],"GET error\n"); flush.console() 
+      cat(format(i,width=6),' "',L[i],'"\n',sep='',file=nam); next}
+    wc <- fromJSON(rawToChar(wd$content))
+    cat(format(i,width=6),' "',wc$display_name,'"\n',sep='',file=nam)
+  }
+  close(nam); cat("Finished",date(),"\n"); flush.console()
 }
 
 coAuthorship <- function(CC,year=NULL){
