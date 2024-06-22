@@ -78,9 +78,15 @@ Finally we generate all networks:
 + )
 > OpenAlex2PajekAll(Q,name="Handball",listF="HB8u.csv")
 ```
-To get source names we run
+## To do
+
+1. To get source names we run
 ```
 > sourceNames(netF="HandballWJ.net",namF="HBSources.nam")
 ```
-
+2. Citation network boundary  https://github.com/bavla/biblio/wiki/Cite
+3. Reduced networks
+   DC = (outdeg > 0) ∨ (indeg ≥ 10) ∨ (year < 3000) ∨ (type > 0)
+   Extract DC from networks  https://github.com/bavla/biblio/wiki/Reduced
+   
 
