@@ -89,4 +89,4 @@ Finally we generate all networks:
    DC = (outdeg > 0) ∨ (indeg ≥ 10) ∨ (year < 3000) ∨ (type > 0)
    Extract DC from networks  https://github.com/bavla/biblio/wiki/Reduced
    
-
+[Analysis](analysis.md)
