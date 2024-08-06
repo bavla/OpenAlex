@@ -8,7 +8,7 @@ https://api.openalex.org/works?filter=authorships.countries:SI&group-by=authorsh
 
 The details are described in 
   - meaning
-  - total
+  - total https://github.com/bavla/OpenAlex/blob/main/Countries/OpenAlex_1-neighbors.pdf
   - years
   - Europe
 
