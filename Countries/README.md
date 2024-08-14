@@ -12,3 +12,4 @@ The details are described in
   - [years](https://github.com/bavla/OpenAlex/blob/main/Countries/years.pdf)
   - [clustering](https://github.com/bavla/OpenAlex/blob/main/Countries/World%20clustering.pdf)
 
+Figures from the paper: [Figure 1](), [Figure 1](), [Figure 1]().
