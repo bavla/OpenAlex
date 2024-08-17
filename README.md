@@ -4,5 +4,6 @@ Bibliometrics
 
 source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2.R")
 
-https://github.com/topics/openalex
+[URLs](URLs.md)
+
 
