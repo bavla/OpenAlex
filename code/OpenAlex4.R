@@ -2,7 +2,7 @@
 # https://github.com/bavla/OpenAlex/tree/main/code
 # http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:bib:alex
 # by Vladimir Batagelj, March 2024
-# source("https://raw.githubusercontent.com/bavla/OpenAlex/main/OpenAlex4.R")
+# source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex4.R")
 # http://localhost:8800/doku.php?id=work:bib:alex
 #
 
