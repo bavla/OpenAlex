@@ -477,7 +477,7 @@ coAuthorship <- function(CC,year=NULL){
   M <- matrix(0,nrow=n,ncol=n); rownames(M) <- colnames(M) <- CC
   T <- rep(0,n); names(T) <- CC; G <- rep(0,n); names(G) <- CC
   Q1 <- "https://api.openalex.org/works?filter=authorships.countries:"
-  Q3 <- "&group-by=authorships.countries"
+  Q3 <- ",countries_distinct_count:>1&group-by=authorships.countries"
   if(is.null(year)) lab <- "\nComplete search" else { 
     lab <- paste0("\nYear =",year); Q3 <- paste0(",publication_year:",year,Q3)}
   cat(lab,date(),"\n"); flush.console()
