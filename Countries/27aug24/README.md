@@ -8,7 +8,7 @@ The ZIP file [WrldCo_years.zip](WrldCo_years.zip) contains
   - and a partition WrldCoYEARG.clu - number of countries that co-authored works with the country cy in the year YEAR
 for each YEAR in 1990:2023.
 
-The ZIP file []() contains the co-authorship data as 3D array describing temporal co-authorship network in RDATA format.
+The ZIP file [WrldCoRdata.zip](WrldCoRdata.zip) contains the co-authorship data as 3D array describing temporal co-authorship network in RDATA format.
 
 The file [ISO2codes.csv](ISO2codes.csv) contains ISO 2 alpha codes of world countries.
 
