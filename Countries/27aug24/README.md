@@ -17,3 +17,5 @@ The file [continents.clu](continents.clu) contains a partition of countries to c
 cluster, Balassa  http://localhost:8800/doku.php?id=work:bib:alex:mat
 
 Europe http://localhost:8800/doku.php?id=work:bib:alex:eu
+
+https://github.com/bavla/OpenAlex/blob/main/code/ex/eu.md
