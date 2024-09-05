@@ -17,7 +17,7 @@ The file [continents.clu](continents.clu) contains a partition of countries to c
 ## Europe
 
   - [EuropeList.Rdata](EuropeList.Rdata) - co-authorship between European countries for each year 1990:2023
-  - [EuropeXList.Rdata](EuropeXList.Rdata) - co-authorship between European countries for each years 1994:2003, 2004:2013, 2014:2023
+  - [EuropeXList.zip](EuropeXList.zip) - co-authorship between European countries for each years 1994:2003, 2004:2013, 2014:2023
   - [Europe](Eu.md) notes
 
 ## Docs
