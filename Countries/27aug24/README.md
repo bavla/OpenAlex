@@ -1,6 +1,6 @@
 # World co-authorship / August 27, 2024
 
-The creation of the files is desribed in []().
+The creation of the files is desribed in [countries.pdf](countries.pdf).
 
 The ZIP file [WrldCo_years.zip](WrldCo_years.zip) contains
   - a network WrldCoYEAR.net - co-authorship network for the year YEAR,
