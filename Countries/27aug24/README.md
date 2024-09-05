@@ -13,3 +13,7 @@ The ZIP file [WrldCoRdata.zip](WrldCoRdata.zip) contains the co-authorship data 
 The file [ISO2codes.csv](ISO2codes.csv) contains ISO 2 alpha codes of world countries.
 
 The file [continents.clu](continents.clu) contains a partition of countries to continents.
+
+cluster, Balassa  http://localhost:8800/doku.php?id=work:bib:alex:mat
+
+Europe http://localhost:8800/doku.php?id=work:bib:alex:eu
