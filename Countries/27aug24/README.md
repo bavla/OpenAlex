@@ -25,7 +25,7 @@ The file [continents.clu](continents.clu) contains a partition of countries to c
   - https://github.com/bavla/wNets/blob/main/Docs/compstat23.pdf
   - https://github.com/bavla/biblio/tree/master/Eu
   - https://github.com/bavla/OpenAlex/blob/main/code/ex/eu.md
-  - C:\Users\vlado\docs\papers\2024\Collnet\paper\Collnet_VB.docx
+  - [Collnet](https://github.com/bavla/OpenAlex/blob/main/docs/WorldCoAu.pdf); C:\Users\vlado\docs\papers\2024\Collnet\paper\Collnet_VB.docx
   - [Sreda1351+2](https://github.com/bavla/OpenAlex/blob/main/docs/sreda1351%2B2.pdf); C:\Users\vlado\docs\papers\2024\OpenAlex\slides\sreda1351+2.pdf
   - [World clustering, Balassa](https://github.com/bavla/OpenAlex/blob/main/Countries/World%20clustering.pdf);  http://localhost:8800/doku.php?id=work:bib:alex:mat
   - Europe http://localhost:8800/doku.php?id=work:bib:alex:eu
