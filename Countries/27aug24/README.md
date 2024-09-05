@@ -16,7 +16,7 @@ The file [continents.clu](continents.clu) contains a partition of countries to c
 
 ## Europe
 
-[Europe](Eu)
+[Europe](Eu.md)
 
 ## Docs
 cluster, Balassa  http://localhost:8800/doku.php?id=work:bib:alex:mat
