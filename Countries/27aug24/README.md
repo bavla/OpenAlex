@@ -16,11 +16,17 @@ The file [continents.clu](continents.clu) contains a partition of countries to c
 
 ## Europe
 
-[Europe](Eu.md)
+  - [EuropeList.Rdata](EuropeList.Rdata) - co-authorship between European countries for each year 1990:2023
+  - [EuropeXList.Rdata](EuropeXList.Rdata) - co-authorship between European countries for each years 1994:2003, 2004:2013, 2014:2023
+  - [Europe](Eu.md) notes
 
 ## Docs
-cluster, Balassa  http://localhost:8800/doku.php?id=work:bib:alex:mat
 
-Europe http://localhost:8800/doku.php?id=work:bib:alex:eu
+  - https://github.com/bavla/wNets/blob/main/Docs/compstat23.pdf
+  - https://github.com/bavla/biblio/tree/master/Eu
+  - https://github.com/bavla/OpenAlex/blob/main/code/ex/eu.md
+  - C:\Users\vlado\docs\papers\2024\Collnet\paper\Collnet_VB.docx
+  - C:\Users\vlado\docs\papers\2024\OpenAlex\slides\sreda1351+2.pdf
+  - cluster, Balassa  http://localhost:8800/doku.php?id=work:bib:alex:mat
+  - Europe http://localhost:8800/doku.php?id=work:bib:alex:eu
 
-https://github.com/bavla/OpenAlex/blob/main/code/ex/eu.md
