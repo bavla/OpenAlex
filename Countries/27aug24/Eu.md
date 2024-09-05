@@ -12,3 +12,32 @@
 + }
 > save(EX,file="EuropeXList.Rdata")
 ```
+## Balassa
+
+```
+> load("./EuRdata/EuropeXList.Rdata")
+> EXb <- list()
+> Y <- c("1994-2003","2004-2013","2014-2023")
+> for(i in 1:length(EX)){
+>    cat(i,"Years",Y[i],"\n"); flush.console()
+>    P <- EX[[i]]; diag(P) <- 0
+>    D <- rowSums(P); T <- sum(D); n <- nrow(P)
+>    for(u in 1:(n-1)) for(v in (u+1):n) P[u,v] <- P[v,u] <- P[u,v]*T/D[u]/D[v]
+>    X <- Z <- log2(P)
+>    Z[Z == -Inf] <- 0; Z[is.nan(Z)] <- 0 
+>    X[X == -Inf] <- NA; X[is.nan(X)] <- 0 
+>    EXb[[i]] <- X
+>    t <- hclust(as.dist(CorEu(Z)),method="ward.D")
+>    pdf(file=paste("EuBalassaD",Y[i],".pdf",sep=""),width=11,height=11)
+>    plot(t,cex=0.7,hang=-1,main=paste("Europe / Balassa",Y[i]))
+>    dev.off()
+>    pdf(file=paste("EuBalassa",Y[i],".pdf",sep=""),width=11,height=11)
+>    heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++       scale="none",revC=TRUE,col = bluered(100),na.color="yellow",
++       trace = "none", density.info = "none",
++       main=paste("Europe ",Y[i]," / Balassa / Ward",sep=""))
+> #   ans <- readline(paste(i,". Press Enter to continue >",sep=""))
+>    dev.off()
+> }
+> save(EXb,file="EuropeXbList.Rdata")
+```
