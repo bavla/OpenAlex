@@ -58,3 +58,60 @@
 > }
 > save(EXb,file="EuropeXbList.Rdata")
 ```
+## Reordering
+
+### Some functions
+
+```
+> flip <- function(k,T) {t <- T[k,1]; T[k,1] <- T[k,2]; T[k,2] <- t; return(T)}
+> toFather <- function(tm){
++   n <- nrow(tm); T <- rep(0,2*n+1)
++   for(i in 1:n){
++     for(j in 1:2){
++       p <- tm[i,j]
++       if(p<0) T[-p] <- i+n+1 else T[n+1+p] <- i+n+1
++     }
++   }
++   return(T)
++ }
+> minCl <- function(u,v,T){
++   if(min(u,v)==0) return(T[max(u,v)])
++   # cat(u," ",v,":",T[u]," ",T[v],"\n")
++   if(u==v) return(u)
++   return( if(T[u]<T[v]) minCl(T[u],v,T) else minCl(u,T[v],T) ) 
++ }
+```
+
+### Balassa
+
+```
+> i <- 1; t <- EXb[[i]]$t; h <- EXb[[3]]$h; X <- EXb[[i]]$M
+> F <- toFather(t$merge); N <- rownames(X); n <- length(N)
+> minCl(which(N=="JE"),which(N=="RO"),F) - n
+[1] 50
+> minCl(which(N=="SM"),which(N=="DE"),F) - n
+[1] 39
+> minCl(which(N=="TR"),which(N=="LT"),F) - n
+[1] 53
+> t$merge <- flip(39,flip(53,flip(50,t$merge)))
+> heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
++   scale="none",revC=TRUE,col=bluered(100),na.color="yellow",
++   trace="none",density.info="none",keysize = 0.8,
++   main=paste("Europe ",Y[i]," / Balassa / Ward",sep=""))
+> 
+
+> pdf(file=paste("EuXBalassaR",Y[i],".pdf",sep=""),width=11,height=11)
+> heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
+>   scale="none",revC=TRUE,col = bluered(100),na.color="yellow",
+>   trace = "none", density.info = "none",keysize = 0.8,
+>   main=paste("Europe ",Y[i]," / Balassa / Ward",sep=""))
+> dev.off()
+
+```
+
+### Density
+
+```
+
+```
+
