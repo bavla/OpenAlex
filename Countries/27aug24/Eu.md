@@ -94,12 +94,21 @@
 > minCl(which(N=="TR"),which(N=="LT"),F) - n
 [1] 53
 > t$merge <- flip(39,flip(53,flip(50,t$merge)))
+---
+> i <- 2; t <- EXb[[i]]$t; h <- EXb[[i]]$h; X <- EXb[[i]]$M
+> F <- toFather(t$merge); N <- rownames(X); n <- length(N)
+> t$merge <- flip(43,flip(20,flip(51,flip(47,t$merge))))
+---
+> i <- 3; t <- EXb[[i]]$t; h <- EXb[[i]]$h; X <- EXb[[i]]$M
+> F <- toFather(t$merge); N <- rownames(X); n <- length(N)
+> t$merge <- flip(25,flip(50,flip(57,flip(29,flip(8,t$merge)))))
+> t$merge <- flip(40,flip(52,flip(44,flip(38,t$merge))))
+----
 > heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
 +   scale="none",revC=TRUE,col=bluered(100),na.color="yellow",
 +   trace="none",density.info="none",keysize = 0.8,
 +   main=paste("Europe ",Y[i]," / Balassa / Ward",sep=""))
 > 
-
 > pdf(file=paste("EuXBalassaR",Y[i],".pdf",sep=""),width=11,height=11)
 > heatmap.2(X,Rowv=as.dendrogram(t),Colv="Rowv",dendrogram="column",
 >   scale="none",revC=TRUE,col = bluered(100),na.color="yellow",
