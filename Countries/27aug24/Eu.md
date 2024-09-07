@@ -124,3 +124,46 @@
 
 ```
 
+## Co-authorship growth
+
+### Growth matrix G
+
+G[countries,years]
+```
+> load("./EU/EuropeList.Rdata")
+> ny <- length(E); n <- nrow(E[[1]]$M)
+> G <- matrix(0,nrow=n,ncol=ny)
+> for(y in 1:ny) G[,y] <- diag(E[[y]]$M)
+> rownames(G) <- rownames(E[[1]]$M); colnames(G) <- 1990:2023
+> save(G,file="EuGrowth.Rdata")
+```
+
+### Plotting
+
+```
+> ym <- max(G); x <- 1990:2023; n <- nrow(G)
+> plot(x,x,ylim=c(0,ym),type="n",main="Europe co-authorship growth")
+> for(c in 1:n) lines(x,G[c,])
+
+> Log <- function(v) ifelse(v>1,log(v),0)
+> xl <- sample(1990:2023,n,replace=TRUE)
+> N <- rownames(G); yl <- rep(0,n)
+> plot(x,x,ylim=c(0,Log(ym)),type="n",main="Europe log growth")
+> for(c in 1:n) {yl[c] <- Log(G[c,xl[c]-1989]); lines(x,Log(G[c,]))}
+> text(xl,yl,labels=N,cex=0.7,col="red")
+
+> y <- Log(G["GB",])
+> reg = lm(y~x)
+> plot(x,y,main="line GB")
+> abline(reg,col="blue",lw=2)
+> a <- reg$coef[2]; b <- reg$coef[1]
+> A <- exp(a); C <- exp(b)
+> c(a,b,A,C)
+            x   (Intercept)             x   (Intercept) 
+ 9.021400e-02 -1.700968e+02  1.094408e+00  1.342497e-74 
+
+> z <- exp(a*x+b)
+> plot(x,G["GB",],main="Growth GB")
+> lines(x,z,type="l",col="red",lw=2)
+```
+
