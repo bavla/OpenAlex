@@ -213,4 +213,41 @@ G[countries,years]
 > plot(x,G["GB",],main="Growth GB")
 > lines(x,z,type="l",col="red",lw=2)
 ```
+## Weight distributions
+
+```
+> library(ggplot2)
+> i <- 3; cat(i,"Years",Y[i],"\n")
+> P <- EX[[i]]; diag(P) <- 0; V <- P[P>0]
+
+> # Histogram
+> hist(V,col="green",border="black",prob=TRUE,xlab="w",breaks=50,
++   main=paste0("Europe ",Y[i]," Weights Distribution"))
+
+> # Log
+> T <- log(V)
+> hist(T,col="green",border="black",prob=TRUE,xlab="log(w)",breaks=20,
++   main=paste0("Europe ",Y[i]," Log Weights Distribution"))
+> lines(density(T,n=64),lwd=2,col="blue")
+> c(m <- mean(T),s <- sd(T))
+> curve(dnorm(x,m,s),from=0,to=12,lwd=2,col="red",xaxt="n",yaxt="n",add=TRUE)
+
+> # Power
+> a <- 0.02; T <- (1000*V)**a
+> hist(T,col="green",border="black",prob=TRUE,ylim=c(0,6.5),
++   xlab="(1000*w)^0.02",main=paste0("Europe ",Y[i]," (1000*w)^",a," Distribution"))
+> c(m <- mean(T),s <- sd(T))
+[1] 1.28794540 0.07122478
+> curve(dnorm(x,m,s),from=0.6,to=2.6,lwd=2,col="red",xaxt="n",yaxt="n",add=TRUE)
+> lines(density(T,n=64),lwd=2,col="blue")
+
+> # Balassa
+> P <- EXb[[i]]$M; T <- P[!is.na(P)]
+> hist(T,col="green",border="black",prob=TRUE,xlab="Balassa(w)",breaks=20,
++   main=paste0("Europe ",Y[i]," Balassa Weights Distribution"))
+> lines(density(T,n=128),lwd=2,col="blue")
+> c(m <- mean(T),s <- sd(T))
+> curve(dnorm(x,m,s),from=-4,to=7,lwd=2,col="red",xaxt="n",yaxt="n",add=TRUE)
+```
+
 
