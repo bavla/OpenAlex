@@ -247,6 +247,7 @@ G[countries,years]
 +   main=paste0("Europe ",Y[i]," Balassa Weights Distribution"))
 > lines(density(T,n=128),lwd=2,col="blue")
 > c(m <- mean(T),s <- sd(T))
+[1] 0.05367164 1.29054820
 > curve(dnorm(x,m,s),from=-4,to=7,lwd=2,col="red",xaxt="n",yaxt="n",add=TRUE)
 ```
 
