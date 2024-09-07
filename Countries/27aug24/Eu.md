@@ -121,7 +121,54 @@
 ### Density
 
 ```
+> i <- 1; cat(i,"Years",Y[i],"\n")
+> P <- EX[[i]]; diag(P) <- 0; D <- rowSums(P)
+> X <- Z <- log2(P)
+> Z[Z == -Inf] <- 0; Z[is.nan(Z)] <- 0 
+> X[X == -Inf] <- NA; X[is.nan(X)] <- 0 
+> X[,D==0] <- NA; X[D==0,] <- NA
+> h <- hclust(as.dist(CorEu(Z)),method="ward.D")
 
+> F <- toFather(h$merge); N <- rownames(X); n <- length(N)
+> h$merge <- flip(54,flip(57,flip(48,h$merge)))
+> h$merge <- flip(40,flip(28,flip(33,flip(38,h$merge))))
+
+-------------
+> i <- 2; cat(i,"Years",Y[i],"\n")
+> P <- EX[[i]]; diag(P) <- 0; D <- rowSums(P)
+> X <- Z <- log2(P)
+> Z[Z == -Inf] <- 0; Z[is.nan(Z)] <- 0 
+> X[X == -Inf] <- NA; X[is.nan(X)] <- 0 
+> X[,D==0] <- NA; X[D==0,] <- NA
+> h <- hclust(as.dist(CorEu(Z)),method="ward.D")
+
+> F <- toFather(h$merge); N <- rownames(X); n <- length(N)
+> h$merge <- flip(50,flip(49,flip(56,flip(55,h$merge))))
+> h$merge <- flip(52,flip(42,flip(54,flip(51,h$merge))))
+
+-------------
+> i <- 3; cat(i,"Years",Y[i],"\n")
+> P <- EX[[i]]; diag(P) <- 0; D <- rowSums(P)
+> X <- Z <- log2(P)
+> Z[Z == -Inf] <- 0; Z[is.nan(Z)] <- 0 
+> X[X == -Inf] <- NA; X[is.nan(X)] <- 0 
+> X[,D==0] <- NA; X[D==0,] <- NA
+> h <- hclust(as.dist(CorEu(Z)),method="ward.D")
+> h$merge <- flip(52,flip(41,flip(57,h$merge)))
+--------------------
+
+> heatmap.2(X,Rowv=as.dendrogram(h),Colv="Rowv",dendrogram="column",
++   scale="none",revC=TRUE,col=myPalette,na.color="yellow",
++   trace="none",density.info="none",keysize = 0.8,
++   main=paste("Europe ",Y[i]," / log density / Ward",sep=""))
+> 
+
+> pdf(file=paste("EuXdensR",Y[i],".pdf",sep=""),width=11,height=11)
+> heatmap.2(X,Rowv=as.dendrogram(h),Colv="Rowv",dendrogram="column",
+>   scale="none",revC=TRUE,col=myPalette,na.color="yellow",
+>   trace="none",density.info="none",keysize=0.8,
+>   main=paste("Europe ",Y[i]," / log density / Ward",sep=""))
+> dev.off()
 ```
 
 ## Co-authorship growth
