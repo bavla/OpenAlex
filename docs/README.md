@@ -4,6 +4,6 @@
   1. [1351+2. sredin seminar](sreda1351+2.pdf)
   1. [Seminar UP Koper](OAkoper.pdf)
   1. [Workshop Lugano](EU_Lugano.pdf)
-  1. {Applied statistics 2024, Koper](OA_AS24.pdf)
+  1. [Applied statistics 2024, Koper](OA_AS24.pdf)
   1. IS2024-SIKDD_2024 [paper](IS2024_-_SIKDD_2024_paper_12-1.pdf), [DOI](https://doi.org/10.70314/is.2024.sikdd.12), [slides](bibIS24.pdf)
  
