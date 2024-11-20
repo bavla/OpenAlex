@@ -2,6 +2,7 @@
 
   1. [1345+6. sredin seminar](sreda1345+6.pdf)
   1. [1351+2. sredin seminar](sreda1351+2.pdf)
+  1. [1354+5. sredin seminar](sreda1354+5.pdf)
   1. [Seminar UP Koper](OAkoper.pdf)
   1. [Workshop Lugano](EU_Lugano.pdf)
   1. [Applied statistics 2024, Koper](OA_AS24.pdf)
