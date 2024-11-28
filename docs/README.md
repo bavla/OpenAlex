@@ -8,4 +8,4 @@
   1. [Workshop Lugano](EU_Lugano.pdf)
   1. [Applied statistics 2024, Koper](OA_AS24.pdf)
   1. IS2024-SIKDD_2024, October 7 2024. Vladimir Batagelj, Jan Pisanski, Tomaž Pisanski: Higher-order bibliographic services based on bibliographic networks [paper](IS2024_-_SIKDD_2024_paper_12-1.pdf), [DOI](https://doi.org/10.70314/is.2024.sikdd.12), [slides](bibIS24.pdf)
-  1. IS2024-Cognitive Science, October 11 2024. Pisanski, T., Batagelj, V., Pisanski, J.: Open Science and Goodhart’s Law.  [paper p. 20-23](https://is.ijs.si/wp-content/uploads/2024/10/IS2024_Volume-B-1.pdf).  
+  1. IS2024-Cognitive Science, October 11 2024. Pisanski, T., Batagelj, V., Pisanski, J.: Open Science and Goodhart’s Law.  [paper p. 20-23](https://is.ijs.si/wp-content/uploads/2024/11/IS2024_Volume-B-1.pdf).  
