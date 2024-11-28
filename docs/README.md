@@ -1,9 +1,9 @@
 # Documents
 
-  1. [1345+6. sredin seminar](sreda1345+6.pdf)
-  1. [1351+2. sredin seminar](sreda1351+2.pdf)
-  1. [1354+5. sredin seminar](sreda1354+5.pdf)
-  1. [1356. sredin seminar](sreda1356.pdf)
+  1. [1345+6. sredin seminar](sreda1345+6.pdf), 20+27 mar 2024; Vladimir Batagelj: OpenAlex2Pajek, part 1+2
+  1. [1351+2. sredin seminar](sreda1351+2.pdf), 22+29 maj 2024; Vladimir Batagelj: OpenAlex2Pajek - Institutions, the saturation approach, and co-authorship between countries, part 1+2
+  1. [1354+5. sredin seminar](sreda1354+5.pdf), 13+20 nov 2024; Vladimir Batagelj: Repozitoriji - shrambe znanja, 1.+2. del
+  1. [1356. sredin seminar](sreda1356.pdf), 27 Nov 2024; Vladimir Batagelj: Znanstvene objave
   1. [Seminar UP Koper](OAkoper.pdf)
   1. [Workshop Lugano](EU_Lugano.pdf)
   1. [Applied statistics 2024, Koper](OA_AS24.pdf)
