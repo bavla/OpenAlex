@@ -20,7 +20,7 @@ The file [continents.clu](continents.clu) contains a partition of countries to c
   - [EuropeXList.zip](EuropeXList.zip) - co-authorship between European countries for each years 1994:2003, 2004:2013, 2014:2023
   - [EuropeXbList.Rdata](EuropeXbList.Rdata) - co-authorship between European countries for each years 1994:2003, 2004:2013, 2014:2023 Balassa normalization; nolinks have value NA - for computations replace it with 0; h - density hierarchy, t - Balassa hierarchy, M - normalized network
   - [Europe](Eu.md) notes
-  - Dynamic blockmodeling: [Dynamic blockmodeling.R](DynmaicBlockmodeling.R) and [plotMatCol.R](plotMatCol.R)
+  - Dynamic blockmodeling: [Dynamic blockmodeling.R](DynamicBlockmodeling.R) and [plotMatCol.R](plotMatCol.R)
 
 ## Docs
 
