@@ -1,0 +1,2 @@
+# OpenAlex2Pajek
+
