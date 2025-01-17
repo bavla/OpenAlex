@@ -1,2 +1,22 @@
 # OpenAlex2Pajek
 
+OpenAlex2Pajek (OpenAlex2Pajek, 2024) is an R a package of functions for constructing bibliographic networks from selected bibliographic data in OpenAlex. Currently, OpenAlex2Pajek contains three main functions OpenAlex2PajekCite, OpenAlex2PajekAll, and coAuthorship.
+
+## Saturation approach to construct a bibliographic networks on selected topic
+
+We split the process of creating the collection of bibliographic networks into two parts:
+1Draft version with vector graphics color figures of the paper published in Collnet 2024 proceedings ISBN 978-93-86578-65-5.
+determining the set W of relevant works using the saturation approach (Batagelj et al., 2017, page 506],
+creation of the network collection for the works from W.
+The set W is determined iteratively using the function OpenAlex2PajekCite and the collection is finally created using the function OpenAlex2PajekAll.
+After each run of the function OpenAlex2PajekCite we read the last version of the citation network into Pajek (De Nooy et al., 2018) and apply macro expNodes to it. It produces a vector of expansion nodes. Using the vector-Info button in Pajek we get a list of works with the largest input degree. We select an appropriate threshold and extract (select and copy) the upper part of the table into TextPad. In TextPad, we remove other columns and save the list of works as a CSV file. Using the function joinLists we combine the old list of works with the new one and save it for the next step of the saturation procedure.
+The collection contains the citation network Cite and two-mode networks: authorship WA, sources WJ, keywords WK, countries WC, and work properties: publication year, type of publication, the language of publication, cited by count, countries distinct count, and referenced works.
+
+## Temporal network of co-authorship between world countries
+
+We developed a function coAuthorship that creates a temporal network describing the co-authorship between world countries in selected time periods. It turned out that OpenAlex is using the current ISO 3166-1 alpha-2 (2024) two-letter country codes to represent countries, dependent territories, and special areas of geographical interest. It doesn’t consider ex-countries such as SU (Soviet Union) or YU (Yugoslavia) – such allocations are transformed into the corresponding current countries. Another problem in creating the co-authorship network between world countries is that the above query returns information about up to 200 most collaborative countries. The problem is resolved by considering the symmetry of the co-authorship data.
+
+2024-Batagelj+Pisanski+Pisanski-Higher-Order Bibliographic Services based on bibliographic networks
+2024-Batagelj-OpenAlex2Pajek–an R Package for converting OpenAlex bibliographic data into Pajek networks_arXiv
+
+
