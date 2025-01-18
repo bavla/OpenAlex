@@ -24,11 +24,6 @@ The collection contains the citation network **Cite** and two-mode networks: aut
 
 We developed a function coAuthorship that creates a temporal network describing the co-authorship between world countries in selected time periods. It turned out that OpenAlex is using the current ISO 3166-1 alpha-2 (2024) two-letter country codes to represent countries, dependent territories, and special areas of geographical interest. It doesn’t consider ex-countries such as SU (Soviet Union) or YU (Yugoslavia) – such allocations are transformed into the corresponding current countries. Another problem in creating the co-authorship network between world countries is that the above query returns information about up to 200 most collaborative countries. The problem is resolved by considering the symmetry of the co-authorship data.
 
-2024-Batagelj+Pisanski+Pisanski-Higher-Order Bibliographic Services based on bibliographic networks
-
-2024-Batagelj-OpenAlex2Pajek–an R Package for converting OpenAlex bibliographic data into Pajek networks_arXiv
-
-1Draft version with vector graphics color figures of the paper published in Collnet 2024 proceedings ISBN 978-93-86578-65-5.
 
   - Batagelj, V., Pisanski, J., Pisanski, T.: Higher-order bibliographic services based on bibliographic networks. IS2024-SIKDD_2024, Ljubljana, October 7 2024. [PDF](https://doi.org/10.70314/is.2024.sikdd.12) 
   - Batagelj, V.: OpenAlex2Pajek – an R Package for converting OpenAlex bibliographic data into Pajek networks.  COLLNET 2024, Strasbourg, December 12-14. V: Jain, Praveen Kumar (ur.), et al. Innovations in webometrics, informetrics, and scientometrics: AI-driven approaches and insights. Delhi: Bookwell, cop. 2024. p. 66-77. ISBN 978-93-86578-65-5.[arXiv](https://arxiv.org/abs/2501.06656)
