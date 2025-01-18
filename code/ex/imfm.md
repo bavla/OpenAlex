@@ -8,8 +8,6 @@ We would like to restrict hits to the years 2001-2020
 
 https://api.openalex.org/works?filter=institution.id:I4210106342,publication_year:2001-2020&select=id,title&per_page=200&page=2
 
-We learn that researchers from HKUST published 9702 works in the years 2017-2019.
-
 Now we are ready for the creation of the corresponding Pajek files.
 ```
 > wdir <- "C:/Users/vlado/work/OpenAlex/API"
