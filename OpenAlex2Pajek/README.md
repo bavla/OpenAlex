@@ -40,17 +40,51 @@ https://api.openalex.org/works?filter=author.id:A5001676164|A5065490876|A5110460
 ```
 They co-authored 524 works. Only first 200 works are listed. To get the remaining works change page=1 to page=2 and page=3.
 
-Now we are ready to create the corresponding networks.
-
-
-```
+Now we are ready to create the corresponding networks using R.
 
 ```
+> setwd("C:/Users/vlado/work/OpenAlex/API/test")
+>  
+> library(httr); library(jsonlite)
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
+> 
+> A <- "A5001676164|A5065490876|A5110460780|A5029499420|A5080127754"
+> Q <- list(
++   filter=paste0("author.id:",A,",publication_year:1990-2024"),
++   select=selAll,
++   per_page="200"
++ )
+> OpenAlex2PajekAll(Q,name="BDF")
+```
+the program execution produces the following report
+```
+OpenAlex2Pajek / All - Start Sat Jan 18 05:40:26 2025 
+*** OpenAlex2Pajek / All - Process Sat Jan 18 05:40:26 2025 
+*** OpenAlex2Pajek / All - Data Collected Sat Jan 18 05:40:32 2025 
+hits: 452 works: 4078 authors: 303 anon: 0 sources: 119 
+>>> Citation Cite
+>>> publication year
+>>> type of publication
+>>> language of publication
+>>> cited by count
+>>> countries distinct count
+>>> referenced works
+>>> Authorship WA
+>>> Sources WJ
+>>> Countries WC
+>>> Keywords WK
+*** OpenAlex2Pajek / All - Stop Sat Jan 18 05:40:32 2025 
+```
+The obtained network files have the name BDF and different extensions.
+
 #### Bibliographic networks for selected institution
 
 ```
 ```
 
+```
+```
 
 ## Temporal network of co-authorship between world countries
 
