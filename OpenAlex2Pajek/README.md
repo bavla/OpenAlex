@@ -43,7 +43,7 @@ They co-authored 524 works. Only the first 200 works are listed. To get the rema
 Now we are ready to create the corresponding networks using R.
 
 ```
-> setwd("C:/Users/vlado/work/OpenAlex/API/test")
+> setwd("C:/OpenAlex/test")
 >  
 > library(httr); library(jsonlite)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
@@ -89,7 +89,7 @@ We learn that UP's OpenAlex ID is I118905719.
 
 We create the corresponding networks using R.
 ```
-> setwd("C:/Users/vlado/work/OpenAlex/API/test")
+> setwd("C:/OpenAlex/test")
 >  
 > library(httr); library(jsonlite)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
@@ -127,7 +127,7 @@ hits: 3495 works: 67883 authors: 5344 anon: 0 sources: 1161
 >>> Keywords WK
 *** OpenAlex2Pajek / All - Stop Sat Jan 18 06:26:27 2025 
 ```
-
+See also [IMFM](https://github.com/bavla/OpenAlex/blob/main/code/ex/imfm.md).
 
 ## Temporal network of co-authorship between world countries
 
@@ -135,7 +135,7 @@ We developed a function coAuthorship that creates a temporal network describing 
 
 Here is a program in R to create temporal co-authorship networks between world countries for selected years.
 ```
-> setwd("C:/Users/vlado/work/OpenAlex/API/test")
+> setwd("C:/OpenAlex/test")
 > library(httr); library(jsonlite)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 > source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
