@@ -14,7 +14,7 @@ We split the process of creating the collection of bibliographic networks into t
 
 The set W is determined iteratively using the function `OpenAlex2PajekCite` and the collection is finally created using the function `OpenAlex2PajekAll`.
 
-After each run of the function `OpenAlex2PajekCite` we read the last version of the citation network into [Pajek](https://core-prod.cambridgecore.org/core/books/exploratory-social-network-analysis-with-pajek/6F8EE2512CB7C6D233DB2DAC3886D4F5) and apply macro [`expNodes`](https://raw.githubusercontent.com/bavla/OpenAlex/refs/heads/main/code/expNodes.mcr) to it. It produces a vector of expansion nodes. Using the `vector-Info` button in Pajek we get a list of works with the largest input degree. We select an appropriate threshold and extract (select and copy) the upper part of the table into TextPad. In TextPad, we remove other columns and save the list of works as a CSV file. Using the function `joinLists` we combine the old list of works with the new one and save it for the next step of the saturation procedure.
+After each run of the function `OpenAlex2PajekCite` we read the last version of the citation network into [Pajek](http://mrvar.fdv.uni-lj.si/pajek/) and apply macro [`expNodes`](https://raw.githubusercontent.com/bavla/OpenAlex/refs/heads/main/code/expNodes.mcr) to it. It produces a vector of expansion nodes. Using the `vector-Info` button in Pajek we get a list of works with the largest input degree. We select an appropriate threshold and extract (select and copy) the upper part of the table into TextPad. In TextPad, we remove other columns and save the list of works as a CSV file. Using the function `joinLists` we combine the old list of works with the new one and save it for the next step of the saturation procedure.
 
 The collection contains the citation network **Cite** and two-mode networks: authorship **WA**, sources **WJ**, keywords **WK**, countries **WC**, and work properties: publication year, type of publication, the language of publication, cited by count, countries distinct count, and referenced works.
 
@@ -204,6 +204,8 @@ See also [Countries](https://github.com/bavla/OpenAlex/tree/main/Countries).
 
   - Batagelj, V., Pisanski, J., Pisanski, T.: Higher-order bibliographic services based on bibliographic networks. IS2024-SIKDD_2024, Ljubljana, October 7 2024. [PDF](https://doi.org/10.70314/is.2024.sikdd.12) 
   - Batagelj, V.: OpenAlex2Pajek – an R Package for converting OpenAlex bibliographic data into Pajek networks.  COLLNET 2024, Strasbourg, December 12-14. V: Jain, Praveen Kumar (ur.), et al. Innovations in webometrics, informetrics, and scientometrics: AI-driven approaches and insights. Delhi: Bookwell, cop. 2024. p. 66-77. ISBN 978-93-86578-65-5. [arXiv](https://arxiv.org/abs/2501.06656)
+  - De Nooy, W., Mrvar, A., Batagelj, V. Exploratory social network analysis with Pajek: Revised and expanded edition for updated software. Vol. 46. Cambridge university press, 2018. [WWW](https://core-prod.cambridgecore.org/core/books/exploratory-social-network-analysis-with-pajek/6F8EE2512CB7C6D233DB2DAC3886D4F5)
+
 
 
 
