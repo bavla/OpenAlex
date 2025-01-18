@@ -22,7 +22,7 @@ The collection contains the citation network **Cite** and two-mode networks: aut
 
 #### Bibliographic networks on selected topic
 
-**In preparation!!!**
+Details **in preparation!!!**
 
 #### Bibliographic networks for selected persons
 
