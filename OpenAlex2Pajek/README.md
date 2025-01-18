@@ -80,9 +80,10 @@ The obtained network files have the name BDF and different extensions.
 
 #### Bibliographic networks for selected institution
 
-We would like to create bibliographic networks of works co-authored by at least one author from University of Primorska (UP), Koper, Slovenia in the years 2011 to 2020. Again we first determine the UP's OpenAlex ID using the API [call](https://api.openalex.org/institutions?search=University%20of%20Primorska&select=id,display_name,display_name_alternatives,country_code)
+We would like to create bibliographic networks of works co-authored by at least one author from University of Primorska (UP), Koper, Slovenia in the years 2011 to 2020. Again we first determine the UP's OpenAlex ID using the API [call](https://api.openalex.org/institutions?search=University%20of%20Primorska&select=id,display_name,display_name_alternatives,country_code,works_count)
 ```
-https://api.openalex.org/institutions?search=University%20of%20Primorska&select=id,display_name,display_name_alternatives,country_code
+https://api.openalex.org/institutions?search=University%20of%20Primorska
+&select=id,display_name,display_name_alternatives,country_code,works_count
 ```
 We learn that UP's OpenAlex ID is I118905719.
 
