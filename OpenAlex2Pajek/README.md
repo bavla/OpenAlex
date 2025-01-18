@@ -28,7 +28,8 @@ The collection contains the citation network **Cite** and two-mode networks: aut
 
 Sometimes we would like to consider only works that are co-authored by at least one person from the list L (research group, project members, etc.). As an example let L = { Vladimir Batagelj, Anuška Ferligoj, Patrick Doreian }. OpenAlex assigns to each author (at least) one ID. To consider the right persons we first identify their IDs and use them in the process.
 
-To get the ID we enter in the web browser URL line the API call
+To get the ID we enter in the web browser URL line the API [call](https://api.openalex.org/authors?search=Vladimir%20Batagelj&select=id,display_name_alternatives,works_count
+)
 ```
 https://api.openalex.org/authors?search=Vladimir%20Batagelj&select=id,display_name_alternatives,works_count
 ```
