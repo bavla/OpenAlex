@@ -38,7 +38,7 @@ We learn that Vladimir Batagelj has the OpenAlex ID A5001676164. In a similar wa
 https://api.openalex.org/works?filter=author.id:A5001676164|A5065490876|A5110460780|A5029499420|A5080127754
 &select=id,title,publication_year&sort=publication_year:desc&per_page=200&page=1
 ```
-They co-authored 524 works. Only first 200 works are listed. To get the remaining works change page=1 to page=2 and page=3.
+They co-authored 524 works. Only the first 200 works are listed. To get the remaining works change page=1 to page=2 and page=3.
 
 Now we are ready to create the corresponding networks using R.
 
