@@ -1,6 +1,6 @@
 # OpenAlex2Pajek
 
-OpenAlex2Pajek is an R a package of functions for constructing bibliographic networks from selected bibliographic data in OpenAlex. Currently, OpenAlex2Pajek contains three main functions OpenAlex2PajekCite, OpenAlex2PajekAll, and coAuthorship.
+**OpenAlex2Pajek** is an R a package of functions for constructing bibliographic networks from selected bibliographic data in OpenAlex. Currently, OpenAlex2Pajek contains three main functions `OpenAlex2PajekCite`, `OpenAlex2PajekAll`, and `coAuthorship`.
 
 ## Saturation approach to construct bibliographic networks on selected topic
 
@@ -9,11 +9,16 @@ We split the process of creating the collection of bibliographic networks into t
   - determining the set W of relevant works using the [saturation approach](https://link.springer.com/article/10.1007/s11192-017-2522-8) [Batagelj et al., 2017, page 506],
   - creation of the network collection for the works from W.
 
-The set W is determined iteratively using the function OpenAlex2PajekCite and the collection is finally created using the function OpenAlex2PajekAll.
+The set W is determined iteratively using the function `OpenAlex2PajekCite` and the collection is finally created using the function `OpenAlex2PajekAll`.
 
-After each run of the function OpenAlex2PajekCite we read the last version of the citation network into [Pajek](https://core-prod.cambridgecore.org/core/books/exploratory-social-network-analysis-with-pajek/6F8EE2512CB7C6D233DB2DAC3886D4F5) and apply macro expNodes to it. It produces a vector of expansion nodes. Using the vector-Info button in Pajek we get a list of works with the largest input degree. We select an appropriate threshold and extract (select and copy) the upper part of the table into TextPad. In TextPad, we remove other columns and save the list of works as a CSV file. Using the function joinLists we combine the old list of works with the new one and save it for the next step of the saturation procedure.
+After each run of the function `OpenAlex2PajekCite` we read the last version of the citation network into [Pajek](https://core-prod.cambridgecore.org/core/books/exploratory-social-network-analysis-with-pajek/6F8EE2512CB7C6D233DB2DAC3886D4F5) and apply macro `expNodes` to it. It produces a vector of expansion nodes. Using the `vector-Info` button in Pajek we get a list of works with the largest input degree. We select an appropriate threshold and extract (select and copy) the upper part of the table into TextPad. In TextPad, we remove other columns and save the list of works as a CSV file. Using the function `joinLists` we combine the old list of works with the new one and save it for the next step of the saturation procedure.
 
-The collection contains the citation network Cite and two-mode networks: authorship WA, sources WJ, keywords WK, countries WC, and work properties: publication year, type of publication, the language of publication, cited by count, countries distinct count, and referenced works.
+The collection contains the citation network **Cite** and two-mode networks: authorship **WA**, sources **WJ**, keywords **WK**, countries **WC**, and work properties: publication year, type of publication, the language of publication, cited by count, countries distinct count, and referenced works.
+
+```
+```
+
+<img src="https://github.com/user-attachments/assets/2aa8b9aa-e4f4-4a55-b24e-a55c448c9cb8" width="600" />
 
 ## Temporal network of co-authorship between world countries
 
