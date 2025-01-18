@@ -18,8 +18,31 @@ After each run of the function `OpenAlex2PajekCite` we read the last version of 
 
 The collection contains the citation network **Cite** and two-mode networks: authorship **WA**, sources **WJ**, keywords **WK**, countries **WC**, and work properties: publication year, type of publication, the language of publication, cited by count, countries distinct count, and referenced works.
 
+### Examples
+
+#### Bibliographic networks on selected topic
+
+#### Bibliographic networks for selected persons
+
+Sometimes we would like to consider only works that are co-authored by at least one person from the list L (research group, project members, etc.). As an example let L = { Vladimir Batagelj, Anuška Ferligoj, Patrick Doreian }. OpenAlex assigns to each author (at least) one ID. To consider the right persons we first identify their IDs and use them in the process.
+
+To get the ID we enter in the web browser URL line the API call
 ```
+https://api.openalex.org/authors?search=Vladimir%20Batagelj&select=id,display_name_alternatives,works_count
 ```
+We learn that Vladimir Batagelj has the OpenAlex ID A5001676164. In a similar way we get 4 candidates for Anuška Ferligoj and select two IDs A5029499420 and A5080127754. There are 8 candidate IDs for Patrick Doreian - we select A5065490876 and A5110460780. To check the selected IDs we [call](https://api.openalex.org/works?filter=author.id:A5001676164|A5065490876|A5110460780|A5029499420|A5080127754&select=id,title,publication_year&sort=publication_year:desc&per_page=200&page=1) the API (single line)
+```
+https://api.openalex.org/works?filter=author.id:A5001676164|A5065490876|A5110460780|A5029499420|A5080127754&select=id,title,publication_year&sort=publication_year:desc&per_page=200&page=1
+```
+
+
+
+
+
+```
+
+```
+#### Bibliographic networks for selected institution
 
 ```
 ```
