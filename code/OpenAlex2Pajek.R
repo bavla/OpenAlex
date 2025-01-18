@@ -1,8 +1,8 @@
-# OpenAlex ver 3. March 18, 2024 / May 11, 2024 / June 18, 2024
+# OpenAlex2Pajek ver 4. March 18, 2024 / May 11, 2024 / June 18, 2024 
 # https://github.com/bavla/OpenAlex/tree/main/code
 # http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:bib:alex
 # by Vladimir Batagelj, March 2024
-# source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex4.R")
+# source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
 # http://localhost:8800/doku.php?id=work:bib:alex
 #
 
