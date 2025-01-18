@@ -33,7 +33,7 @@ To get the ID we enter in the web browser URL line the API [call](https://api.op
 ```
 https://api.openalex.org/authors?search=Vladimir%20Batagelj&select=id,display_name_alternatives,works_count
 ```
-We learn that Vladimir Batagelj has the OpenAlex ID A5001676164. In a similar way we get 4 candidates for Anuška Ferligoj and select two IDs A5029499420 and A5080127754. There are 8 candidate IDs for Patrick Doreian - we select A5065490876 and A5110460780. To check the selected IDs we [call](https://api.openalex.org/works?filter=author.id:A5001676164|A5065490876|A5110460780|A5029499420|A5080127754&select=id,title,publication_year&sort=publication_year:desc&per_page=200&page=1) the API (single line)
+We learn that Vladimir Batagelj has the OpenAlex ID A5001676164. In a similar way we get 4 candidates for Anuška Ferligoj and select two IDs A5029499420 and A5080127754. There are 8 candidate IDs for Patrick Doreian - we select A5065490876 and A5110460780. Probably all 4+8 candidates are OK. To check the selected IDs we [call](https://api.openalex.org/works?filter=author.id:A5001676164|A5065490876|A5110460780|A5029499420|A5080127754&select=id,title,publication_year&sort=publication_year:desc&per_page=200&page=1) the API (single line)
 ```
 https://api.openalex.org/works?filter=author.id:A5001676164|A5065490876|A5110460780|A5029499420|A5080127754
 &select=id,title,publication_year&sort=publication_year:desc&per_page=200&page=1
