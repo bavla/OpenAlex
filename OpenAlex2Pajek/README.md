@@ -5,6 +5,7 @@ OpenAlex2Pajek (OpenAlex2Pajek, 2024) is an R a package of functions for constru
 ## Saturation approach to construct a bibliographic networks on selected topic
 
 We split the process of creating the collection of bibliographic networks into two parts:
+
   *determining the set W of relevant works using the saturation approach (Batagelj et al., 2017, page 506],
   *creation of the network collection for the works from W.
 
