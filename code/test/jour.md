@@ -13,7 +13,7 @@ select=id,title,type,cited_by_count,publication_year
 https://api.openalex.org/works?filter=cites:W2922895789&
 select=id,title,type,cited_by_count,publication_year&per_page=200&page=1
 ```
-**C.** List of citing works of a given work [call](https://api.openalex.org/works?filter=cites:W2922895789&select=id,title,type,cited_by_count,publication_year,referenced_works)
+**C.** List of works cited by a given work [call](https://api.openalex.org/works?filter=cites:W2922895789&select=id,title,type,cited_by_count,publication_year,referenced_works)
 
 ```
 https://api.openalex.org/works?filter=cites:W2922895789&
