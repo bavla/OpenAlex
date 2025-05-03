@@ -30,7 +30,7 @@ select=id,title,type,cited_by_count,publication_year,referenced_works
 Note that for sources different from j only the citations from/to j are complete. Other citations consider only cases where at least one end-node is a work from the source j.
 The obtained networks can be used to determine the set of important sources J.
 
-**E.** For each important source j from J we determine (**D**) the corresponding set of relevant works. The union of these set W<sub>J</sub> is used in the procedure `OpenAlex2PajekAll` to create networks. Now, the citation data are complete for all sources from J.
+**E.** For each important source j from J we determine (**D**) the corresponding set of relevant works. The union of these set W<sub>J</sub> is used in the procedure `OpenAlex2PajekAll` to create networks. Now, the citation data are complete for all sources from J (but not for the other sources).
 
 The size of the set W<sub>J</sub> can be very large. To reduce it we can consider some restriction such us interval of considered year of publication, type of publication, etc.
 
