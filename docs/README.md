@@ -10,4 +10,4 @@
   1. IS2024-SIKDD_2024, October 7 2024. Vladimir Batagelj, Jan Pisanski, Tomaž Pisanski: Higher-order bibliographic services based on bibliographic networks [paper](IS2024_-_SIKDD_2024_paper_12-1.pdf), [DOI](https://doi.org/10.70314/is.2024.sikdd.12), [slides](bibIS24.pdf)
   1. IS2024-Cognitive Science, October 11 2024. Pisanski, T., Batagelj, V., Pisanski, J.: Open Science and Goodhart’s Law.  [paper](https://is.ijs.si/wp-content/uploads/2024/10/IS2024_-_COGNITIVE_SCIENCE_paper_4-1.pdf), [DOI](https://doi.org/10.70314/is.2024.cog.4).
   2. COLLNET 2024, Strasbourg, December 12-14. Vladimir Batagelj: OpenAlex2Pajek – an R Package for converting OpenAlex bibliographic data into Pajek networks. [slides](collnetVB.pdf); [paper](WorldCoAu.pdf)
-  1. OZUP, po Zoomu, 17. april 2025. Vladimir Batagelj: OpenAlex - katalog odprtih raziskovalnih objav. [slides]()
+  1. OZUP, po Zoomu, 17. april 2025. Vladimir Batagelj: OpenAlex - katalog odprtih raziskovalnih objav. [slides](OAozup.pdf)
