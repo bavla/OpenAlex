@@ -1,6 +1,6 @@
 # First version of OpenAlexSources
 
-
+```
 > setwd(wdir <- "C:/Users/vlado/docs/papers/2025/OpenAlex/sources")
 > library(httr); library(jsonlite)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
@@ -90,4 +90,13 @@ start Sun May  4 05:32:28 2025
 > close(json)
 > cat("finish",date(),"\n"); flush.console()
 finish Sun May  4 05:39:31 2025 
-> 
+```
+
+
+```
+
+
+```
+
+
+
