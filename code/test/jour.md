@@ -13,11 +13,11 @@ select=id,title,type,cited_by_count,publication_year
 https://api.openalex.org/works?filter=cites:W2922895789&
 select=id,title,type,cited_by_count,publication_year&per_page=200&page=1
 ```
-**C.** List of works cited by a given work [call](https://api.openalex.org/works?filter=cites:W2922895789&select=id,title,type,cited_by_count,publication_year,referenced_works)
+**C.** List of works cited by a given work [call](https://api.openalex.org/works?filter=openalex:W2922895789|W4250234346|W3010751055|W3011442895|W3041317610|W4406275124&select=id,title,publication_year,referenced_works))
 
 ```
-https://api.openalex.org/works?filter=cites:W2922895789&
-select=id,title,type,cited_by_count,publication_year,referenced_works
+https://api.openalex.org/works?filter=openalex:W2922895789|W4250234346|W3010751055|W3011442895|W3041317610|W4406275124&
+select=id,title,publication_year,referenced_works
 ```
 
 ## Creating the set of relevant works W and networks
