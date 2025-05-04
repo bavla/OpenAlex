@@ -5,7 +5,7 @@
 > library(httr); library(jsonlite)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 > source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
-> worksF="works.ndjson"
+> worksS <- "addWorks.csv"
 > sID <- "s4210233660"; cond <- ""
 > # cond <- ",publication_year:1990-2024" 
 > works <- "https://api.openalex.org/works"
@@ -84,9 +84,9 @@ start Sun May  4 05:32:28 2025
 > W <- union(Wout$id,union(Win$id,Wj$id))
 > cat(length(W),"different works",date(),"\n"); flush.console()
 17641 different works Sun May  4 05:39:31 2025 
-> json <- file(worksF,"w",encoding="UTF-8")
-> write(toJSON(W),file=json)
-> close(json)
+> csv <- file(worksS,"w",encoding="UTF-8")
+> write(W,sep="\n",file=csv)
+> close(csv)
 > cat("finish",date(),"\n"); flush.console()
 finish Sun May  4 05:39:31 2025 
 ```
