@@ -50,8 +50,7 @@ start Sun May  4 05:32:28 2025
 +     if(is.null(Q$cursor)) break
 +     df <- wc$results; nr <- nrow(df); i <- i+1
 +     # cat(k,i,nr,"\n"); flush.console()
-+     if(nr>0){ # use current page data
-+       df$id <- getID(df$id); Win <- rbind(Win,df) }
++     if(nr>0){df$id <- getID(df$id); Win <- rbind(Win,df)}
 +   } 
 + }
 > cat(nrow(Win),"citing works collected",date(),"\n"); flush.console()
