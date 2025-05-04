@@ -1,7 +1,7 @@
 # First version of OpenAlexSources
 
 ```
-> setwd(wdir <- "C:/Users/vlado/docs/papers/2025/OpenAlex/sources")
+> setwd(wdir <- "C:/OpenAlex/sources")
 > library(httr); library(jsonlite)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
 > source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
