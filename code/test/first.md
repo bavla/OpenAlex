@@ -91,10 +91,64 @@ start Sun May  4 05:32:28 2025
 finish Sun May  4 05:39:31 2025 
 ```
 
-
+The creation of networks takes around 3 hours.
 ```
-
-
+> Q <- NULL
+> OpenAlex2PajekAll(Q,name="Dasha",listF=worksS)
+OpenAlex2Pajek / All - Start Sun May  4 17:06:34 2025 
+*** OpenAlex2Pajek / All - Process Sun May  4 17:06:34 2025 
+Sun May  4 17:09:04 2025  n = 500 
+Sun May  4 17:12:10 2025  n = 1000 
+Sun May  4 17:15:16 2025  n = 1500 
+Sun May  4 17:19:06 2025  n = 2000 
+Sun May  4 17:22:45 2025  n = 2500 
+2857 GET error
+Sun May  4 17:26:43 2025  n = 3000 
+Sun May  4 17:30:50 2025  n = 3500 
+Sun May  4 17:34:54 2025  n = 4000 
+Sun May  4 17:38:54 2025  n = 4500 
+Sun May  4 17:43:13 2025  n = 5000 
+Sun May  4 17:47:58 2025  n = 5500 
+W 5969 https://openalex.org/W2064249557 1 
+<simpleError in exists(cty, env = cntrs, inherits = FALSE): invalid first argument>
+Sun May  4 17:52:31 2025  n = 6000 
+Sun May  4 17:57:17 2025  n = 6500 
+Sun May  4 18:02:26 2025  n = 7000 
+Sun May  4 18:07:04 2025  n = 7500 
+Sun May  4 18:12:24 2025  n = 8000 
+Sun May  4 18:17:28 2025  n = 8500 
+Sun May  4 18:22:35 2025  n = 9000 
+Sun May  4 18:28:10 2025  n = 9500 
+Sun May  4 18:34:10 2025  n = 10000 
+Sun May  4 18:39:59 2025  n = 10500 
+Sun May  4 18:45:49 2025  n = 11000 
+Sun May  4 18:52:12 2025  n = 11500 
+Sun May  4 18:58:56 2025  n = 12000 
+Sun May  4 19:05:31 2025  n = 12500 
+Sun May  4 19:13:38 2025  n = 13000 
+Sun May  4 19:21:22 2025  n = 13500 
+Sun May  4 19:28:23 2025  n = 14000 
+Sun May  4 19:36:11 2025  n = 14500 
+Sun May  4 19:42:58 2025  n = 15000 
+Sun May  4 19:49:18 2025  n = 15500 
+Sun May  4 20:00:04 2025  n = 16000 
+Sun May  4 20:03:50 2025  n = 16500 
+Sun May  4 20:07:59 2025  n = 17000 
+Sun May  4 20:11:37 2025  n = 17500 
+*** OpenAlex2Pajek / All - Data Collected Sun May  4 20:12:39 2025 
+hits: 17640 works: 395453 authors: 29992 anon: 388 sources: 4077 
+>>> Citation Cite
+>>> publication year
+>>> type of publication
+>>> language of publication
+>>> cited by count
+>>> countries distinct count
+>>> referenced works
+>>> Authorship WA
+>>> Sources WJ
+>>> Countries WC
+>>> Keywords WK
+*** OpenAlex2Pajek / All - Stop Sun May  4 20:15:50 2025 
 ```
 
 
