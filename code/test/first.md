@@ -173,10 +173,19 @@ hits: 17640 works: 395453 authors: 29992 anon: 388 sources: 4077
 
 [dendrogram](dendroCoEucLn.pdf), [matrix](matrix_wdeg100.pdf)
 
-For interpretation of the obtained results some info about the sources (IDs copied from a dendrogram into a file [`wdeg100.dat`](wdeg100.dat)) is useful. I wrote a short program to collected such data from OpenAlex
+For interpretation of the obtained results some info about the sources (IDs in a file [`wdeg100.dat`](wdeg100.dat)) is useful. 
+
+**Remark:** initially I created the IDs file by copying IDs from a dendrogram into a file `wdeg100.dat`. The program didn't find all the sources from the file **!!!???** I spent some hours to find the mistake. It turned out that some IDs are longer than 10 characters used for dendrogram labels. Another, better way to create the IDs file is as follows
+
+   1. select the network
+   2. Network/Create vector/Centrality/Weighted degrees/All
+   3. Click on the vector magnifying glass icon; Edit/Copy complete table to clipborad
+   4. Paste into a text editor (Textpad); remove all data except labels
+
+I wrote a short program to collected the IDs info from OpenAlex
 
 ```
-> N <- read.csv("./Dasha/wdeg100.dat",head=FALSE)$V1
+> N <- trimws(read.csv("./Dasha/wdeg100.dat",head=FALSE)$V1)
 > # units <- "works"
 > units <- "sources"
 > Units <- paste0("https://api.openalex.org/",units)
@@ -188,21 +197,19 @@ For interpretation of the obtained results some info about the sources (IDs copi
 > while(TRUE) {
 +   li <- ri+1; ri <- min(ri+50,nj)
 +   if(li > ri) break
-+   cat(li,ri,"\n"); flush.console()
++   # cat(li,ri,"\n"); flush.console()
 +   wID <- paste(N[li:ri],collapse="|")
 +   Q <- list(filter=paste0(F,wID,cond),select=S,per_page="200",page="1")
 +   wd <- GET(Units,query=Q)
 +   if(wd$status_code!=200) {cat("Error:",wd$status_code,"\n"); flush.console(); next}
 +   wc <- fromJSON(rawToChar(wd$content))
-+   df <- wc$results; nr <- nrow(df)
++   df <- wc$results; nr <- nrow(df); cat(li,ri,nr,"\n"); flush.console()
 +   if(nr>0){df$id <- getID(df$id); W <- rbind(W,df)}
 + }
-1 50 
-51 100 
-101 139
-> dim(W)
-[1] 104   8
+1 50 50 
+51 100 50 
+101 139 39 
 > write.csv2(W,file=nameF)
 ```
-Collected data are saved in a file [`wdeg100nam.csv`](wdeg100nam.csv)). It doesn't find all the sources **!!!???**
+Collected data are saved in a file [`wdeg100nam.csv`](wdeg100nam.csv)). 
 
