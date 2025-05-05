@@ -160,13 +160,16 @@ hits: 17640 works: 395453 authors: 29992 anon: 388 sources: 4077
   5. multiply JciW * WJ -> JciJ
   6. remove loops (journal self citations) from JciJ -> JciJ'
   7. determine vector of weighted (all) degrees in JciJ'
-  8. Vector/Make partition/by intervals [100]
-  9. extract cluster 2 from JciJ' -> JJ100
-  10. Network/Create new network/Transform/Line values/Ln  ->  JJln
-  11. Cluster/Create complete cluster
-  12. Operations/Network+Cluster/Dissimilarity/d5  ->  D, dendro.eps
-  13. select JJln, File/Network/Export as matrix/EPS/Using permutation
-  14. using Acrobat reader convert EPS files to PDF
+  8. vector info - node 4 (unknown source)
+  9. Network/Create new network/Transform/Remove/Selected vertices [4]
+  10. determine vector of weighted (all) degrees
+  11. Vector/Make partition/by intervals [100]
+  12. extract cluster 2 from JciJ' -> JJ100
+  13. Network/Create new network/Transform/Line values/Ln  ->  JJln
+  14. Cluster/Create complete cluster
+  15. Operations/Network+Cluster/Dissimilarity/d5  ->  D, dendro.eps
+  16. select JJln, File/Network/Export as matrix/EPS/Using permutation
+  17. using Acrobat reader convert EPS files to PDF
 
 [dendrogram](dendroCoEucLn.pdf), [matrix](matrix_wdeg100.pdf)
 
