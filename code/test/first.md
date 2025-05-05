@@ -169,3 +169,35 @@ hits: 17640 works: 395453 authors: 29992 anon: 388 sources: 4077
   14. using Acrobat reader convert EPS files to PDF
 
 [dendrogram](dendroCoEucLn.pdf), [matrix](matrix_wdeg100.pdf)
+
+For interpretation of the obtained results some info about the sources (IDs copied from a dendrogram into a file [`wdeg100.dat`](wdeg100.dat)) is useful. I wrote a short program to collected such data from OpenAlex
+
+```
+> N <- read.csv("./Dasha/wdeg100.dat",head=FALSE)$V1
+> # units <- "works"
+> units <- "sources"
+> Units <- paste0("https://api.openalex.org/",units)
+> cond <- ""
+> nameF <- "./Dasha/wdeg100nam.csv"
+> F <- "openalex:"
+> S <- "id,issn_l,country_code,type,is_oa,cited_by_count,works_count,display_name"
+> W <- NULL; ri <- 0; nj <- length(N)
+> while(TRUE) {
++   li <- ri+1; ri <- min(ri+50,nj)
++   if(li > ri) break
++   cat(li,ri,"\n"); flush.console()
++   wID <- paste(N[li:ri],collapse="|")
++   Q <- list(filter=paste0(F,wID,cond),select=S,per_page="200",page="1")
++   wd <- GET(Units,query=Q)
++   if(wd$status_code!=200) {cat("Error:",wd$status_code,"\n"); flush.console(); next}
++   wc <- fromJSON(rawToChar(wd$content))
++   df <- wc$results; nr <- nrow(df)
++   if(nr>0){df$id <- getID(df$id); W <- rbind(W,df)}
++ }
+1 50 
+51 100 
+101 139 
+> write.csv2(W,file=nameF)
+```
+Collected data are saved in a file [`wdeg100nam.csv`](wdeg100nam.csv)).
+
