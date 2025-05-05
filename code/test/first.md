@@ -211,5 +211,5 @@ I wrote a short program to collected the IDs info from OpenAlex
 101 139 39 
 > write.csv2(W[order(W$id),],file=nameF)
 ```
-Collected data are saved in a file [`wdeg100nam.csv`](wdeg100nam.csv)). For easier searching, the table is reordered alphabetically.
+Collected data are saved in a file [`wdeg100nam.csv`](wdeg100nam.csv). For easier searching, the table is reordered alphabetically.
 
