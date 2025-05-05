@@ -196,7 +196,9 @@ For interpretation of the obtained results some info about the sources (IDs copi
 + }
 1 50 
 51 100 
-101 139 
+101 139
+> dim(W)
+[1] 104   8
 > write.csv2(W,file=nameF)
 ```
 Collected data are saved in a file [`wdeg100nam.csv`](wdeg100nam.csv)). It doesn't find all the sources **!!!???**
