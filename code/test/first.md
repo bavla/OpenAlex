@@ -151,5 +151,19 @@ hits: 17640 works: 395453 authors: 29992 anon: 388 sources: 4077
 *** OpenAlex2Pajek / All - Stop Sun May  4 20:15:50 2025 
 ```
 
+## Analysis with Pajek
 
+  - read WJ and Ci
+  - for both networks  Network/Create new network/Transform/Remove/Miltiple lines/Sum values [yes]
+  - transpose WJ -> JW
+  - multiply JW * Ci -> JciW
+  - multiply JciW * WJ -> JciJ
+  - remove loops (journal self citations) from JciJ -> JciJ'
+  - determine vector of weighted (all) degrees in JciJ'
+  - Vector/Make partition/by intervals [100]
+  - extract cluster 2 from JciJ' -> JJ100
+  - Network/Create new network/Transform/Line values/Ln  ->  JJln
+  - Cluster/Create complete cluster
+  - Operations/Network+Cluster/Dissimilarity/d5  ->  D, dendro.eps
+  - select JJln, File/Network/Export as matrix/EPS/Using permutation
 
