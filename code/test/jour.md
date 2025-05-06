@@ -40,14 +40,42 @@ The size of the set W<sub>J</sub> can be very large. To reduce it we can conside
 
 ## Programming OpenAlexSources
 
-The programming of the function is traced in [First version](first.md). It resulted into two functions 
+The programming of the function is traced in [First version](first.md). It resulted into two functions [`OpenAlexSources`](OpenAlexSources.md) and [`unitsInfo`](unitsInfo.md).
+
+To build networks for a selected source sID is now simple. First we create a vector R of all works from sID, works citing them, and works cited by them.   - 
 ```
-
+> setwd(wdir <- "C:/test/OpenAlex/sources")
+> library(httr); library(jsonlite)
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
+> sID <- "s4210233660"
+> R <- OpenAlexSources(sID,step=250)
+OpenAlex2Pajek / Sources Tue May  6 19:32:47 2025 
+i = 1  nr = 200 
+i = 2  nr = 200 
+i = 3  nr = 200 
+i = 4  nr = 200 
+i = 5  nr = 200 
+i = 6  nr = 200 
+i = 7  nr = 200 
+i = 8  nr = 200 
+i = 9  nr = 200 
+i = 10  nr = 200 
+i = 11  nr = 200 
+i = 12  nr = 200 
+i = 13  nr = 122 
+2522 source s4210233660 works collected Tue May  6 19:32:50 2025 
+...
+ 4092 citing works collected Tue May  6 19:38:59 2025 
+..........
+ 14515 cited works collected Tue May  6 19:39:10 2025 
+17642 different works Tue May  6 19:39:10 2025 
 ```
-
-
+We can save them in a file.
 ```
-
+> csv <- file("worksTest.csv","w",encoding="UTF-8")
+> write(R,sep="\n",file=csv)
+> close(csv)
 ```
 
 
