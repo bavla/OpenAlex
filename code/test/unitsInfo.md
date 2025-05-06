@@ -25,12 +25,7 @@ unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond=""){
 ```
 ## Sources
 
-id, issn_l, issn, display_name, host_organization, host_organization_name, 
-host_organization_lineage, relevance_score, works_count, cited_by_count, summary_stats, 
-is_oa, is_in_doaj, is_indexed_in_scopus, is_core, ids, homepage_url, apc_prices,
- apc_usd, country, country_code, societies, alternate_titles, abbreviated_title, type, 
-topics, topic_share, x_concepts, counts_by_year, works_api_url, updated_date, 
-created_date.
+id, issn_l, issn, display_name, host_organization, host_organization_name, host_organization_lineage, relevance_score, works_count, cited_by_count, summary_stats, is_oa, is_in_doaj, is_indexed_in_scopus, is_core, ids, homepage_url, apc_prices, apc_usd, country, country_code, societies, alternate_titles, abbreviated_title, type, topics, topic_share, x_concepts, counts_by_year, works_api_url, updated_date, created_date.
 
 ```
 > SIDs <- trimws(read.csv("./Dasha/wdeg100.dat",head=FALSE)$V1)
@@ -56,11 +51,18 @@ li = 101  ri = 139  nr = 39
 16                   Social Science & Medicine
 114                   Journal of Communication
 ```
+## Works
 
+id, doi, title, display_name, relevance_score, publication_year, publication_date, ids, language, primary_location, sources, type, type_crossref, indexed_in, open_access, authorships, institution_assertions, countries_distinct_count, institutions_distinct_count, corresponding_author_ids, corresponding_institution_ids, apc_list, apc_paid, fwci, is_authors_truncated, has_fulltext, fulltext_origin, cited_by_count, citation_normalized_percentile, cited_by_percentile_year, biblio, is_retracted, is_paratext, primary_topic, topics, keywords, concepts, mesh, locations_count, locations, best_oa_location, sustainable_development_goals, grants, datasets, versions, referenced_works_count, referenced_works, related_works, abstract_inverted_index, abstract_inverted_index_v3, cited_by_api_url, counts_by_year, updated_date, created_date.
 
 ```
 
 ```
+
+## Authors
+
+id, orcid, display_name, display_name_alternatives, relevance_score, works_count, cited_by_count, summary_stats, ids, affiliations, last_known_institutions, topics, topic_share, x_concepts, counts_by_year, works_api_url, updated_date, created_date.
+
 
 ```
 
