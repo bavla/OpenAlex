@@ -15,6 +15,7 @@
 # version 2. May 5, 2024; OpenAlex2Pajek split to Cite and All parts
 # version 3. May 11, 2024; Collaboration between countries
 # version 4. June 18, 2024; Problem with the NULL values, sourceNames
+# version 5. May 4-6, 2025; OpenAlexSources, unitsInfo
 
 selPub  <- "id,primary_location,title,publication_year,cited_by_count,countries_distinct_count"
 selRef  <- "biblio,type,language,referenced_works_count,referenced_works"
@@ -506,6 +507,24 @@ coAuthorship <- function(CC,year=NULL){
   }
   cat("k =",k,"  a =",a,"  dmax =",dm,"\n"); flush.console()
   return(list(T=T,G=G,M=M))
+}
+
+unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond=""){
+  Units <- paste0("https://api.openalex.org/",units) 
+  W <- NULL; ri <- 0; nj <- length(IDs)
+  while(TRUE) {
+    li <- ri+1; ri <- min(ri+50,nj)
+    if(li > ri) break
+    wID <- paste(IDs[li:ri],collapse="|")
+    Q <- list(filter=paste0("openalex:",wID,cond),select=select,per_page="200",page="1")
+    wd <- GET(Units,query=Q)
+    if(wd$status_code!=200) {cat("Error:",wd$status_code,"\n"); flush.console(); next}
+    wc <- fromJSON(rawToChar(wd$content))
+    df <- wc$results; nr <- nrow(df)
+    if(trace){cat("li =",li," ri =",ri," nr =",nr,"\n"); flush.console()}
+    if(nr>0){df$id <- getID(df$id); W <- rbind(W,df)}
+  }
+  return(W[order(W$id),])
 }
 
 
