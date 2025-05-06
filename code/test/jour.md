@@ -71,7 +71,7 @@ i = 13  nr = 122
  14515 cited works collected Tue May  6 19:39:10 2025 
 17642 different works Tue May  6 19:39:10 2025 
 ```
-We can save them in a file.
+We can save the vector R in a file.
 ```
 > csv <- file("worksTest.csv","w",encoding="UTF-8")
 > write(R,sep="\n",file=csv)
