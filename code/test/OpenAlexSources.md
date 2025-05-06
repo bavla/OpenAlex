@@ -2,7 +2,7 @@
 
 May 6, 2025
 
-I converted the program from [First version](first.md) into a function `OpenAlexSources`
+I converted the program from [First version](first.md) into a function `OpenAlexSources`. It is included in the package `OpenAlex2Pajek`.
 ```
 OpenAlexSources <- function(sID,step=100,cond=""){
   cat("OpenAlex2Pajek / Sources",date(),"\n"); flush.console()
