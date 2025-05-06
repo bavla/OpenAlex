@@ -66,7 +66,7 @@ OpenAlexSources <- function(sID,step=100,cond=""){
     } 
   }
   cat("\n",nrow(Wout),"cited works collected",date(),"\n"); flush.console()
-# --- save ---
+# --- combine ---
   W <- union(Wout$id,union(Win$id,Wj$id))
   cat(length(W),"different works",date(),"\n"); flush.console() 
   return(W)
