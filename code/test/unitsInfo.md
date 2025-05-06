@@ -56,7 +56,28 @@ li = 101  ri = 139  nr = 39
 id, doi, title, display_name, relevance_score, publication_year, publication_date, ids, language, primary_location, sources, type, type_crossref, indexed_in, open_access, authorships, institution_assertions, countries_distinct_count, institutions_distinct_count, corresponding_author_ids, corresponding_institution_ids, apc_list, apc_paid, fwci, is_authors_truncated, has_fulltext, fulltext_origin, cited_by_count, citation_normalized_percentile, cited_by_percentile_year, biblio, is_retracted, is_paratext, primary_topic, topics, keywords, concepts, mesh, locations_count, locations, best_oa_location, sustainable_development_goals, grants, datasets, versions, referenced_works_count, referenced_works, related_works, abstract_inverted_index, abstract_inverted_index_v3, cited_by_api_url, counts_by_year, updated_date, created_date.
 
 ```
-
+> WIDs <- trimws(read.csv("./Dasha/worksTest.dat",head=FALSE)$V1)
+> selW <- paste0("id,language,countries_distinct_count,cited_by_count,",
++   "relevance_score,publication_year,title")
+> RW <- unitsInfo(IDs=WIDs,units="works",select=selW)
+li = 1  ri = 50  nr = 50 
+li = 51  ri = 90  nr = 40 
+> write.csv2(RW,file="./Dasha/worksTest.csv")
+> head(RW)
+            id language countries_distinct_count cited_by_count publication_year
+43  W113241274       en                        0            159             1992
+45  W120428109       en                        1            108             1998
+21  W143336295       en                        1           1847             1993
+41 W1504472087       en                        0            181             1993
+8  W1539609515       en                        1           5610             1975
+67 W1552061030       en                        0           1747             1998
+                                                                      title
+43     Psychological Distress/Well-Being and Cognitive Functioning Measures
+45                                    Subjective Well-Being and Personality
+21 Quality of Life Enjoyment and Satisfaction Questionnaire: a new measure.
+41                        The Pursuit of Happiness: Who Is Happy - and Why?
+8                                                Beyond boredom and anxiety
+67                                            Multiple Regression: A Primer
 ```
 
 ## Authors
