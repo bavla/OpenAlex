@@ -28,13 +28,13 @@ unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond=""){
 id, issn_l, issn, display_name, host_organization, host_organization_name, host_organization_lineage, relevance_score, works_count, cited_by_count, summary_stats, is_oa, is_in_doaj, is_indexed_in_scopus, is_core, ids, homepage_url, apc_prices, apc_usd, country, country_code, societies, alternate_titles, abbreviated_title, type, topics, topic_share, x_concepts, counts_by_year, works_api_url, updated_date, created_date.
 
 ```
-> SIDs <- trimws(read.csv("./Dasha/wdeg100.dat",head=FALSE)$V1)
+> SIDs <- trimws(read.csv("wdeg100.dat",head=FALSE)$V1)
 > selS <- "id,issn_l,country_code,type,is_oa,cited_by_count,works_count,display_name"
 > RS <- unitsInfo(IDs=SIDs,units="sources",select=selS)
 li = 1  ri = 50  nr = 50 
 li = 51  ri = 100  nr = 50 
 li = 101  ri = 139  nr = 39 
-> write.csv2(RS,file="./Dasha/sourcesTest.csv")
+> write.csv2(RS,file="sourcesTest.csv")
 > head(RS)
             id    issn_l country_code        type is_oa cited_by_count works_count
 128 S100176667 1751-9020           GB     journal FALSE          41545        1740
@@ -56,13 +56,13 @@ li = 101  ri = 139  nr = 39
 id, doi, title, display_name, relevance_score, publication_year, publication_date, ids, language, primary_location, sources, type, type_crossref, indexed_in, open_access, authorships, institution_assertions, countries_distinct_count, institutions_distinct_count, corresponding_author_ids, corresponding_institution_ids, apc_list, apc_paid, fwci, is_authors_truncated, has_fulltext, fulltext_origin, cited_by_count, citation_normalized_percentile, cited_by_percentile_year, biblio, is_retracted, is_paratext, primary_topic, topics, keywords, concepts, mesh, locations_count, locations, best_oa_location, sustainable_development_goals, grants, datasets, versions, referenced_works_count, referenced_works, related_works, abstract_inverted_index, abstract_inverted_index_v3, cited_by_api_url, counts_by_year, updated_date, created_date.
 
 ```
-> WIDs <- trimws(read.csv("./Dasha/worksTest.dat",head=FALSE)$V1)
+> WIDs <- trimws(read.csv("worksTest.dat",head=FALSE)$V1)
 > selW <- paste0("id,language,countries_distinct_count,cited_by_count,",
 +   "relevance_score,publication_year,title")
 > RW <- unitsInfo(IDs=WIDs,units="works",select=selW)
 li = 1  ri = 50  nr = 50 
 li = 51  ri = 90  nr = 40 
-> write.csv2(RW,file="./Dasha/worksTest.csv")
+> write.csv2(RW,file="worksTest.csv")
 > head(RW)
             id language countries_distinct_count cited_by_count publication_year
 43  W113241274       en                        0            159             1992
@@ -84,8 +84,20 @@ li = 51  ri = 90  nr = 40
 
 id, orcid, display_name, display_name_alternatives, relevance_score, works_count, cited_by_count, summary_stats, ids, affiliations, last_known_institutions, topics, topic_share, x_concepts, counts_by_year, works_api_url, updated_date, created_date.
 
-
 ```
-
+> AIDs <- trimws(read.csv("authorsTest.dat",head=FALSE)$V1)
+> selA <- "id,orcid,works_count,cited_by_count,relevance_score,display_name"
+> RA <- unitsInfo(IDs=AIDs,units="authors",select=selA)
+li = 1  ri = 50  nr = 50 
+li = 51  ri = 98  nr = 48 
+> write.csv2(RA,file="authorsTest.csv")
+> head(RA)
+            id                                 orcid works_count cited_by_count        display_name
+36 A5000166339                                  <NA>          98           3046  Colin Tucker Smith
+71 A5001125856 https://orcid.org/0000-0002-5539-783X          95           2396  Panagiotis Metaxas
+19 A5003112909 https://orcid.org/0000-0001-7102-2491         222          11979   Timothy D. Wilson
+31 A5003968744 https://orcid.org/0000-0001-6406-8811         149           2828      Andreas Graefe
+18 A5004796814 https://orcid.org/0000-0002-8460-0331         240           4465 Costas Panagopoulos
+27 A5006386521 https://orcid.org/0000-0002-0943-162X         169           4947     Marco Ottaviani
 ```
 
