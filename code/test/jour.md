@@ -133,8 +133,6 @@ hits: 17642 works: 395471 authors: 29993 anon: 388 sources: 4078
 >>> Countries WC
 >>> Keywords WK
 *** OpenAlex2Pajek / All - Stop Tue May  6 23:33:18 2025 
-> 
-
 ```
 See [First version](first.md).
 
