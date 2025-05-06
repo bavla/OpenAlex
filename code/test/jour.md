@@ -1,5 +1,7 @@
 # Journals
 
+May 4, 2025
+
 ## Collecting works
 
 If you open these examples in a web browser, they will look much better if you have a browser plug-in such as [JSONVue](https://chromewebstore.google.com/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc) installed.
