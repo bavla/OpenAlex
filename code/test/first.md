@@ -186,12 +186,12 @@ For interpretation of the obtained results some info about the sources (IDs in a
 I wrote a short program to collected the IDs info from OpenAlex
 
 ```
-> N <- trimws(read.csv("./Dasha/wdeg100.dat",head=FALSE)$V1)
+> N <- trimws(read.csv("wdeg100.dat",head=FALSE)$V1)
 > # units <- "works"
 > units <- "sources"
 > Units <- paste0("https://api.openalex.org/",units)
 > cond <- ""
-> nameF <- "./Dasha/wdeg100nam.csv"
+> nameF <- "wdeg100nam.csv"
 > F <- "openalex:"
 > S <- "id,issn_l,country_code,type,is_oa,cited_by_count,works_count,display_name"
 > W <- NULL; ri <- 0; nj <- length(N)
