@@ -1,6 +1,6 @@
 ## OpenAlexSources
 
-I converted the program from [xxx]() into a function `OpenAlexSources`
+I converted the program from [First version](first.md) into a function `OpenAlexSources`
 ```
 OpenAlexSources <- function(sID,step=100,cond=""){
   cat("OpenAlex2Pajek / Sources",date(),"\n"); flush.console()
