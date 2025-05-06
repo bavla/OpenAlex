@@ -83,4 +83,4 @@ To get the networks we apply `OpenAlex2PajekAll` to R
 ```
 See [First version](first.md).
 
-[Index]{README.md)
+[Index](README.md)
