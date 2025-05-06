@@ -40,7 +40,7 @@ The size of the set W<sub>J</sub> can be very large. To reduce it we can conside
 
 ## Programming OpenAlexSources
 
-[First version](first.md)
+The programming of the function is traced in [First version](first.md). It resulted into two functions 
 ```
 
 ```
