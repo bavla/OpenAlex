@@ -81,5 +81,5 @@ To get the networks we apply `OpenAlex2PajekAll` to R
 ```
 > OpenAlex2PajekAll(NULL,name="Dasha",listF="worksTest.csv")
 ```
-
+See [First version](first.md).
 
