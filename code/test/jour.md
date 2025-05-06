@@ -71,16 +71,15 @@ i = 13  nr = 122
  14515 cited works collected Tue May  6 19:39:10 2025 
 17642 different works Tue May  6 19:39:10 2025 
 ```
-We can save the vector R in a file.
+We save the vector R in a file.
 ```
 > csv <- file("worksTest.csv","w",encoding="UTF-8")
 > write(R,sep="\n",file=csv)
 > close(csv)
 ```
-
-
+To get the networks we apply `OpenAlex2PajekAll` to R
 ```
-
+> OpenAlex2PajekAll(NULL,name="Dasha",listF="worksTest.csv")
 ```
 
 
