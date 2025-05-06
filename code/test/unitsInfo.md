@@ -1,5 +1,7 @@
 # unitsInfo
 
+May 6, 2025
+
 ## Function `unitsInfo`
 
 I converted a short program from [first](first.md) into a function `unitsInfo` that collects from OpenAlex the basic information about units from a given list of OpenAlex IDs (of the same type). The function `unitsInfo` is included in the package `OpenAlex2Pajek`.
