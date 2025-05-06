@@ -79,38 +79,6 @@ We save the vector R in a file.
 ```
 To get the networks we apply `OpenAlex2PajekAll` to R
 ```
-> OpenAlex2PajekAll(NULL,name="Dasha",listF="worksTest.csv")
-
-> setwd(wdir <- "C:/Users/vlado/docs/papers/2025/OpenAlex/sources")
-> library(httr); library(jsonlite)
-> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
-> source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
-> sID <- "s4210233660"
-> R <- OpenAlexSources(sID,step=250)
-OpenAlex2Pajek / Sources Tue May  6 19:32:47 2025 
-i = 1  nr = 200 
-i = 2  nr = 200 
-i = 3  nr = 200 
-i = 4  nr = 200 
-i = 5  nr = 200 
-i = 6  nr = 200 
-i = 7  nr = 200 
-i = 8  nr = 200 
-i = 9  nr = 200 
-i = 10  nr = 200 
-i = 11  nr = 200 
-i = 12  nr = 200 
-i = 13  nr = 122 
-2522 source s4210233660 works collected Tue May  6 19:32:50 2025 
-...
- 4092 citing works collected Tue May  6 19:38:59 2025 
-..........
- 14515 cited works collected Tue May  6 19:39:10 2025 
-17642 different works Tue May  6 19:39:10 2025 
-> 
-> csv <- file("./test/worksTest.csv","w",encoding="UTF-8")
-> write(R,sep="\n",file=csv)
-> close(csv)
 > OpenAlex2PajekAll(NULL,name="Dasha",listF="./test/worksTest.csv")
 OpenAlex2Pajek / All - Start Tue May  6 20:39:20 2025 
 *** OpenAlex2Pajek / All - Process Tue May  6 20:39:20 2025 
