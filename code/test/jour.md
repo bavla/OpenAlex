@@ -38,7 +38,7 @@ The obtained networks can be used to determine the set of important sources J.
 
 The size of the set W<sub>J</sub> can be very large. To reduce it we can consider some restriction such us interval of considered year of publication, type of publication, etc.
 
-## Programming OpenAlexSources
+## Programming and applying OpenAlexSources
 
 The programming of the function is traced in [First version](first.md). It resulted into two functions [`OpenAlexSources`](OpenAlexSources.md) and [`unitsInfo`](unitsInfo.md).
 
