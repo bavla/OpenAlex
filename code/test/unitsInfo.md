@@ -30,6 +30,7 @@ unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond=""){
 id, issn_l, issn, display_name, host_organization, host_organization_name, host_organization_lineage, relevance_score, works_count, cited_by_count, summary_stats, is_oa, is_in_doaj, is_indexed_in_scopus, is_core, ids, homepage_url, apc_prices, apc_usd, country, country_code, societies, alternate_titles, abbreviated_title, type, topics, topic_share, x_concepts, counts_by_year, works_api_url, updated_date, created_date.
 
 ```
+> # source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
 > SIDs <- trimws(read.csv("wdeg100.dat",head=FALSE)$V1)
 > selS <- "id,issn_l,country_code,type,is_oa,cited_by_count,works_count,display_name"
 > RS <- unitsInfo(IDs=SIDs,units="sources",select=selS)
