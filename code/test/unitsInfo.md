@@ -129,6 +129,7 @@ Here is a test
 
 ### Parameter order
 
+The above solution is included in the function `unitsInfo` by introducing an additional parameter `order` with a default value `alpha` returning the alphabetically ordered list; and value `input` for returning the list following the original input list order.
 ```
 > AS <- unitsInfo(IDs=SIDs,units="sources",select=selS)
 li = 1  ri = 50  nr = 50 
