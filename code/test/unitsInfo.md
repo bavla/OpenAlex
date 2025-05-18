@@ -104,4 +104,33 @@ li = 51  ri = 98  nr = 48
 27 A5006386521 https://orcid.org/0000-0002-0943-162X         169           4947     Marco Ottaviani
 ```
 
+## Preserving the initial order of units in the description list
+
+Assume that the description data frame RS is created as in **Sources**. To get a data frame N with units ordered as in SIDs we use the command
+```
+N <- RS[p<-match(SIDs,RS$id),]
+```
+Here is a test
+```
+> head(SIDs)
+[1] "S4306525036" "S112952035"  "S202734349"  "S151331055"  "S166002381"  "S37739784"  
+> N <- RS[p<-match(SIDs,RS$id),]
+> head(N)
+            id    issn_l country_code       type is_oa cited_by_count works_count
+1  S4306525036      <NA>           US repository FALSE     1165544817    33075702
+23  S112952035 0303-8300           NL    journal FALSE         248273        5707
+38  S202734349 1389-4978           NL    journal FALSE         119486        1811
+18  S151331055 0191-8869           GB    journal FALSE         768640       15619
+19  S166002381 0021-9010           US    journal FALSE        1311088       13123
+46   S37739784 1532-7957           US    journal FALSE         159965         552
+                               display_name
+1                                    PubMed
+23               Social Indicators Research
+38             Journal of Happiness Studies
+18   Personality and Individual Differences
+19            Journal of Applied Psychology
+46 Personality and Social Psychology Review
+> write.csv2(N,file="sourcesTestOrg.csv")
+```
+
 [Index](README.md)
