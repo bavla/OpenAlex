@@ -116,20 +116,14 @@ Here is a test
 [1] "S4306525036" "S112952035"  "S202734349"  "S151331055"  "S166002381"  "S37739784"  
 > N <- RS[p<-match(SIDs,RS$id),]
 > head(N)
-            id    issn_l country_code       type is_oa cited_by_count works_count
-1  S4306525036      <NA>           US repository FALSE     1165544817    33075702
-23  S112952035 0303-8300           NL    journal FALSE         248273        5707
-38  S202734349 1389-4978           NL    journal FALSE         119486        1811
-18  S151331055 0191-8869           GB    journal FALSE         768640       15619
-19  S166002381 0021-9010           US    journal FALSE        1311088       13123
-46   S37739784 1532-7957           US    journal FALSE         159965         552
-                               display_name
-1                                    PubMed
-23               Social Indicators Research
-38             Journal of Happiness Studies
-18   Personality and Individual Differences
-19            Journal of Applied Psychology
-46 Personality and Social Psychology Review
+            id    issn_l country_code       type is_oa cited_by_count works_count                             display_name
+1  S4306525036      <NA>           US repository FALSE     1165544817    33075702                                   PubMed
+23  S112952035 0303-8300           NL    journal FALSE         248273        5707               Social Indicators Research
+38  S202734349 1389-4978           NL    journal FALSE         119486        1811             Journal of Happiness Studies
+18  S151331055 0191-8869           GB    journal FALSE         768640       15619   Personality and Individual Differences
+19  S166002381 0021-9010           US    journal FALSE        1311088       13123            Journal of Applied Psychology
+46   S37739784 1532-7957           US    journal FALSE         159965         552 Personality and Social Psychology Review
+> 
 > write.csv2(N,file="sourcesTestOrg.csv")
 ```
 
