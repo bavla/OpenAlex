@@ -106,6 +106,8 @@ li = 51  ri = 98  nr = 48
 
 ## Preserving the initial order of units in the description list
 
+May 18, 2025
+
 Assume that the description data frame RS is created as in **Sources**. To get a data frame N with units ordered as in SIDs we use the command
 ```
 N <- RS[p<-match(SIDs,RS$id),]
