@@ -16,6 +16,7 @@
 # version 3. May 11, 2024; Collaboration between countries
 # version 4. June 18, 2024; Problem with the NULL values, sourceNames
 # version 5. May 4-6, 2025; OpenAlexSources, unitsInfo
+# version 6. May 18. 2025; unitsInfo(order)
 
 selPub  <- "id,primary_location,title,publication_year,cited_by_count,countries_distinct_count"
 selRef  <- "biblio,type,language,referenced_works_count,referenced_works"
@@ -577,7 +578,7 @@ OpenAlexSources <- function(sID,step=100,cond=""){
   return(W)
 }
 
-unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond=""){
+unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond="",order="alpha"){
   Units <- paste0("https://api.openalex.org/",units) 
   W <- NULL; ri <- 0; nj <- length(IDs)
   while(TRUE) {
@@ -592,8 +593,9 @@ unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond=""){
     if(trace){cat("li =",li," ri =",ri," nr =",nr,"\n"); flush.console()}
     if(nr>0){df$id <- getID(df$id); W <- rbind(W,df)}
   }
-  return(W[order(W$id),])
+  if(order=="alpha") return(W[order(W$id),]) else return(W[match(IDs,W$id),])
 }
+
 
 
 
