@@ -127,4 +127,33 @@ Here is a test
 > write.csv2(N,file="sourcesTestOrg.csv")
 ```
 
+### Parameter order
+
+```
+> AS <- unitsInfo(IDs=SIDs,units="sources",select=selS)
+li = 1  ri = 50  nr = 50 
+li = 51  ri = 100  nr = 50 
+li = 101  ri = 139  nr = 39 
+> head(AS)
+            id    issn_l country_code        type is_oa cited_by_count works_count                               display_name
+128 S100176667 1751-9020           GB     journal FALSE          41744        1740                          Sociology Compass
+29   S10288104 0046-2772           GB     journal FALSE         195183        3703      European Journal of Social Psychology
+74   S10591207 0011-3921           US     journal FALSE          53482        2499                          Current Sociology
+134 S106560479 0065-2601           US book series FALSE         203434         755 Advances in experimental social psychology
+16  S106822843 0277-9536           GB     journal FALSE        1335817       20525                  Social Science & Medicine
+114 S107737141 0021-9916           US     journal FALSE         252807        5090                   Journal of Communication
+> IN <- unitsInfo(IDs=SIDs,units="sources",select=selS,order="input")
+li = 1  ri = 50  nr = 50 
+li = 51  ri = 100  nr = 50 
+li = 101  ri = 139  nr = 39 
+> head(IN)
+            id    issn_l country_code       type is_oa cited_by_count works_count                             display_name
+1  S4306525036      <NA>           US repository FALSE     1165544817    33075702                                   PubMed
+23  S112952035 0303-8300           NL    journal FALSE         248273        5707               Social Indicators Research
+38  S202734349 1389-4978           NL    journal FALSE         119486        1811             Journal of Happiness Studies
+18  S151331055 0191-8869           GB    journal FALSE         768640       15619   Personality and Individual Differences
+19  S166002381 0021-9010           US    journal FALSE        1311088       13123            Journal of Applied Psychology
+46   S37739784 1532-7957           US    journal FALSE         159965         552 Personality and Social Psychology Review
+```
+
 [Index](README.md)
