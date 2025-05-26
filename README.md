@@ -2,7 +2,7 @@
 
 Bibliometrics
 
-source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex4.R")
+source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
 
 [URLs](URLs.md)
 
