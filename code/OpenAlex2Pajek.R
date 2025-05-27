@@ -510,6 +510,10 @@ coAuthorship <- function(CC,year=NULL){
   return(list(T=T,G=G,M=M))
 }
 
+authors <- function(L) {A <- L$authorships; k <- length(A); N <- rep("",k)
+  for (i in 1:k) N[i] <- paste(A[i][[1]]$author$display_name,collapse=", ")
+  return(N)
+}
 OpenAlexSources <- function(sID,step=100,cond=""){
   cat("OpenAlex2Pajek / Sources",date(),"\n"); flush.console()
   works <- "https://api.openalex.org/works"
