@@ -31,7 +31,7 @@ select=id,title,publication_year,referenced_works
   * the set W<sub>out</sub> of works cited from some work from W<sub>j</sub> - for each k ∈ W<sub>j</sub> determine (**C**) the set W<sub>k</sub> of works cited by the work k.  The set W<sub>out</sub> is the union of all W<sub>k</sub>s.
   * the set of relevant works is W = W<sub>in</sub> ∪ W<sub>j</sub> ∪ W<sub>out</sub>. To get networks apply the procedure `OpenAlex2PajekAll` on W.
 
-<img src="https://github.com/bavla/OpenAlex/blob/main/code/test/WIOj.png" width="200" />
+<img src="https://github.com/bavla/OpenAlex/blob/main/code/test/WIOj.png" width="300" />
 
 Note that for sources different from j only the citations from/to j are complete. Other citations consider only cases where at least one end-node is related to a work from the source j.
 The obtained networks can be used to determine the set of important sources J.
