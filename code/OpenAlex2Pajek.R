@@ -16,7 +16,8 @@
 # version 3. May 11, 2024; Collaboration between countries
 # version 4. June 18, 2024; Problem with the NULL values, sourceNames
 # version 5. May 4-6, 2025; OpenAlexSources, unitsInfo
-# version 6. May 18. 2025; unitsInfo(order)
+# version 6. May 18, 2025; unitsInfo(order)
+# version 7. July 27, 2025; OpenAlexAuthors
 
 selPub  <- "id,primary_location,title,publication_year,cited_by_count,countries_distinct_count"
 selRef  <- "biblio,type,language,referenced_works_count,referenced_works"
@@ -144,6 +145,13 @@ putWork <- function(Wid,hit){
     if(hit) works[[Wid]][["cnt"]] <- 1 else works[[Wid]][["inp"]] <- 1 
   }
   return(works[[Wid]][["wind"]])
+}
+
+# Wid -> (wind,cnt)
+putWork2 <- function(wId){
+  if(!exists(wId,env=W,inherits=FALSE)) W[[wId]] <- list(wind=length(W)+1,cnt=0) 
+  W[[wId]][["cnt"]] <- W[[wId]][["cnt"]]+1
+  return(W[[wId]][["wind"]]) 
 }
 
 # Sid -> (sind)
@@ -514,6 +522,7 @@ authors <- function(L) {A <- L$authorships; k <- length(A); N <- rep("",k)
   for (i in 1:k) N[i] <- paste(A[i][[1]]$author$display_name,collapse=", ")
   return(N)
 }
+  
 OpenAlexSources <- function(sID,step=100,cond=""){
   cat("OpenAlex2Pajek / Sources",date(),"\n"); flush.console()
   works <- "https://api.openalex.org/works"
@@ -598,6 +607,36 @@ unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond="",orde
     if(nr>0){df$id <- getID(df$id); W <- rbind(W,df)}
   }
   if(order=="alpha") return(W[order(W$id),]) else return(W[match(IDs,W$id),])
+}
+
+OpenAlexAuthors <- function(IDs,step=100,cond=""){
+  cat("OpenAlex2Pajek / Authors",date(),"\n"); flush.console() 
+  works <- "https://api.openalex.org/works"
+  W <- eDict()
+  an <- length(IDs); ar <- 0; k <- 0
+  while(TRUE){
+    al <- ar+1
+    if(al>an) break
+    ar <- min(al+49,an); k <- k+1 
+    if((step<2)||(k %% step == 1)) {
+      cat("k =",k," al =",al," ar =",ar," w =",length(W),"\n"); 
+      flush.console()}
+    alist <- paste0(IDs[al:ar],collapse="|")
+    Q <- list(filter=paste0("author.id:",alist,cond),
+      select="id", per_page="200", cursor="*")
+    while(TRUE){
+      as <- GET(works,query=Q)
+      if(as$status_code!=200) break
+      ac <- fromJSON(rawToChar(as$content))
+      df <- ac$results
+      for(w in getID(df$id)) ind <- putWork2(w)
+      Q$cursor <- ac$meta$next_cursor
+      if(is.null(Q$cursor)) break
+    }
+  }
+  cat("# works = ",length(W),"\n")
+  cat("OpenAlex2Pajek / Authors - End",date(),"\n"); flush.console()
+  return(W)
 }
 
 
