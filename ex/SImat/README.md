@@ -1,5 +1,7 @@
 # Slovenian mathematics
 
+[Presentation](sredin.pdf)
+
 Data files:
 - [Authors with multiple OpenAlex Ids](joinSImat.csv)
 - [Reduced normalized citation network Ci](SImatnCir.zip) (ZIP)
