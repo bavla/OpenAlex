@@ -201,6 +201,16 @@ vector2vec(R$T,Vec="WorldCoComplete.vec")
 ```
 See also [Countries](https://github.com/bavla/OpenAlex/tree/main/Countries).
 
+
+OpenAlexSources <- function(sID,step=100,cond="")
+
+OpenAlexAuthors <- function(IDs,step=100,cond="")
+
+unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond="",order="alpha"){
+
+authorsId2name <- function(Ids,clu=NULL,Fname="aDF")
+
+
 ## See also
 
   - Batagelj, V., Pisanski, J., Pisanski, T.: Higher-order bibliographic services based on bibliographic networks. IS2024-SIKDD_2024, Ljubljana, October 7 2024. [PDF](https://doi.org/10.70314/is.2024.sikdd.12) 
