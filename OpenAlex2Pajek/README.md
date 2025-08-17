@@ -1,6 +1,6 @@
 # OpenAlex2Pajek
 
-**OpenAlex2Pajek** is an R package of functions for constructing bibliographic networks from selected bibliographic data in OpenAlex. Currently, OpenAlex2Pajek contains four main functions `OpenAlex2PajekCite`, `OpenAlex2PajekAll`, `OpenAlexSources`, and `coAuthorship`.
+**OpenAlex2Pajek** is an R package of functions for constructing bibliographic networks from selected bibliographic data in OpenAlex. Currently, OpenAlex2Pajek contains four main functions `OpenAlex2PajekCite`, `OpenAlex2PajekAll`, `OpenAlexSources`, `OpenAlexAuthors`, and `coAuthorship`.
 
 ## Saturation approach to construct bibliographic networks on selected topic
 
@@ -18,9 +18,13 @@ After each run of the function `OpenAlex2PajekCite` we read the last version of 
 
 The collection contains the citation network **Cite** and two-mode networks: authorship **WA**, sources **WJ**, keywords **WK**, countries **WC**, and work properties: publication year, type of publication, the language of publication, cited by count, countries distinct count, and referenced works.
 
-The function `OpenAlexSources` creates the list of works related to a selected journal (all papers published by the journal chosen and all works citing/cited by these papers). Since in networks the units (works, authors, sources, keywords, etc.) are identified by their OpenAlex IDs, another function, `unitsInfo`, provides the user with additional information about the units appearing in the results of analyses.
+The function `OpenAlexSources` creates the list of works related to a selected journal (all papers published by the journal chosen and all works citing/cited by these papers). Similary, the function `OpenAlexAuthors` creates the list of works related to selected authors (all works (co-)authored by the chosen authors).
+
+Since in networks the units (works, authors, sources, keywords, etc.) are identified by their OpenAlex IDs, another function, `unitsInfo`, provides the user with additional information about the units appearing in the results of analyses. A more detailed information about authors is provided by the function 
+
 ### Examples
 
+[Bibliographic networks on selected topic](./doc/topic)
 #### Bibliographic networks on selected topic
 
 Details **in preparation!!!**
