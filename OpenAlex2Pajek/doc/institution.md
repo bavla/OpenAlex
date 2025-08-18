@@ -49,3 +49,7 @@ hits: 3495 works: 67883 authors: 5344 anon: 0 sources: 1161
 ```
 See also [IMFM](https://github.com/bavla/OpenAlex/blob/main/code/ex/imfm.md).
 
+
+<hr />
+
+[OpenAlex2Pajek](../README.md)
