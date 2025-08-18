@@ -1,6 +1,21 @@
 # Author names and info
 
-Details **in preparation!!!**
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
 
 <hr />
 
