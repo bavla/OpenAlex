@@ -52,3 +52,7 @@ hits: 452 works: 4078 authors: 303 anon: 0 sources: 119
 ```
 The obtained network files have the name BDF and different extensions.
 
+
+<hr />
+
+[OpenAlex2Pajek](../README.md)
