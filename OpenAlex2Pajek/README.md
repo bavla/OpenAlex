@@ -20,7 +20,7 @@ The collection contains the citation network **Cite** and two-mode networks: aut
 
 The function `OpenAlexSources` creates the list of works related to a selected journal (all papers published by the journal chosen and all works citing/cited by these papers). Similary, the function `OpenAlexAuthors` creates the list of works related to selected authors (all works (co-)authored by the chosen authors).
 
-Since in networks the units (works, authors, sources, keywords, etc.) are identified by their OpenAlex IDs, another function, `unitsInfo`, provides the user with additional information about the units appearing in the results of analyses. A more detailed information about authors is provided by the function 
+Since in networks the units (works, authors, sources, keywords, etc.) are identified by their OpenAlex IDs, another function, `unitsInfo`, provides the user with additional information about the units appearing in the results of analyses. A more detailed information about authors is provided by functions `authorsId2name` and `worksId2name`.
 
 ### Examples
 
