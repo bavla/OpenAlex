@@ -28,15 +28,16 @@ Since in networks the units (works, authors, sources, keywords, etc.) are identi
 - [Bibliographic networks for selected persons](./doc/persons.md)
 - [Bibliographic networks for selected institution](./doc/institution.md)
 - [Temporal network of co-authorship between world countries](./doc/worldco.md)
-- 
+- [Garfield labels and info about works](./doc/wnames.md) 
+- [Names and info about authors](./doc/anames.md)
 
-OpenAlexSources <- function(sID,step=100,cond="")
+OpenAlexSources(sID,step=100,cond="")
 
-OpenAlexAuthors <- function(IDs,step=100,cond="")
+OpenAlexAuthors(IDs,step=100,cond="")
 
-unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond="",order="alpha"){
+unitsInfo(IDs=NULL,units="works",select="id",trace=TRUE,cond="",order="alpha"){
 
-authorsId2name <- function(Ids,clu=NULL,Fname="aDF")
+authorsId2name(Ids,clu=NULL)
 
 
 ## See also
