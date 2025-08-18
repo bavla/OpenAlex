@@ -1,4 +1,4 @@
-# OpenAlex2Pajek ver 4. March 18, 2024 / May 11, 2024 / June 18, 2024 
+# OpenAlex2Pajek ver 8. August 15, 2025 / March 18, 2024  
 # https://github.com/bavla/OpenAlex/tree/main/code
 # http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:bib:alex
 # by Vladimir Batagelj, March 2024
@@ -18,6 +18,11 @@
 # version 5. May 4-6, 2025; OpenAlexSources, unitsInfo
 # version 6. May 18, 2025; unitsInfo(order)
 # version 7. July 27, 2025; OpenAlexAuthors
+# version 8. August 15, 2025; removehash, authorsId2name, worksId2name
+
+# TO DO:
+# Vector DC / http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:clea
+# Work labels and titles / http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:aci
 
 selPub  <- "id,primary_location,title,publication_year,cited_by_count,countries_distinct_count"
 selRef  <- "biblio,type,language,referenced_works_count,referenced_works"
@@ -228,7 +233,7 @@ openWorks <- function(query=NULL,list=NULL,file=NULL,name){
 
 nextWork <- function(){
   # repeat{
-  for(t in 1:5){
+  for(t in 1:10){
     switch(WC$act,
       "page" = {
         # if(WC$n==10) {WC$act <- "list"; next}
@@ -236,7 +241,7 @@ nextWork <- function(){
         if(WC$k>WC$nr){
           WC$wd <- GET(WC$works,query=WC$Q)
           if(WC$wd$status_code!=200) {WC$act <- "list"
-            cat(WC$n,"GET error\n"); flush.console(); next}
+            cat(WC$n,"GET error in page\n"); flush.console(); next}
           WC$k <- 1
           WC$wc <- fromJSON(rawToChar(WC$wd$content))
           WC$Q$cursor <- WC$wc$meta$next_cursor
@@ -252,8 +257,18 @@ nextWork <- function(){
         if(WC$l>length(WC$L)) {WC$act <- "open"; next}
         Works <- paste(WC$works,"/",WC$L[WC$l],sep="")
         WC$wd <- GET(Works,query=list(select=WC$Q[["select"]]))
-        if(WC$wd$status_code!=200) {cat(WC$n,"GET error\n")
-          flush.console(); next}
+        if(WC$wd$status_code!=200) {cat(WC$n,"GET error in list\n")
+          flush.console(); t1 <- Sys.time(); print(t1)
+          while(TRUE) { 
+            cat("Options: 1 - show time; 2 - try again; 3 - stop\n"); flush.console()
+            num <- as.numeric(readline("Enter option? > "))
+            if(is.na(num)) num <- 0
+            if(num==2) break
+            if(num==3) stop("STOP requested by user")
+            if(num==1) { t2 <- Sys.time(); print(t2)
+              cat("elapsed time: ",(t2-t1)/3600,"h\n") }
+          }
+          next }
         # cat("   >>>",WC$l,WC$L[WC$l],"\n"); flush.console()
         wc <- fromJSON(rawToChar(WC$wd$content))
         WC$n <- WC$n + 1
@@ -431,7 +446,14 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
       processWork(w,test),
       error=function(e){ WC$er <- WC$er + 1; cat("W",WC$n,w$id,WC$er,"\n")
         print(e); flush.console();
-        if(WC$er > 20) stop("To many errors") }  )
+        if(WC$er > 10) { WC$er <- 0
+          cat("Problems with processWork\n"); flush.console()
+          cat("Options: 1 - try again; 2 - stop\n"); flush.console()
+          num <- as.numeric(readline("Enter option? > "))
+          if(is.na(num)) num <- 0
+          if(num==2) stop("STOP requested by user")
+        }
+      } )
   }
   cat("*** OpenAlex2Pajek / All - Data Collected",date(),"\n"); flush.console()
   if(test>1) print(ls.str(WC))
@@ -638,6 +660,46 @@ OpenAlexAuthors <- function(IDs,step=100,cond=""){
   cat("OpenAlex2Pajek / Authors - End",date(),"\n"); flush.console()
   return(W)
 }
+
+removehash <- function(s) ifelse(substr(s,1,1)=="#",substr(s,2,nchar(s)),s)
+
+authorsId2name <- function(Ids,clu=NULL){
+  Ids <- removehash(Ids)
+  Nas <- unitsInfo(IDs=Ids,units="authors",order="list",
+    select="id,display_name,works_count,cited_by_count")
+  Nas$display_name <- gsub("‐","-",Nas$display_name)
+  if(!is.null(clu)) Nas$clu <- clu
+  return(Nas)
+}
+
+worksId2name <- function(wlist,len=47){
+  wlist <- removehash(wlist); k <- length(wlist)
+  wdf <- data.frame(wid=wlist,lab=rep("",k),cbc=rep(0,k),tit=rep("",k))
+  for(i in 1:k){ w <- wlist[i] 
+    # cat(i,w,"\n"); flush.console()
+    wd <- GET(paste("https://api.openalex.org/works/",w,
+      "?&select=id,title,publication_year,type,authorships,biblio",
+      ",cited_by_count",sep=""))
+    if(wd$status_code==200) {
+      cont <- fromJSON(rawToChar(wd$content))
+      wN <- cont$authorships
+      name <- wN$author$display_name[1]
+      if(length(name)==0) name <- "Anonymous"
+      ty <- cont$type; py <- cont$publication_year
+      vl <- cont$biblio$volume; fp <- cont$biblio$first_page
+      lab <- Gname(name,ty,py,vl,fp)
+      wdf$lab[i] <- lab; tit <- cont$title
+      wdf$cbc[i] <- cont$cited_by_count
+      if(length(tit)>0) wdf$tit[i] <- ifelse(nchar(tit)<(len+4),tit,
+        paste0(substr(tit,1,len),"...") )
+    }
+  }
+  return(wdf)
+}
+
+
+
+
 
 
 
