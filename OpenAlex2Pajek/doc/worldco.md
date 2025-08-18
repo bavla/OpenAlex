@@ -69,3 +69,9 @@ vector2vec(R$T,Vec="WorldCoComplete.vec")
 ```
 See also [Countries](https://github.com/bavla/OpenAlex/tree/main/Countries).
 
+
+<hr />
+
+[OpenAlex2Pajek](../README.md)
+
+
