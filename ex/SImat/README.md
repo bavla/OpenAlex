@@ -1,5 +1,7 @@
 # Slovenian mathematics
 
+[Konferenca slovenskih matematikov 2025](https://conferences.matheo.si/event/45/overview),  Koper, 12. in 13. september 2025
+
 [Presentation](sredin.pdf)
 
 Data files:
