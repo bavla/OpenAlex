@@ -19,6 +19,7 @@
 # version 6. May 18, 2025; unitsInfo(order)
 # version 7. July 27, 2025; OpenAlexAuthors
 # version 8. August 15, 2025; removehash, authorsId2name, worksId2name
+# version 9. September 10, 2025; partition2twomode, journals
 
 # TO DO:
 # Vector DC / http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:clea
@@ -663,11 +664,13 @@ OpenAlexAuthors <- function(IDs,step=100,cond=""){
 
 removehash <- function(s) ifelse(substr(s,1,1)=="#",substr(s,2,nchar(s)),s)
 
+# > intToUtf8(8208)
+# [1] "‐"
 authorsId2name <- function(Ids,clu=NULL){
   Ids <- removehash(Ids)
   Nas <- unitsInfo(IDs=Ids,units="authors",order="list",
     select="id,display_name,works_count,cited_by_count")
-  Nas$display_name <- gsub("‐","-",Nas$display_name)
+  Nas$display_name <- gsub(intToUtf8(8208),"-",Nas$display_name)
   if(!is.null(clu)) Nas$clu <- clu
   return(Nas)
 }
@@ -697,6 +700,40 @@ worksId2name <- function(wlist,len=47){
   return(wdf)
 }
 
+partition2twomode <- function(C,nam,cLab,sel){
+# C   - integer: partition
+# nam    - char: node names
+# cLab   - char: cluster names
+# sel - integer: selected clusters
+  n <- length(C)
+  U <- V <- rep(0,n); i <- 0
+  for(u in 1:n){ v <- which(sel==C[u])
+    if(length(v)>0){i <- i+1; U[i] <- u; V[i] <- v}
+  }
+  Uf <- U[1:i]; Vf <- V[1:i]
+  return(list(u=Uf,v=Vf,nam=nam,cLab=cLab[sel]))
+}
+
+journals <- function(j,C=NULL,K=M[-1,],kNam=jNam[-1],aNam=Nams,I=1:20,len=47,nuM=10){
+  mem <- which(C$C1==j)
+  num <- length(mem)
+  cat("Cluster",j,"with",num,"nodes\n")
+  print(aNam[mem][1:min(nuM,num)])
+  jj <- which(cNam==paste0("C",j))
+  p <- order(K[,jj],decreasing=TRUE)
+  Ip <- p[I]
+  IDs <- kNam[Ip]
+  S <- unitsInfo(IDs=IDs,units="sources",select="id,display_name",order="org")
+  J <- S$display_name
+  L <- ifelse(nchar(J)<(len+4),J,paste0(substr(J,1,len),"...") )
+  jInfo <- data.frame(i=I,f=K[Ip,jj],id=IDs,journal=L)
+  U <- list(i=0,f=M[1,jj],id="Sunknown",journal="Unknown source")
+  jInfo <- rbind(jInfo,U)
+  print(jInfo)
+  return(list(j=j,jj=jj,num=num,nams=aNam[mem],jInfo=jInfo))
+}
+# j <- weak$C1[which(Nams=="Iztok Fister")]
+# R <- journals(j,C=weak)
 
 
 
