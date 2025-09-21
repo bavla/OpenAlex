@@ -73,5 +73,5 @@ OpenAlexSources <- function(sID,step=100,cond=""){
 }
 ```
 
-[Index](README.md)
+[Index](https://github.com/bavla/OpenAlex/tree/main/ex/Sources)
 
