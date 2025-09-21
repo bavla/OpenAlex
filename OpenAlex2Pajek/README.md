@@ -30,12 +30,13 @@ Since in networks the units (works, authors, sources, keywords, etc.) are identi
 - [Temporal network of co-authorship between world countries](./doc/worldco.md)
 - [Garfield labels and info about works](./doc/wnames.md) 
 - [Names and info about authors](./doc/anames.md)
-
-OpenAlexSources(sID,step=100,cond="")
+- [Journals](https://github.com/bavla/OpenAlex/tree/main/code/test/jour.md)
+- 
+OpenAlexSources(sID,step=100,cond="")  [Function `OpenAlexSources`](https://github.com/bavla/OpenAlex/tree/main/code/test/OpenAlexSources.md)
 
 OpenAlexAuthors(IDs,step=100,cond="")
 
-unitsInfo(IDs=NULL,units="works",select="id",trace=TRUE,cond="",order="alpha"){
+unitsInfo(IDs=NULL,units="works",select="id",trace=TRUE,cond="",order="alpha") [Function `unitsInfo`](https://github.com/bavla/OpenAlex/tree/main/code/test/unitsInfo.md)
 
 authorsId2name(Ids,clu=NULL)
 
