@@ -138,4 +138,4 @@ hits: 17642 works: 395471 authors: 29993 anon: 388 sources: 4078
 ```
 See [First version](first.md).
 
-[Index](README.md)
+[Index](https://github.com/bavla/OpenAlex/tree/main/ex/Sources)
