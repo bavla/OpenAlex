@@ -216,5 +216,5 @@ Collected data are saved in a file [`wdeg100nam.csv`](wdeg100nam.csv). For easie
 
 This program was converted into a function [unitsInfo](unitsInfo.md).
 
-[Index](README.md)
+[Index](https://github.com/bavla/OpenAlex/tree/main/ex/Sources)
 
