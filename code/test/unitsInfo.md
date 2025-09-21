@@ -159,4 +159,4 @@ li = 101  ri = 139  nr = 39
 46   S37739784 1532-7957           US    journal FALSE         159965         552 Personality and Social Psychology Review
 ```
 
-[Index](README.md)
+[Index](https://github.com/bavla/OpenAlex/tree/main/ex/Sources)
