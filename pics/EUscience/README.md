@@ -5,4 +5,4 @@
 ## Pictures
 
 Balassa
-  - 1994-2003: [dendro](EuXBalassaD1994-2003.pdf); matrix: [PNG](Figure 5.png), [PDF](EuXBalassaR1994-2003.pdf)
+  - 1994-2003: [dendro](EuXBalassaD1994-2003.pdf); matrix: [PNG](./Figure 5.png), [PDF](EuXBalassaR1994-2003.pdf)
