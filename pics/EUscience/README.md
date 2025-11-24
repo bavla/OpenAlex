@@ -1,6 +1,7 @@
 # EU science
 
-[Data and code](https://github.com/bavla/OpenAlex/tree/main/Countries/27aug24#europe)
+- [Data and code](https://github.com/bavla/OpenAlex/tree/main/Countries/27aug24#europe)
+- [WoS data](https://github.com/bavla/biblio/tree/master/Eu)
 
 ## Pictures
 
