@@ -11,3 +11,7 @@
   - 2004-2013: [dendro](EuXBalassaD2004-2013.pdf); matrix: [PNG](Figure%206.png), [PDF](EuXBalassaR2004-2013.pdf)
   - 2014-2023: [dendro](EuXBalassaD2014-2023.pdf); matrix: [PNG](Figure%207.png), [PDF](EuXBalassaR2014-2023.pdf)
   - 2022: [dendro](EuBalassa2022D.pdf); matrix: [PNG](Figure%208.png), [PDF](EuBalassa2022.pdf)
+- SBM
+  - [Number of clusters](Figure%209.png)
+  - [4 clusters](Figure%210.pdf)
+  - [6 clusters](Figure%211.pdf)
