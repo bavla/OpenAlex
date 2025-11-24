@@ -13,5 +13,5 @@
   - 2022: [dendro](EuBalassa2022D.pdf); matrix: [PNG](Figure%208.png), [PDF](EuBalassa2022.pdf)
 - SBM
   - [Number of clusters](Figure%209.pdf)
-  - [4 clusters](Figure%210.pdf)
-  - [6 clusters](Figure%211.pdf)
+  - [4 clusters](Figure%2010.pdf)
+  - [6 clusters](Figure%2011.pdf)
