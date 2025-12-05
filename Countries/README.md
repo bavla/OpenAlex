@@ -14,5 +14,6 @@ The details are described in
 
 Figures from the paper: [Figure 1](./pics/WorldCo1N.pdf), [Figure 2](./pics/WorldCoT2023.pdf), [Figure 3](./pics/WorldBalassaF2023.pdf).
 
-[Maps](./maps/README.md)
+  - [World/Europe collaboration](./27aug24/README.md)
+  - [Maps](./maps/README.md)
 
