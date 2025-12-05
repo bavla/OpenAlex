@@ -97,6 +97,7 @@ sf [263 × 12] (S3: sf/tbl_df/tbl/data.frame)
 
 ## EU5 / World administrative boundaries
 
+  - https://public.opendatasoft.com/explore/assets/world-administrative-boundaries/export/
 
 ```
 > wa <- read_sf("EU5/world-administrative-boundaries.shp")
