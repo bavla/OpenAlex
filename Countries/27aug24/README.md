@@ -32,3 +32,8 @@ The file [continents.clu](continents.clu) contains a partition of countries to c
   - [World clustering, Balassa](https://github.com/bavla/OpenAlex/blob/main/Countries/World%20clustering.pdf);  http://localhost:8800/doku.php?id=work:bib:alex:mat
   - Europe http://localhost:8800/doku.php?id=work:bib:alex:eu
 
+
+<hr />
+
+[Index](../README.md)
+
