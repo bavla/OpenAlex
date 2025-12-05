@@ -55,9 +55,10 @@ Missing countries, nonprecise.
 
 ## EU2 / World_Countries
 
-  - https://gisco-services.ec.europa.eu/distribution/v1/countries-2024.html
-  - https://services3.arcgis.com/NqGokVvI0NQ6O9Jf/ArcGIS/rest/services/World_Countries/FeatureServer/15
-  - https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/
+  - [EuroStat/Gisco](https://ec.europa.eu/eurostat/web/gisco/geodata/administrative-units/countries)
+  - [Gisco/Countries 2024](https://gisco-services.ec.europa.eu/distribution/v1/countries-2024.html)
+  - [ArcGIS](https://services3.arcgis.com/NqGokVvI0NQ6O9Jf/ArcGIS/rest/services/World_Countries/FeatureServer/15)
+  - [Gisco/NUTs](https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/)
 
 ```
 > EU <- read_sf("EU2/CNTR_RG_20M_2024_3035.shp")
