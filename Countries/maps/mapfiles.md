@@ -92,6 +92,7 @@ sf [263 × 12] (S3: sf/tbl_df/tbl/data.frame)
 +   tm_layout(bg.color = "lightskyblue1")
 ```
 
+<img src="./countries24.png" width="450" alt="CNTR_RG_20M_2024_3035">
 
 ## EU
 
