@@ -1,7 +1,7 @@
 # World countries data 
 
 
-<img src="./Europe_ISO_3166-1.png" width="450" alt="ISO 3166-1 alpha-2">
+<img src="./Europe_ISO_3166-1.png" width="500" alt="ISO 3166-1 alpha-2">
 
 [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
 
@@ -54,7 +54,7 @@ sf [177 × 11] (S3: sf/tbl_df/tbl/data.frame)
 +   tm_layout(bg.color="lightblue")
 ```
 
-<img src="./spData.png" width="450" alt="spData/world">
+<img src="./spData.png" width="500" alt="spData/world">
 
 Missing countries, nonprecise.
 
@@ -98,7 +98,7 @@ sf [263 × 12] (S3: sf/tbl_df/tbl/data.frame)
 +   tm_layout(bg.color = "lightskyblue1")
 ```
 
-<img src="./countries24.png" width="450" alt="CNTR_RG_20M_2024_3035">
+<img src="./countries24.png" width="500" alt="CNTR_RG_20M_2024_3035">
 
 ## EU5 / World administrative boundaries
 
@@ -134,7 +134,7 @@ sf [256 × 9] (S3: sf/tbl_df/tbl/data.frame)
 +   tm_text("lab",size=0.5) + tm_title("Europe") +
 +   tm_layout(bg.color="lightskyblue1")
 ```
-<img src="./WAbound.png" width="450" alt="World administrative boundaries">
+<img src="./WAbound.png" width="500" alt="World administrative boundaries">
 
 ## EU6 / Natural Earth
 
@@ -178,7 +178,7 @@ sf [242 × 169] (S3: sf/tbl_df/tbl/data.frame)
 
 ```
 
-<img src="./NEarth.png" width="450" alt="Natural Earth">
+<img src="./NEarth.png" width="500" alt="Natural Earth">
 
 
 ```
