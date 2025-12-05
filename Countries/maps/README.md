@@ -40,7 +40,7 @@ In 2023 the `maptools` package was [replaced](https://geocompx.org/post/2023/rgd
   - https://www.mapsforeurope.org/access-data
   - https://data.opendatascience.eu/geonetwork/srv/api/records/8704eb16-b430-43da-a401-1a9e0c0350a0
   - https://www.eea.europa.eu/data-and-maps/data/eea-reference-grids-2/gis-files/europe-10-km-100-km/view
-  - https://public.opendatasoft.com/explore/assets/world-administrative-boundaries/export/
+
 <hr />
 
 [Index](README.md)
