@@ -13,7 +13,7 @@
 ## spData
 
 ```
-> world = read_sf(system.file("shapes/world.gpkg", package = "spData"))
+> world = read_sf(system.file("shapes/world.gpkg",package="spData"))
 > qtm(world)
 > str(world)
 sf [177 × 11] (S3: sf/tbl_df/tbl/data.frame)
@@ -41,21 +41,59 @@ sf [177 × 11] (S3: sf/tbl_df/tbl/data.frame)
 > # st_crs(world) # Coordinate Reference System info
 > n <- nrow(world)
 > world$clu <- sample(1:6,n,replace=TRUE)
-> qtm(world) + tm_crs("auto") + tm_polygons(fill = "clu",fill.scale = tm_scale_categorical())
+> qtm(world) + tm_crs("auto") + tm_polygons(fill="clu",fill.scale=tm_scale_categorical())
 > world$lab <- ifelse(world$iso_a2 %in% Europe,world$iso_a2,paste0("[",world$iso_a2,"]"))
 > qtm(world,bbox=c(-20,34,53,77)) + tm_crs("auto") + tm_borders() +
 +   tm_polygons(fill="clu",fill.scale=tm_scale_categorical(values="brewer.set1")) +
-+   tm_text("lab",size = 0.5) + tm_title("Europe") +
-+   tm_layout(bg.color = "lightblue")
-> 
-
++   tm_text("lab",size=0.5) + tm_title("Europe") +
++   tm_layout(bg.color="lightblue")
 ```
 
 <img src="./spData.png" width="450" alt="spData/world">
 
-```
+Missing countries, nonprecise.
+
+## EU2
+
+https://gisco-services.ec.europa.eu/distribution/v1/countries-2024.html
+
 
 ```
+> EU <- read_sf("EU2/CNTR_RG_20M_2024_3035.shp")
+> tm_shape(EU) + tm_fill() + tm_borders()
+> str(EU)
+sf [263 × 12] (S3: sf/tbl_df/tbl/data.frame)
+ $ CNTR_ID  : chr [1:263] "CD" "CF" "CG" "AD" ...
+ $ CNTR_NAME: chr [1:263] "République Démocratique du Congo-Kongo-Kongó-Kongu-Kongo" "République Centrafricaine-Ködörösêse Tî Bêafrîka" "Congo-Kongo-Kongó" "Andorra" ...
+ $ NAME_ENGL: chr [1:263] "Democratic Republic of The Congo" "Central African Republic" "Congo" "Andorra" ...
+ $ NAME_FREN: chr [1:263] "République démocratique du Congo" "République centrafricaine" "Congo" "Andorre" ...
+ $ ISO3_CODE: chr [1:263] "COD" "CAF" "COG" "AND" ...
+ $ SVRG_UN  : chr [1:263] "UN Member State" "UN Member State" "UN Member State" "UN Member State" ...
+ $ CAPT     : chr [1:263] "Kinshasa" "Bangui" "Brazzaville" "Andorra la Vella" ...
+ $ EU_STAT  : chr [1:263] "F" "F" "F" "F" ...
+ $ EFTA_STAT: chr [1:263] "F" "F" "F" "F" ...
+ $ CC_STAT  : chr [1:263] "F" "F" "F" "F" ...
+ $ NAME_GERM: chr [1:263] "Demokratische Republik Kongo" "Zentralafrikanische Republik" "Kongo" "Andorra" ...
+ $ geometry :sfc_MULTIPOLYGON of length 263; first list element: List of 1
+  ..$ :List of 1
+  .. ..$ : num [1:271, 1:2] 6184400 6219916 6260213 6298378 6328634 ...
+  ..- attr(*, "class")= chr [1:3] "XY" "MULTIPOLYGON" "sfg"
+ - attr(*, "sf_column")= chr "geometry"
+ - attr(*, "agr")= Factor w/ 3 levels "constant","aggregate",..: NA NA NA NA NA NA NA NA NA NA ...
+  ..- attr(*, "names")= chr [1:11] "CNTR_ID" "CNTR_NAME" "NAME_ENGL" "NAME_FREN" ...
+> n <- nrow(EU)
+> EU$clu <- sample(1:7,n,replace=TRUE)
+> EU$lab <- ifelse(EU$CNTR_ID %in% Europe,EU$CNTR_ID,"")
+> EUmap <- tm_shape(EU,bbox=c(-20,35,53,75),crs=3035)
+> EUmap + tm_borders() +
++   tm_polygons(fill="clu",fill.scale=tm_scale_categorical(values="brewer.set1")) +
++   tm_text("lab",size=0.5) + tm_title("Europe") +
++   tm_layout(bg.color = "lightskyblue1")
+```
+
+
+## EU
+
 
 ```
 
