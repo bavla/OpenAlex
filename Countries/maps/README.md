@@ -33,7 +33,6 @@ In 2023 the `maptools` package was [replaced](https://geocompx.org/post/2023/rgd
 
 ### URLs
 
-  - https://ec.europa.eu/eurostat/web/gisco/geodata/administrative-units/countries
   - https://www.eea.europa.eu/data-and-maps/data/eea-reference-grids-2/gis-files/folder_listing
   - https://sdi.eea.europa.eu/catalogue/srv/api/records/27812b75-404e-476e-8a21-07df0122d764
   - https://gadm.org/
