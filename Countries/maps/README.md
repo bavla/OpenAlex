@@ -12,6 +12,9 @@ In 2023 the `maptools` package was [replaced](https://geocompx.org/post/2023/rgd
 > library(RColorBrewer)
 > # library(spDataLarge)
 > # library(shiny)
+
+> # tmap_options()
+> # tmap_options()$values.var
 ```
 [mapfiles](mapfiles.md)
 
