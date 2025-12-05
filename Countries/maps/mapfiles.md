@@ -131,7 +131,9 @@ sf [256 × 9] (S3: sf/tbl_df/tbl/data.frame)
 ```
 <img src="./WAbound.png" width="450" alt="World administrative boundaries">
 
-## EU6 /
+## EU6 / Natural Earth
+
+  - https://www.naturalearthdata.com/downloads/
 
 ```
 
