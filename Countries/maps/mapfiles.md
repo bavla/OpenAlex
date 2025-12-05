@@ -1,5 +1,10 @@
 # World countries data 
 
+
+<img src="./Europe_ISO_3166-1.png" width="450" alt="ISO 3166-1 alpha-2">
+
+[ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+
 ```
 > Europe <- c(
 +   "AX", "AL", "AD", "AM", "AT", "AZ", "BY", "BE", "BA", "BG",
