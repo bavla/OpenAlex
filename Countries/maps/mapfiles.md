@@ -194,4 +194,4 @@ sf [242 × 169] (S3: sf/tbl_df/tbl/data.frame)
 
 <hr />
 
-[Index](README.md)
+[Maps](maps.md); [Index](README.md)
