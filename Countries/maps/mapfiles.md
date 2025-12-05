@@ -51,7 +51,7 @@ sf [177 × 11] (S3: sf/tbl_df/tbl/data.frame)
 
 ```
 
-<img src="./pics/TikZvisIg1.png" width="350" alt="Example TikZ/igraph 1">
+<img src="./spData.png" width="450" alt="spData/world">
 
 ```
 
