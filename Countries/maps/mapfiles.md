@@ -98,7 +98,7 @@ sf [263 × 12] (S3: sf/tbl_df/tbl/data.frame)
 +   tm_layout(bg.color = "lightskyblue1")
 ```
 
-<img src="./countries24.png" width="500" alt="CNTR_RG_20M_2024_3035">
+<img src="./countries24.png" width="550" alt="CNTR_RG_20M_2024_3035">
 
 ## EU5 / World administrative boundaries
 
@@ -134,7 +134,7 @@ sf [256 × 9] (S3: sf/tbl_df/tbl/data.frame)
 +   tm_text("lab",size=0.5) + tm_title("Europe") +
 +   tm_layout(bg.color="lightskyblue1")
 ```
-<img src="./WAbound.png" width="500" alt="World administrative boundaries">
+<img src="./WAbound.png" width="550" alt="World administrative boundaries">
 
 ## EU6 / Natural Earth
 
@@ -178,7 +178,7 @@ sf [242 × 169] (S3: sf/tbl_df/tbl/data.frame)
 
 ```
 
-<img src="./NEarth.png" width="500" alt="Natural Earth">
+<img src="./NEarth.png" width="550" alt="Natural Earth">
 
 
 ```
