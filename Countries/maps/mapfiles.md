@@ -95,12 +95,42 @@ sf [263 × 12] (S3: sf/tbl_df/tbl/data.frame)
 
 <img src="./countries24.png" width="450" alt="CNTR_RG_20M_2024_3035">
 
-## EU
+## EU5 / World administrative boundaries
 
 
 ```
-
+> wa <- read_sf("EU5/world-administrative-boundaries.shp")
+> tm_shape(wa) + tm_fill() + tm_borders()
+> str(wa)
+sf [256 × 9] (S3: sf/tbl_df/tbl/data.frame)
+ $ ISO_3_terri: chr [1:256] "VAT" "MKD" "TUN" "IRQ" ...
+ $ Status     : chr [1:256] "Permanent Observer to the UN" "Member State" "Member State" "Member State" ...
+ $ ISO_3_count: chr [1:256] "VAT" "MKD" "TUN" "IRQ" ...
+ $ English_Nam: chr [1:256] "Holy See" "The former Yugoslav Republic of Macedonia" "Tunisia" "Iraq" ...
+ $ Continent_o: chr [1:256] "Europe" "Europe" "Africa" "Asia" ...
+ $ Region_of_t: chr [1:256] "Southern Europe" "Southern Europe" "Northern Africa" "Western Asia" ...
+ $ ISO_3166_1_: chr [1:256] "VA" "MK" "TN" "IQ" ...
+ $ French_Name: chr [1:256] "Saint-Siège" "Macédoine du Nord" "Tunisie" "Iraq" ...
+ $ geometry   :sfc_MULTIPOLYGON of length 256; first list element: List of 1
+  ..$ :List of 1
+  .. ..$ : num [1:8, 1:2] 12.4 12.4 12.5 12.5 12.5 ...
+  ..- attr(*, "class")= chr [1:3] "XY" "MULTIPOLYGON" "sfg"
+ - attr(*, "sf_column")= chr "geometry"
+ - attr(*, "agr")= Factor w/ 3 levels "constant","aggregate",..: NA NA NA NA NA NA NA NA
+  ..- attr(*, "names")= chr [1:8] "ISO_3_terri" "Status" "ISO_3_count" "English_Nam" ...
+> n <- nrow(wa)
+> wa$clu <- sample(1:7,n,replace=TRUE)
+> qtm(wa) + tm_polygons(fill = "clu",fill.scale = tm_scale_categorical())
+> wa$lab <- ifelse(wa$ISO_3166_1_ %in% Europe,wa$ISO_3166_1_,"")
+> EUmap <- tm_shape(wa,bbox=c(-20,35,53,75),crs=3035)
+> EUmap + tm_borders() +
++   tm_polygons(fill="clu",fill.scale=tm_scale_categorical()) +
++   tm_text("lab",size=0.5) + tm_title("Europe") +
++   tm_layout(bg.color="lightskyblue1")
 ```
+<img src="./WAbound.png" width="450" alt="World administrative boundaries">
+
+## EU6 /
 
 ```
 
