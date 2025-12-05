@@ -13,3 +13,6 @@ The details are described in
   - [clustering](https://github.com/bavla/OpenAlex/blob/main/Countries/World%20clustering.pdf)
 
 Figures from the paper: [Figure 1](./pics/WorldCo1N.pdf), [Figure 2](./pics/WorldCoT2023.pdf), [Figure 3](./pics/WorldBalassaF2023.pdf).
+
+[Maps](./maps/README.md)
+
