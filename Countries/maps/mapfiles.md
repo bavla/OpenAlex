@@ -174,11 +174,11 @@ sf [242 × 169] (S3: sf/tbl_df/tbl/data.frame)
 > EUmap + tm_borders() +
 +   tm_polygons(fill = "clu",fill.scale = tm_scale_categorical()) +
 +   tm_text("lab",size = 0.5) + tm_title("Europe") +
-+   tm_layout(bg.color = "lightskyblue1")
++   tm_layout(bg.color = "aliceblue")
 
 ```
 
-<img src="./NEarth.png" width="550" alt="Natural Earth">
+<img src="./NEarthA.png" width="550" alt="Natural Earth">
 
 
 ```
