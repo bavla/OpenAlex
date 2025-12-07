@@ -116,9 +116,27 @@ There are some problems:
 +  col=brewer.pal(n=7,name="Set2")[europe$clu],bg="aliceblue")
 > text(centers$X,centers$Y,centers$lab,cex=.5,col="firebrick3")
 ```
-
-
 <img src="./europeL1.png" width="550" alt="Europe Labels One">
+
+### R Natural Earth
+
+```
+> library(rnaturalearth)
+> worldmap <- ne_countries(scale='medium',type='map_units',returnclass='sf')
+> europeC <- st_crop(worldmap,xmin=-30,xmax=52,ymin=22,ymax=79)
+> C <- paste0("C",1:7); Col <- brewer.pal(n=7,name="Set2"); names(Col) <- C
+> europeC$lab <- ifelse(europeC$iso_a2_eh %in% Europe,europeC$iso_a2_eh,
++   paste0("[",europeC$iso_a2_eh,"]"))
+> clu <- C[europeC$mapcolor7]
+> ggplot(europeC) + geom_sf() +
++   geom_sf(aes(fill=clu)) + 
++   scale_fill_manual(values=Col) +
++   geom_sf_text(aes(label=europeC$lab),col="red",size=2) +
++   theme_bw()
+```
+
+
+<img src="./europeL3.png" width="550" alt="Europe Labels One">
 
 ``` 
 > n <- nrow(europe)
@@ -132,10 +150,8 @@ There are some problems:
 +   tm_text("lab",size=0.5) + tm_title("Europe") +
 +   tm_layout(bg.color="aliceblue")
 ```
+<img src="./europeL1.png" width="550" alt="Europe Labels One">
 
-```
-
-```
 
 ```
 
