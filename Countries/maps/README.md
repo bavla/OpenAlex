@@ -16,8 +16,10 @@ In 2023 the `maptools` package was [replaced](https://geocompx.org/post/2023/rgd
 > # tmap_options()
 > # tmap_options()$values.var
 ```
-[mapfiles](mapfiles.md)
+  1. [mapfiles](mapfiles.md)
+  1. [labels](labels.md)
 
+     
 ## World countries data 
 
 ### spData
