@@ -34,7 +34,7 @@
 > centers <- cbind(centroids,st_coordinates(centroids))
 > par(mar=c(0,0,0,0))
 > plot(st_geometry(europe),xlim=c(-5,10),ylim=c(35,80),lwd = 0.5)
-> text(centers$X,centers$Y,centers$ISO_A2,cex=.5,col="#69b3a2")
+> text(centers$X,centers$Y,centers$ISO_A2,cex=.7,col="firebrick")
 ```
 <img src="./europeT1.png" width="550" alt="Europe First Try">
 
