@@ -70,6 +70,7 @@ There are some problems:
 ```
 <img src="./europeT2.png" width="550" alt="Europe Second Try">
 
+**It works!**
 
 ```
 
