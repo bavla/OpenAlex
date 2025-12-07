@@ -123,6 +123,8 @@ There are some problems:
 ```
 > library(rnaturalearth)
 > worldmap <- ne_countries(scale='medium',type='map_units',returnclass='sf')
+> Ee[which(!(Ee %in% worldmap$iso_a2_eh))]
+[1] "GI"  "OTH"
 > europeC <- st_crop(worldmap,xmin=-30,xmax=52,ymin=22,ymax=79)
 > C <- paste0("C",1:7); Col <- brewer.pal(n=7,name="Set2"); names(Col) <- C
 > europeC$lab <- ifelse(europeC$iso_a2_eh %in% Europe,europeC$iso_a2_eh,
