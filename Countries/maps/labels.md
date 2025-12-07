@@ -112,7 +112,8 @@ There are some problems:
 +   paste0("[",europe$ISO_A2_EH,"]"))
 > centers <- cbind(centroids,st_coordinates(centroids))
 > # par(mar=c(0,0,0,0))
-> plot(st_geometry(europe),xlim=c(-5,10),ylim=c(35,80),lwd = 0.5,col=europe$clu)
+> plot(st_geometry(europe),xlim=c(-5,10),ylim=c(35,80),lwd = 0.5,
++  col=brewer.pal(n=7,name="Set2")[europe$clu],bg="aliceblue")
 > text(centers$X,centers$Y,centers$lab,cex=.5,col="firebrick3")
 ```
 
