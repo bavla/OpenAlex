@@ -73,7 +73,50 @@ There are some problems:
 
 **It works!**
 
+## Europe 2
+
 ```
+> nw <- read_sf("EU6/50m_cultural/ne_50m_admin_0_countries.shp")
+> tm_shape(nw) + tm_fill() + tm_borders()
+> Europe <- c(
++   "AX", "AL", "AD", "AM", "AT", "AZ", "BY", "BE", "BA", "BG",
++   "HR", "CY", "CZ", "DK", "EE", "FO", "FI", "FR", "GE", "DE",
++   "GI", "GR", "GG", "VA", "HU", "IS", "IE", "IM", "IT", "JE",
++   "KZ", "XK", "LV", "LI", "LT", "LU", "MK", "MT", "MD", "MC",
++   "ME", "NL", "NO", "PL", "PT", "RO", "RU", "SM", "RS", "SK",
++   "SI", "ES", "SJ", "SE", "CH", "TR", "UA", "GB", "OTH")
+> En <- c(
++   "GL", "UZ", "TM", "IR", "SY", "IQ", "LB", "JO", "IL", "PS",
++   "SA", "TN", "DZ", "MA")
+> Ee <- c(Europe,En)
+> Ee[which(!(Ee %in% nw$ISO_A2_EH))]
+[1] "GI"  "SJ"  "OTH"
+> as.data.frame(nw)[131,!(names(nw)=="geometry")]
+```
+
+```
+> europe <- nw[nw$ISO_A2_EH %in% Ee, ]
+> centroids <- st_centroid(europe,of_largest_polygon=TRUE)
+> centers <- cbind(centroids,st_coordinates(centroids))
+> par(mar=c(0,0,0,0))
+> plot(st_geometry(europe),xlim=c(-5,10),ylim=c(35,80),lwd = 0.5)
+> text(centers$X,centers$Y,centers$ISO_A2,cex=.5,col="firebrick3")
+```
+
+``` 
+> n <- nrow(europe)
+> europe$clu <- sample(1:7,n,replace=TRUE)
+> qtm(europe) + tm_polygons(fill="clu",fill.scale=tm_scale_categorical())
+> europe$lab <- ifelse(europe$ISO_A2_EH %in% Europe,europe$ISO_A2_EH,
++   paste0("[",europe$ISO_A2_EH,"]"))
+> EUmap <- tm_shape(europe,bbox=c(-20,35,53,78),crs=3035)
+> EUmap + tm_borders() +
++   tm_polygons(fill="clu",fill.scale=tm_scale_categorical()) +
++   tm_text("lab",size=0.5) + tm_title("Europe") +
++   tm_layout(bg.color="aliceblue")
+```
+
+<img src="./europeL1.png" width="550" alt="Europe Labels One">
 
 ```
 
@@ -84,6 +127,9 @@ There are some problems:
 ```
 
 ```
+
+```
+
 
 
 [PDF](./pics/TikZvisPaj.pdf)
