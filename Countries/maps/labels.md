@@ -40,10 +40,36 @@ The recipe we can find in [The R Graph Gallery](https://r-graph-gallery.com/169-
 ```
 <img src="./europeT1.png" width="550" alt="Europe First Try">
 
+There are some problems:
+  - some countries, for example France, have label **-99**
+  - some labels, for example Croatia, have to be moved to a better place
 
 ```
-
+> XY <- data.frame(ISO2=centers$ISO_A2,X=centers$X,Y=centers$Y)
+> head(XY)
+  ISO2         X        Y
+1   VA 12.433872 41.90175
+2   JE -2.126891 49.21839
+3   GG -2.572404 49.46810
+4   IM -4.539039 54.22410
+5   GB -2.411745 53.82588
+6   UA 31.315403 49.19669
+> XY[XY$ISO2=="-99",]
+   ISO2         X        Y
+18  -99 12.158573 63.78631
+29  -99 20.872603 42.57020
+36  -99  2.460963 46.57229
+> centers$ISO_A2[18] <- "NO"; centers$ISO_A2[29] <- "XK"; centers$ISO_A2[36] <- "FR"
+> XY[which(XY$ISO2=="HR"),]
+   ISO2        X       Y
+43   HR 16.41912 45.1568
+> centers$X[43] <- 16.54; centers$Y[43] <- 45.75
+> par(mar=c(0,0,0,0))
+> plot(st_geometry(europe),xlim=c(-5,10),ylim=c(35,80),lwd = 0.5)
+> text(centers$X,centers$Y,centers$ISO_A2,cex=.5,col="firebrick")
 ```
+<img src="./europeT2.png" width="550" alt="Europe Second Try">
+
 
 ```
 
