@@ -41,7 +41,7 @@ The recipe we can find in [The R Graph Gallery](https://r-graph-gallery.com/169-
 <img src="./europeT1.png" width="550" alt="Europe First Try">
 
 There are some problems:
-  - some countries, for example France, have label **-99**
+  - some countries (France, Norway, Kosovo), have label **-99**
   - some labels, for example Croatia, have to be moved to a better place
 
 ```
