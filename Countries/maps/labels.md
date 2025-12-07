@@ -1,5 +1,6 @@
 # Labels
 
+December 7, 2025
 
 ## ISO alpha2 and alpha3 codes
 
