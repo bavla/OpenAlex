@@ -103,6 +103,22 @@ There are some problems:
 > text(centers$X,centers$Y,centers$ISO_A2,cex=.5,col="firebrick3")
 ```
 
+```
+> europe <- nw[nw$ISO_A2_EH %in% Ee, ]
+> n <- nrow(europe)
+> europe$clu <- sample(1:7,n,replace=TRUE)
+> qtm(europe) + tm_polygons(fill="clu",fill.scale=tm_scale_categorical())
+> europe$lab <- ifelse(europe$ISO_A2_EH %in% Europe,europe$ISO_A2_EH,
++   paste0("[",europe$ISO_A2_EH,"]"))
+> centers <- cbind(centroids,st_coordinates(centroids))
+> # par(mar=c(0,0,0,0))
+> plot(st_geometry(europe),xlim=c(-5,10),ylim=c(35,80),lwd = 0.5,col=europe$clu)
+> text(centers$X,centers$Y,centers$lab,cex=.5,col="firebrick3")
+```
+
+
+<img src="./europeL1.png" width="550" alt="Europe Labels One">
+
 ``` 
 > n <- nrow(europe)
 > europe$clu <- sample(1:7,n,replace=TRUE)
@@ -114,12 +130,6 @@ There are some problems:
 +   tm_polygons(fill="clu",fill.scale=tm_scale_categorical()) +
 +   tm_text("lab",size=0.5) + tm_title("Europe") +
 +   tm_layout(bg.color="aliceblue")
-```
-
-<img src="./europeL1.png" width="550" alt="Europe Labels One">
-
-```
-
 ```
 
 ```
