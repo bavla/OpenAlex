@@ -25,6 +25,8 @@
 ```
 ## Improving label placement
 
+The recipe we can find in [The R Graph Gallery](https://r-graph-gallery.com/169-170-basic-manipulation-of-shapefiles.html#centroid)
+
 ```
 > europe <- nw[nw$REGION_UN=="Europe", ]
 > par(mar=c(0,0,0,0))
