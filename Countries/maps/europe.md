@@ -59,11 +59,11 @@ December 9, 2025
 > EUmap(cluC,"2014-2023 / indirect")
 ```
 
-<img src="./europeL1.png" width="550" alt="Europe Labels One">
+<img src="./Eu94-03.png" width="550" alt="Europe 1994-2003 / indirect">
 
-<img src="./europeL1.png" width="550" alt="Europe Labels One">
+<img src="./Eu04-13.png" width="550" alt="Europe 2004-2013 / indirect">
 
-<img src="./europeL1.png" width="550" alt="Europe Labels One">
+<img src="./Eu14-23.png" width="550" alt="Europe 2014-2023 / indirect">
 
 
 ## Stochastic blockmodeling
@@ -102,6 +102,13 @@ December 9, 2025
 > EUmap(sbmB,"2004-2013 / SBM")
 > EUmap(sbmC,"2014-2023 / SBM")
 ```
+
+<img src="./Eu94-03s.png" width="550" alt="Europe 1994-2003 / SBM">
+
+<img src="./Eu04-13s.png" width="550" alt="Europe 2004-2013 / SBM">
+
+<img src="./Eu14-23s.png" width="550" alt="Europe 2014-2023 / SBM">
+
 
 ```
 
