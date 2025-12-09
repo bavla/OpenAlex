@@ -2,7 +2,7 @@
 
 December 9, 2025
 
-## Indirect clustering / blockmpdeling
+## Indirect clustering / blockmodeling
 ```
 > Y <- c("1994–2003", "2004–2013", "2014–2023")
 > Clab <- c("Balkan", "Eastern", "Post-Soviet", "Scandinavian", 
