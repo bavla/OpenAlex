@@ -18,6 +18,7 @@ In 2023 the `maptools` package was [replaced](https://geocompx.org/post/2023/rgd
 ```
   1. [mapfiles](mapfiles.md)
   1. [labels](labels.md)
+  2. [Europe collaboration](europe.md)
 
      
 ## World countries data 
