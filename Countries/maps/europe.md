@@ -35,7 +35,7 @@ December 9, 2025
 +   c("MC", "GB", "LU", "IE", "LI", "GR", "PT", "AT", "CY", "GG", "JE", "VA"),
 +   c("AD", "SM", "EE", "LV", "LT", "MT") )
 > 
-> iso2 <- europeC$iso_a2_eh
+> iso2 <- europeC$iso_a2_eh; n <- length(iso2)
 > which(iso2=="-99")
 [1] 73
 > iso2[73] <- "CY"
@@ -43,8 +43,8 @@ December 9, 2025
 > lab <- ifelse(iso2 %in% Europe,iso2,paste0("[",iso2,"]"))
 >
 > EUmap <- function(cluX,tit){
-+   clu <- rep(8,n)
-+   for(i in 1:7){ for(c in cluX[[i]]) clu[which(c==iso2)] <- i }
++   k <- length(cluX); clu <- rep(k+1,n)
++   for(i in 1:k){ for(c in cluX[[i]]) clu[which(c==iso2)] <- i }
 +   Clu <- C[clu]
 +   ggplot(europeC) + geom_sf() +
 +     geom_sf(aes(fill=Clu)) + 
@@ -61,9 +61,46 @@ December 9, 2025
 
 <img src="./europeL1.png" width="550" alt="Europe Labels One">
 
+<img src="./europeL1.png" width="550" alt="Europe Labels One">
+
+<img src="./europeL1.png" width="550" alt="Europe Labels One">
+
+
+## Stochastic blockmodeling
 
 ```
-
+> Slab <- c("Small", "Eastern", "Post-Soviet", "Balkan", "Scandinavian", "Western")
+> sbmA <- list(
++   c("GI", "GG", "VA", "IM", "JE", "MC", "SM", "AD", "LI", "LU", "MT", "MD"),
++   c("BG", "CZ", "EE", "LV", "LT", "PL", "RO", "SK", "SI"),
++   c("AM", "AZ", "BY", "GE", "GR", "KZ", "RU", "TR", "UA", "AT", "CY", "HU"),
++   c("AL", "BA", "HR", "XK", "MK", "ME", "RS"),
++   c("AX", "DK", "FO", "FI", "IS", "NO", "SJ", "SE"),
++   c("BE", "FR", "DE", "IE", "IT", "NL", "PT", "ES", "CH", "GB") )
+> 
+> sbmB <- list(
++   c("GI", "GG", "VA", "IM", "JE", "MC", "SM", "AD", "LI"),
++   c("BG", "CZ", "EE", "LV", "LT", "PL", "RO", "SK", "SI", "HU", "MD", "MT"),
++   c("AM", "AZ", "BY", "GE", "GR", "KZ", "RU", "TR", "UA", "AT", "CY"),
++   c("AL", "BA", "HR", "XK", "MK", "ME", "RS"),
++   c("AX", "DK", "FO", "FI", "IS", "NO", "SJ", "SE"),
++   c("BE", "FR", "DE", "IE", "IT", "NL", "PT", "ES", "CH", "GB", "LU") )
+> 
+> sbmC <- list(
++   c("GI", "GG", "VA", "IM", "JE", "MC"),
++   c("BG", "CZ", "EE", "LV", "LT", "PL", "RO", "SK", "SI", "AD", "HU", "MD", "MT", "CY", "SM", "TR"),
++   c("AM", "AZ", "BY", "GE", "GR", "KZ", "RU", "TR", "UA"),
++   c("AL", "BA", "HR", "XK", "MK", "ME", "RS"),
++   c("AX", "DK", "FO", "FI", "IS", "NO", "SJ", "SE"),
++   c("BE", "FR", "DE", "IE", "IT", "NL", "PT", "ES", "CH", "GB", "LI", "LU", "AT") )
+> 
+> cout <- Col[8]; C <- c(Slab,"Out"); Col <- brewer.pal(n=7,name="Set2")
+> Col[7] <- cout; names(Col) <- C
+> lab <- ifelse(iso2 %in% Europe,iso2,paste0("[",iso2,"]"))
+>
+> EUmap(sbmA,"1994-2003 / SBM")
+> EUmap(sbmB,"2004-2013 / SBM")
+> EUmap(sbmC,"2014-2023 / SBM")
 ```
 
 ```
