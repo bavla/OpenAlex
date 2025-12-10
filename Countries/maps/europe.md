@@ -115,9 +115,6 @@ December 9, 2025
 ```
 
 
-[PDF](./pics/TikZvisPaj.pdf)
-
-
 <hr />
 
 [Maps](README.md); [Index](../README.md)
