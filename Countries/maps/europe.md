@@ -2,6 +2,8 @@
 
 December 9, 2025
 
+Maps for partitions from the paper Anuška Ferligoj, Vladimir Batagelj, Marjan Cugmas, Franc Mali: Bridging borders or widening gaps? The dynamics of European scientific collaboration networks. Scientometrics [Online](https://rdcu.be/eTItI)
+
 ## Map, packages and function
 
 ```
