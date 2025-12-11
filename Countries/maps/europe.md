@@ -2,6 +2,46 @@
 
 December 9, 2025
 
+## Map, packages and function
+
+```
+> setwd(wdir<-"C:/Users/vlado/test/shape")
+> library(sf)
+> library(tmap)
+> library(spData)
+> library(RColorBrewer)
+> library(rnaturalearth)
+> library(ggplot2)
+> 
+> EUmap <- function(cluX,tit){
++   k <- length(cluX); clu <- rep(k+1,n)
++   for(i in 1:k){ for(c in cluX[[i]]) clu[which(c==iso2)] <- i }
++   Clu <- C[clu]
++   ggplot(europeC) + geom_sf() +
++     geom_sf(aes(fill=Clu)) + 
++     scale_fill_manual(values=Col) +
++     geom_sf_text(aes(label=lab),col="firebrick4",size=1.5) +
++     labs(title=tit,x="long",y="lat") +
++     theme_bw()
++ }
+>
+> Europe <- c(
++   "AX", "AL", "AD", "AM", "AT", "AZ", "BY", "BE", "BA", "BG",
++   "HR", "CY", "CZ", "DK", "EE", "FO", "FI", "FR", "GE", "DE",
++   "GI", "GR", "GG", "VA", "HU", "IS", "IE", "IM", "IT", "JE",
++   "KZ", "XK", "LV", "LI", "LT", "LU", "MK", "MT", "MD", "MC",
++   "ME", "NL", "NO", "PL", "PT", "RO", "RU", "SM", "RS", "SK",
++   "SI", "ES", "SJ", "SE", "CH", "TR", "UA", "GB", "OTH")
+> En <- c(
++   "GL", "UZ", "TM", "IR", "SY", "IQ", "LB", "JO", "IL", "PS",
++   "SA", "TN", "DZ", "MA")
+> Ee <- c(Europe,En)
+> worldmap <- ne_countries(scale='medium',type='map_units',returnclass='sf')
+> Ee[which(!(Ee %in% worldmap$iso_a2_eh))]
+[1] "GI"  "OTH"
+> europeC <- st_crop(worldmap,xmin=-30,xmax=52,ymin=22,ymax=79)
+```
+
 ## Indirect clustering / blockmodeling
 ```
 > Y <- c("1994–2003", "2004–2013", "2014–2023")
@@ -42,18 +82,6 @@ December 9, 2025
 > C <- c(Clab,"Out"); Col <- brewer.pal(n=8,name="Set2"); names(Col) <- C
 > lab <- ifelse(iso2 %in% Europe,iso2,paste0("[",iso2,"]"))
 >
-> EUmap <- function(cluX,tit){
-+   k <- length(cluX); clu <- rep(k+1,n)
-+   for(i in 1:k){ for(c in cluX[[i]]) clu[which(c==iso2)] <- i }
-+   Clu <- C[clu]
-+   ggplot(europeC) + geom_sf() +
-+     geom_sf(aes(fill=Clu)) + 
-+     scale_fill_manual(values=Col) +
-+     geom_sf_text(aes(label=lab),col="firebrick4",size=1.5) +
-+     labs(title=tit,x="long",y="lat") +
-+     theme_bw()
-+ }
-> 
 > EUmap(cluA,"1994-2003 / indirect")
 > EUmap(cluB,"2004-2013 / indirect")
 > EUmap(cluC,"2014-2023 / indirect")
