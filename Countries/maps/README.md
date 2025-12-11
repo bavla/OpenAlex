@@ -21,17 +21,6 @@ In 2023 the `maptools` package was [replaced](https://geocompx.org/post/2023/rgd
   2. [Europe collaboration](europe.md)
 
      
-## World countries data 
-
-### spData
-
-
-
-<img src="./pics/TikZvisIg1.png" width="350" alt="Example TikZ/igraph 1">
-
-```
-```
-
 
 ### URLs
 
