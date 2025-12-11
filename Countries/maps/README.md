@@ -20,25 +20,10 @@ In 2023 the `maptools` package was [replaced](https://geocompx.org/post/2023/rgd
   1. [labels](labels.md)
   2. [Europe collaboration](europe.md)
 
-     
-
-### URLs
-
-  - https://www.eea.europa.eu/data-and-maps/data/eea-reference-grids-2/gis-files/folder_listing
-  - https://sdi.eea.europa.eu/catalogue/srv/api/records/27812b75-404e-476e-8a21-07df0122d764
-  - https://gadm.org/
-  - https://www.mapsforeurope.org/access-data
-  - https://data.opendatascience.eu/geonetwork/srv/api/records/8704eb16-b430-43da-a401-1a9e0c0350a0
-  - https://www.eea.europa.eu/data-and-maps/data/eea-reference-grids-2/gis-files/europe-10-km-100-km/view
-
-  - https://github.com/bavla/OpenAlex/blob/main/pics/EUscience/README.md
-  - https://r.geocompx.org/adv-map
-  - https://r-tmap.github.io/tmap-book/layers.html
-  - https://github.com/bavla/OpenAlex/blob/main/Countries/27aug24/Eu.md
-  - https://bookdown.org/nicohahn/making_maps_with_r5/docs/tmap.html
-  - https://r-tmap.github.io/tmap/reference/index.html
-  - https://tmap.geocompx.org/layout
+  - [URLs maps](http://localhost:8800/doku.php?id=work:urls:map)     
   - C:\Users\vlado\work\OpenAlex\API\EU
+
+
 
 <hr />
 
