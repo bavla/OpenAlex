@@ -1,6 +1,6 @@
 # OpenAlex2Pajek
 
-**OpenAlex2Pajek** is an R package of functions for constructing bibliographic networks from selected bibliographic data in OpenAlex. Currently, OpenAlex2Pajek contains four main functions `OpenAlex2PajekCite`, `OpenAlex2PajekAll`, `OpenAlexSources`, `OpenAlexAuthors`, and `coAuthorship`.
+[**OpenAlex2Pajek**](https://github.com/bavla/OpenAlex/blob/main/code/OpenAlex2Pajek.R) is an R package of functions for constructing bibliographic networks from selected bibliographic data in OpenAlex. Currently, OpenAlex2Pajek contains four main functions `OpenAlex2PajekCite`, `OpenAlex2PajekAll`, `OpenAlexSources`, `OpenAlexAuthors`, and `coAuthorship`.
 
 ## Saturation approach to construct bibliographic networks on selected topic
 
