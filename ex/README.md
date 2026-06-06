@@ -4,3 +4,4 @@
 - [IS 2024](./IS)
 - [Slovenian mathematics](./SImat)
 - [Sources](./Sources)
+- [Patrick Doreian](./Pat)
