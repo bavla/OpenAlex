@@ -1,4 +1,4 @@
-# OpenAlex2Pajek ver 9. September 10, 2025 / March 18, 2024  
+# OpenAlex2Pajek ver 10. June 12, 2026 / March 18, 2024  
 # https://github.com/bavla/OpenAlex/tree/main/code
 # http://vladowiki.fmf.uni-lj.si/doku.php?id=vlado:work:bib:alex
 # by Vladimir Batagelj, March 2024
@@ -20,12 +20,13 @@
 # version 7. July 27, 2025; OpenAlexAuthors
 # version 8. August 15, 2025; removehash, authorsId2name, worksId2name
 # version 9. September 10, 2025; partition2twomode, journals
-# version 10. June 6, 2026; OpenAlexInOut
+# version 10. June 6, 2026; OpenAlexInOut and api_key
 
 # TO DO:
 # Vector DC / http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:clea
 # Work labels and titles / http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:aci
 # call OpenAlexInOut in OpenAlexSources
+# check # --- Wout ---
 
 selPub  <- "id,primary_location,title,publication_year,cited_by_count,countries_distinct_count"
 selRef  <- "biblio,type,language,referenced_works_count,referenced_works"
@@ -35,6 +36,12 @@ selAll  <- paste(selCite,selAut,sep=",")
 selInfo <- "id,title,type,publication_year"
 
 keys = ls
+
+# global vars
+# apikey - user's OpenAlex API key
+# APIkey - OpenAlex API key entry for GET
+setAPIkey <- function(api_key=""){ apikey <<- api_key
+  APIkey <<- ifelse(api_key=="","",paste("&api_key=",api_key,sep="")) }
 
 eDict <- function(size=10000L) new.env(hash=TRUE,parent=emptyenv(),size=size)
 
@@ -222,6 +229,7 @@ openWorks <- function(query=NULL,list=NULL,file=NULL,name){
   WC <<- new.env(hash=TRUE,parent=emptyenv())
   WC$works <- "https://api.openalex.org/works"
   WC$Q <- query; WC$L <- list; WC$f <- file; WC$name <- name
+  if(apikey!="") WC$Q$api_key <- apikey
   WC$n <- 0; WC$l <- 0; WC$m <- 0; WC$an <- 0; WC$er <- 0
   WC$tr <- file("trace.txt","w",encoding="UTF-8")
   cat("% OpenAlex",date(),"\n",file=WC$tr)
@@ -236,7 +244,7 @@ openWorks <- function(query=NULL,list=NULL,file=NULL,name){
 
 nextWork <- function(){
   # repeat{
-  for(t in 1:10){
+  for(t in 1:20){
     switch(WC$act,
       "page" = {
         # if(WC$n==10) {WC$act <- "list"; next}
@@ -259,11 +267,11 @@ nextWork <- function(){
         WC$l <- WC$l + 1 
         if(WC$l>length(WC$L)) {WC$act <- "open"; next}
         Works <- paste(WC$works,"/",WC$L[WC$l],sep="")
-        WC$wd <- GET(Works,query=list(select=WC$Q[["select"]]))
-        if(WC$wd$status_code!=200) {cat(WC$n,"GET error in list\n")
-          flush.console(); t1 <- Sys.time(); print(t1)
+        WC$wd <- GET(Works,query=list(select=WC$Q$select,api_key=apikey))
+        if(WC$wd$status_code!=200) {t1 <- Sys.time()
+          cat(WC$n,WC$l,t1,"GET error in list\n"); flush.console(); 
           while(TRUE) { 
-            cat("Options: 1 - show time; 2 - try again; 3 - stop\n"); flush.console()
+            cat(t,". Options: 1 - show time; 2 - try again; 3 - stop\n"); flush.console()
             num <- as.numeric(readline("Enter option? > "))
             if(is.na(num)) num <- 0
             if(num==2) break
@@ -498,7 +506,7 @@ sourceNames <- function(netF="WJ.net",namF="Sources.nam",step=500){
   for(i in 1:length(L)){ 
     if(i %% step==0) cat(date()," n =",i,"\n"); flush.console()
     src <- paste0("https://api.openalex.org/sources/",L[i])
-    wd <- GET(src,query=list(select="id,display_name"))
+    wd <- GET(src,query=list(select="id,display_name",api_key=apikey))
     if(wd$status_code!=200) {cat(i,L[i],"GET error\n"); flush.console() 
       cat(format(i,width=6),' "',L[i],'"\n',sep='',file=nam); next}
     wc <- fromJSON(rawToChar(wd$content))
@@ -516,6 +524,7 @@ coAuthorship <- function(CC,year=NULL){
   if(is.null(year)) lab <- "\nComplete search" else { 
     lab <- paste0("\nYear =",year); Q3 <- paste0(",publication_year:",year,Q3)}
   cat(lab,date(),"\n"); flush.console()
+  if(apikey!="") Q3 <- paste0(Q3,APIkey)
   for(cy in CC){
     Q <- paste0(Q1,cy,Q3)
     S <- GET(Q)
@@ -557,7 +566,7 @@ OpenAlexInOut <- function(Wj,step=100,cond=""){
   Win <- NULL; ni <- 0
   for(k in 1:nj) if(Wj$cited_by_count[k]>0){
     wID <- Wj$id[k]
-    Q <- list(filter=paste0("cites:",wID),
+    Q <- list(filter=paste0("cites:",wID), api_key=apikey,
       select="id,cited_by_count", per_page="200", cursor="*")
     i <- 0
     while(TRUE){
@@ -580,7 +589,7 @@ OpenAlexInOut <- function(Wj,step=100,cond=""){
     li <- ri+1; ri <- min(ri+50,nj)
     if(li > ri) break
     wID <- paste(Wj$id[li:ri],collapse="|")
-    Q <- list(filter=paste0("openalex:",wID),
+    Q <- list(filter=paste0("openalex:",wID), api_key=apikey,
       select="id,referenced_works", per_page="200", page="1")
     wd <- GET(works,query=Q)
     if(wd$status_code!=200) next
@@ -607,7 +616,7 @@ OpenAlexSources <- function(sID,step=100,cond=""){
   works <- "https://api.openalex.org/works"
 # --- Wj ---
   Q <- list(filter=paste0("primary_location.source.id:",sID,cond),
-    select="id,cited_by_count", per_page="200", cursor="*")
+    select="id,cited_by_count", per_page="200", api_key=apikey, cursor="*")
   i <- 0; Wj <- NULL
   while(TRUE){
     wd <- GET(works,query=Q)
@@ -625,7 +634,7 @@ OpenAlexSources <- function(sID,step=100,cond=""){
   Win <- NULL; ni <- 0
   for(k in 1:nj) if(Wj$cited_by_count[k]>0){
     wID <- Wj$id[k]
-    Q <- list(filter=paste0("cites:",wID),
+    Q <- list(filter=paste0("cites:",wID), api_key=apikey,
       select="id,cited_by_count", per_page="200", cursor="*")
     i <- 0
     while(TRUE){
@@ -648,7 +657,7 @@ OpenAlexSources <- function(sID,step=100,cond=""){
     li <- ri+1; ri <- min(ri+50,nj)
     if(li > ri) break
     wID <- paste(Wj$id[li:ri],collapse="|")
-    Q <- list(filter=paste0("openalex:",wID),
+    Q <- list(filter=paste0("openalex:",wID), api_key=apikey,
       select="id,referenced_works", per_page="200", page="1")
     wd <- GET(works,query=Q)
     if(wd$status_code!=200) next
@@ -677,7 +686,8 @@ unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond="",orde
     li <- ri+1; ri <- min(ri+50,nj)
     if(li > ri) break
     wID <- paste(IDs[li:ri],collapse="|")
-    Q <- list(filter=paste0("openalex:",wID,cond),select=select,per_page="200",page="1")
+    Q <- list(filter=paste0("openalex:",wID,cond),api_key=apikey,
+      select=select,per_page="200",page="1")
     wd <- GET(Units,query=Q)
     if(wd$status_code!=200) {cat("Error:",wd$status_code,"\n"); flush.console(); next}
     wc <- fromJSON(rawToChar(wd$content))
@@ -701,7 +711,7 @@ OpenAlexAuthors <- function(IDs,step=100,cond=""){
       cat("k =",k," al =",al," ar =",ar," w =",length(W),"\n"); 
       flush.console()}
     alist <- paste0(IDs[al:ar],collapse="|")
-    Q <- list(filter=paste0("author.id:",alist,cond),
+    Q <- list(filter=paste0("author.id:",alist,cond),api_key=apikey,
       select="id", per_page="200", cursor="*")
     while(TRUE){
       as <- GET(works,query=Q)
@@ -738,7 +748,7 @@ worksId2name <- function(wlist,len=47){
     # cat(i,w,"\n"); flush.console()
     wd <- GET(paste("https://api.openalex.org/works/",w,
       "?&select=id,title,publication_year,type,authorships,biblio",
-      ",cited_by_count",sep=""))
+      ",cited_by_count",APIkey,sep=""))
     if(wd$status_code==200) {
       cont <- fromJSON(rawToChar(wd$content))
       wN <- cont$authorships
