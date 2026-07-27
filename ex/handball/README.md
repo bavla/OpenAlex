@@ -8,7 +8,8 @@
 
     
 ```
-
+> setAPIkey("your API key")
+> Wall <- read.table("worksPat.csv",encoding="UTF-8")
 ```
 
 ```
