@@ -10,7 +10,7 @@
   * https://api.openalex.org/sources/S4306400653?select=id,ids,type,display_name,country_code,works_count,cited_by_count,summary_stats,homepage_url
 
 
-  * [http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:edu:anom:viri](Analiza omrežij)
+  * [Analiza omrežij](http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:edu:anom:viri)
   * [Slovarček](http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:net:dic)
     
 ```
