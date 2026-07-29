@@ -17,5 +17,15 @@
 ```
 
 ```
+> source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
+> library(jsonlite)
+> setAPIkey("your API key")
+> S <- c( "S4306400653", "S4210225227", "S4306401293", "S4306549530", 
++         "S4306543465", "S4306402641", "S4306525539", "S2764608969" ) 
+> U <- unitsInfo(IDs=S,units="sources",select="id,display_name,country_code",trace=TRUE,cond="",order="org")
+> U
+
+> setwd("C:/Users/vlado/docs/papers/2026/eusn/mark/named")
+> sourceNames(netF="WJr.net",namF="Sources.nam",step=500)
 
 ```
