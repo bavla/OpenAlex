@@ -10,6 +10,7 @@ https://api.openalex.org/works?filter=keywords.id:social-network-analysis|social
 
 To get the list of works and the corresponding citation network we use the function `OpenAlex2PajekCite`
 ```
+> source("https://raw.githubusercontent.com/bavla/OpenAlex/main/code/OpenAlex2Pajek.R")
 > Q <- list(
 +   # search.title_and_abstract.exact="social+network*",
 +   filter="keywords.id:social-network-analysis|social-network|complex-network",
