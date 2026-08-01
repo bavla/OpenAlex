@@ -39,7 +39,7 @@ hits: 124800 works: 1109800
 >>> Citation Cite
 *** OpenAlex2Pajek / Cite - Stop Sat Aug  1 17:30:59 2026 
 ```
-
+[DC partition](http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:clea) 
 ```
 ```
 ```
