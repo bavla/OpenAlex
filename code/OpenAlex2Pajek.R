@@ -21,12 +21,14 @@
 # version 8. August 15, 2025; removehash, authorsId2name, worksId2name
 # version 9. September 10, 2025; partition2twomode, journals
 # version 10. June 6, 2026; OpenAlexInOut and api_key
+# version 11. August 1, 2026; W <<- in OpenAlexAuthors; 
 
 # TO DO:
 # Vector DC / http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:clea
 # Work labels and titles / http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:aci
 # call OpenAlexInOut in OpenAlexSources
 # check # --- Wout ---
+# names of vars in <<- 
 
 selPub  <- "id,primary_location,title,publication_year,cited_by_count,countries_distinct_count"
 selRef  <- "biblio,type,language,referenced_works_count,referenced_works"
@@ -701,7 +703,7 @@ unitsInfo <- function(IDs=NULL,units="works",select="id",trace=TRUE,cond="",orde
 OpenAlexAuthors <- function(IDs,step=100,cond=""){
   cat("OpenAlex2Pajek / Authors",date(),"\n"); flush.console() 
   works <- "https://api.openalex.org/works"
-  W <- eDict()
+  W <<- eDict()
   an <- length(IDs); ar <- 0; k <- 0
   while(TRUE){
     al <- ar+1
