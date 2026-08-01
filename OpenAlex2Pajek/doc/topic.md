@@ -8,7 +8,7 @@ We [can](https://developers.openalex.org/guides/searching) combine the into a si
 https://api.openalex.org/works?filter=keywords.id:social-network-analysis|social-network|complex-network&select=id,title
 ```
 
-To get the list of works and the corresponding citation network we use the function 
+To get the list of works and the corresponding citation network we use the function `OpenAlex2PajekCite`
 ```
 > Q <- list(
 +   # search.title_and_abstract.exact="social+network*",
