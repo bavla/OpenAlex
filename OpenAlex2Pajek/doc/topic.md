@@ -5,7 +5,7 @@ For example for the field of network analysis we can use keywords [social-networ
 
 We [can](https://developers.openalex.org/guides/searching) combine the into a single search ([call](https://api.openalex.org/works?filter=keywords.id:social-network-analysis|social-network|complex-network&select=id,publication_year,title), Works count: 124999)
 ```
-https://api.openalex.org/works?filter=keywords.id:social-network-analysis|social-network|complex-network&select=id,publication_year,title
+https://api.openalex.org/works?filter=keywords.id:social-network-analysis|social-network|complex-network&select=id,title
 ```
 
 To get the list of works and the corresponding citation network we use the function 
