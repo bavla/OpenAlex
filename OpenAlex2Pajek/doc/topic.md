@@ -42,6 +42,18 @@ hits: 124800 works: 1109800
 ```
 [DC partition](http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:clea) 
 ```
+> source("https://raw.githubusercontent.com/bavla/Rnet/master/R/Pajek.R")
+> W <- eDict(1500000L)
+> n <- 1109800 ; # of vertices in NA1Ci.net
+> Wn <- read.table("NA1Ci.net",skip=2,nrows=n)$V2
+> Wt <- read.csv("NA1works.csv",head=FALSE)$V1
+> print(date())
+> for(w in Wt) ind <- putWork2(w)
+> print(date())
+> DC <- rep(0,n)
+> for(i in 1:n) if(exists(Wn[i],env=W,inherits=FALSE)) DC[i] <- 1
+> print(date())
+> vector2clu(DC,Clu="NA1DC.clu")
 ```
 ```
 ```
