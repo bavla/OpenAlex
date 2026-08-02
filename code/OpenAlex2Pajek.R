@@ -434,7 +434,7 @@ OpenAlex2PajekCite <- function(Q,nrun,name="test",listF=NULL,save=FALSE,
 }
 
 OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
-  saveF="saveCite.ndjson",step=500,test=0){
+  saveF="saveCite.ndjson",step=500,test=0,size=200000L){
   if(save) json <<- file(saveF,"w",encoding="UTF-8")
   if(is.null(listF)) listW <- NULL else listW <- unique(read.table(listF)$V1) # list of works
   cat("OpenAlex2Pajek / All - Start",date(),"\n")
@@ -446,9 +446,10 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
   cat("% OpenAlex2Pajek / All",date(),"\n",file=wk); cat("% OpenAlex2Pajek / All",date(),"\n",file=wl);
   # cat("ind;Wid;hit;sWname;Sid;pYear;pDate;type;lang;vol;iss;fPage;lPage;fAName;title\n",file=wrk)
   cat("ind;Wid;hit;sWname;Sid;pYear;pDate;type;lang;vol;iss;fPage;lPage;cdc;cbc;fAName;title\n",file=wrk)
-  works <<- eDict(); srces <<- eDict(); auths <<- eDict(); keyws <<- eDict(); cntrs <<- eDict()
+  works <<- eDict(size); srces <<- eDict(); auths <<- eDict(); keyws <<- eDict(); cntrs <<- eDict()
   openWorks(query=Q,list=listW,file=NULL,name) 
   if(test>1) print(ls.str(WC))
+  if(length(listW)>0) cat("List of works",length(listW),"\n")
   cat("*** OpenAlex2Pajek / All - Process",date(),"\n"); flush.console()
   repeat{
     w <- nextWork()
@@ -489,8 +490,9 @@ OpenAlex2PajekAll <- function(Q,name="test",listF=NULL,save=FALSE,
   saveTwoMode(U,name,cntrs,"cind","Countries WC","WC")
   saveTwoMode(U,name,keyws,"kind","Keywords WK","WK")
   cat("*** OpenAlex2Pajek / All - Stop",date(),"\n"); flush.console()
-  # close(WC$tr) 
-  closeWorks() 
+  close(WC$tr) 
+  #closeWorks() 
+  return(works)
 }
 
 sourceNames <- function(netF="WJ.net",namF="Sources.nam",step=500){
@@ -803,8 +805,54 @@ journals <- function(j,C=NULL,K=M[-1,],kNam=jNam[-1],aNam=Nams,I=1:20,len=47,nuM
 # j <- weak$C1[which(Nams=="Iztok Fister")]
 # R <- journals(j,C=weak)
 
+OpenAlexKeywords <- function(kList,step=100,size=200000L,cond=""){
+  cat("OpenAlex2Pajek / Keywords",date(),"\n"); flush.console() 
+  works <- "https://api.openalex.org/works"
+  W <<- eDict(size)
+  Q <- list(filter=paste0("keywords.id:",kList,cond),
+      api_key=apikey, select="id", per_page="200", cursor="*")
+  k <- 0
+  while(TRUE){ k <- k+1
+    if((step<2)||(k %% step == 1)) {
+      cat("k =",k,date()," w =",length(W),"\n"); flush.console()}
+    as <- GET(works,query=Q)
+    if(as$status_code!=200) break
+    ac <- fromJSON(rawToChar(as$content))
+    df <- ac$results
+    for(w in getID(df$id)) ind <- putWork2(w)
+    Q$cursor <- ac$meta$next_cursor
+    if(is.null(Q$cursor)) break
+  }
+  cat("# works = ",length(W),"\n")
+  cat("OpenAlex2Pajek / Keywords - End",date(),"\n"); flush.console()
+  return(W)
+}
 
+# Wk <- OpenAlexKeywords("social-network-analysis|social-network|complex-network",step=10)
 
+activity <- function(aIDs,keyw,col=c("blue","red"),main="Activity"){
+  start <- "https://api.openalex.org/works?"
+  end <- "&group_by=publication_year&per_page=200&page=1"
+  sta <- "search.title_and_abstract.exact="
+  aID <- "filter=author.id:"
+  wd <- GET(paste0(start,aID,aIDs,end))
+  wc <- fromJSON(rawToChar(wd$content))
+  ws <- GET(paste0(start,sta,keyw,"&",aID,aIDs,end))
+  wp <- fromJSON(rawToChar(ws$content))
+  cat("IDs =",aIDs," keyw =",keyw,
+    "total =",sum(wc$group_by$count)," topic =",sum(wp$group_by$count),"\n")
+  nin <- min(as.integer(c(wc$group_by$key,wp$group_by$key)))
+  nax <- max(as.integer(c(wc$group_by$key,wp$group_by$key)))
+  NN <- nin:nax; N <- as.character(NN)
+  topic <- all <- rep(0,length(N)); names(topic) <- names(all) <- N
+  all[wc$group_by$key] <- wc$group_by$count
+  topic[wp$group_by$key] <- wp$group_by$count
+  barplot(all,col=col[1],main=main)
+  barplot(topic,col=col[2],add=T)
+}
+
+# activity("a5065490876|A5110460780","blockmodel*",
+#   col=c("darkolivegreen","darkgoldenrod1"), main="Patrick Doreian / blockmodeling")
 
 
 
