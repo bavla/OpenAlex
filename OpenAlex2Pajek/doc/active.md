@@ -1,25 +1,36 @@
-# Bibliographic networks on selected topic
+# Author's total and topic activity by years
 
-OpenAlex assigns to each work also some [keywords](https://help.openalex.org/hc/en-us/articles/24736201130391-Keywords) that describe its content.
-For example for the field of network analysis we can use keywords [social-network-analysis](https://openalex.org/keywords/social-network-analysis) (works count: 51.950), [social-network](https://openalex.org/keywords/social-network) (works count: 96.250), and [complex-network](https://openalex.org/keywords/complex-network) (works count: 49.090).
-
-We [can](https://developers.openalex.org/guides/searching) combine the into a single search ([call](https://api.openalex.org/works?filter=keywords.id:social-network-analysis|social-network|complex-network&select=id,publication_year,title), works count: 124999)
-```
-https://api.openalex.org/works?filter=keywords.id:social-network-analysis|social-network|complex-network&select=id,title
-```
-
-To get the list of works and the corresponding citation network we use the function `OpenAlex2PajekCite`
-```
+For an example, we will present the [total activity]("https://api.openalex.org/works?filter=author.id:a5065490876|A5110460780&group_by=publication_year&per_page=200&page=1") (blue) of Patrick Doreian by years and
+his [works on signed networks]("https://api.openalex.org/works?search.title_and_abstract.exact=sign*&filter=author.id:a5065490876|A5110460780&group_by=publication_year&per_page=200&page=1") (red).
 
 ```
-[DC partition](http://localhost:8800/doku.php?id=work:bib:alex:ana:mat:clea) 
+> library(httr); library(jsonlite)
+> aIDs <- "a5065490876|A5110460780"
+> keyw <- "sign*" 
+> start <- "https://api.openalex.org/works?"
+> end <- "&group_by=publication_year&per_page=200&page=1"
+> sta <- "search.title_and_abstract.exact="
+> aID <- "filter=author.id:"
+> wd <- GET(paste0(start,aID,aIDs,end))
+> wc <- fromJSON(rawToChar(wd$content))
+> ws <- GET(paste0(start,sta,keyw,"&",aID,aIDs,end))
+> wp <- fromJSON(rawToChar(ws$content))
+> sum(wc$group_by$count)
+> sum(wp$group_by$count)
+> nin <- min(as.integer(c(wc$group_by$key,wp$group_by$key)))
+> nax <- max(as.integer(c(wc$group_by$key,wp$group_by$key)))
+> NN <- nin:nax; N <- as.character(NN)
+> topic <- all <- rep(0,length(N)); names(topic) <- names(all) <- N
+> all[wc$group_by$key] <- wc$group_by$count
+> topic[wp$group_by$key] <- wp$group_by$count
+> barplot(all,col="blue",main="Patrick Doreian / signed")
+> barplot(topic,col="red",add=T)
 ```
+<img width="800" alt="PatSig" src="https://github.com/user-attachments/assets/72cb0377-1ed3-40d3-b1e1-fba6e25daa7a" />
 
 ```
 ```
-```
-```
-```
+
 
 <hr />
 
