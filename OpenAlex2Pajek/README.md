@@ -31,7 +31,9 @@ Since in networks the units (works, authors, sources, keywords, etc.) are identi
 - [Garfield labels and info about works](./doc/wnames.md) 
 - [Names and info about authors](./doc/anames.md)
 - [Journals](https://github.com/bavla/OpenAlex/tree/main/code/test/jour.md)
-- 
+- [Author's total and topic activity by years](./doc/active.md)
+
+  
 OpenAlexSources(sID,step=100,cond="")  [Function `OpenAlexSources`](https://github.com/bavla/OpenAlex/tree/main/code/test/OpenAlexSources.md)
 
 OpenAlexAuthors(IDs,step=100,cond="")
