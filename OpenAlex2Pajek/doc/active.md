@@ -1,7 +1,7 @@
 # Author's total and topic activity by years
 
-For an example, we will present the [total activity]("https://api.openalex.org/works?filter=author.id:a5065490876|A5110460780&group_by=publication_year&per_page=200&page=1") (blue) of Patrick Doreian by years and
-his [works on signed networks]("https://api.openalex.org/works?search.title_and_abstract.exact=sign*&filter=author.id:a5065490876|A5110460780&group_by=publication_year&per_page=200&page=1") (red).
+For an example, we will present the [total activity](https://api.openalex.org/works?filter=author.id:a5065490876|A5110460780&group_by=publication_year&per_page=200&page=1) (blue) of Patrick Doreian by years and
+his [works on signed networks](https://api.openalex.org/works?search.title_and_abstract.exact=sign*&filter=author.id:a5065490876|A5110460780&group_by=publication_year&per_page=200&page=1) (red).
 
 ```
 > library(httr); library(jsonlite)
