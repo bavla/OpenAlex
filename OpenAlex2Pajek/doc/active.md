@@ -59,6 +59,7 @@ IDs = a5065490876|A5110460780  keyw = blockmodel* total = 218  topic = 53
 ```
 <img width="800" alt="PatBM" src="https://github.com/user-attachments/assets/fe8579f2-03fe-4b20-b7e7-f9ea9b0e24e6" />
 
+Check the OpenAlex author's ID [a5065490876](https://openalex.org/authors/a5065490876)
 
 <hr />
 
